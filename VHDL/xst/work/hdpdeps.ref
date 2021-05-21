@@ -1,0 +1,15 @@
+V3 7
+FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/MUX_2_1.vhd" 2021/05/21.11:31:36 P.20131013
+EN work/mux_2_1 1621590641 \
+      FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/MUX_2_1.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/MUX_2_1/rtl 1621590642 \
+      FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/MUX_2_1.vhd" \
+      EN work/mux_2_1 1621590641
+FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/Mux_8_1.vhd" 2021/05/21.11:51:45 P.20131013
+EN work/MUX_8_1 1621590967 \
+      FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/Mux_8_1.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/MUX_8_1/rtl 1621590968 \
+      FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/Mux_8_1.vhd" \
+      EN work/MUX_8_1 1621590967
