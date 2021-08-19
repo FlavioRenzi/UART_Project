@@ -1,0 +1,449 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: BaudGeneretor.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "BaudGeneretor.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "BaudGeneretor"
+Output Format                      : NGC
+Target Device                      : xc3s1500-5-fg320
+
+---- Source Options
+Top Module Name                    : BaudGeneretor
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/BaudGeneretor.vhd" in Library work.
+Architecture baudgen of Entity baudgeneretor is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <BaudGeneretor> in library <work> (architecture <baudgen>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <BaudGeneretor> in library <work> (Architecture <baudgen>).
+INFO:Xst:1739 - HDL ADVISOR - "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/BaudGeneretor.vhd" line 28: declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output.
+Entity <BaudGeneretor> analyzed. Unit <BaudGeneretor> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <BaudGeneretor>.
+    Related source file is "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/BaudGeneretor.vhd".
+WARNING:Xst:647 - Input <rst_b> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit 8-to-1 multiplexer for signal <BclkX8>.
+    Found 4-bit up counter for signal <ctr1>.
+    Found 8-bit up counter for signal <ctr2>.
+    Found 3-bit up counter for signal <ctr3>.
+    Summary:
+	inferred   3 Counter(s).
+	inferred   1 Multiplexer(s).
+Unit <BaudGeneretor> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 3
+ 3-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+ 8-bit up counter                                      : 1
+# Multiplexers                                         : 1
+ 1-bit 8-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 3
+ 3-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+ 8-bit up counter                                      : 1
+# Multiplexers                                         : 1
+ 1-bit 8-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <BaudGeneretor> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block BaudGeneretor, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 15
+ Flip-Flops                                            : 15
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : BaudGeneretor.ngr
+Top Level Output File Name         : BaudGeneretor
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 7
+
+Cell Usage :
+# BELS                             : 39
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 7
+#      LUT2                        : 2
+#      LUT3                        : 6
+#      LUT4                        : 2
+#      MUXCY                       : 7
+#      MUXF5                       : 2
+#      MUXF6                       : 1
+#      VCC                         : 1
+#      XORCY                       : 8
+# FlipFlops/Latches                : 15
+#      FD                          : 10
+#      FDR                         : 5
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 5
+#      IBUF                        : 3
+#      OBUF                        : 2
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1500fg320-5 
+
+ Number of Slices:                       10  out of  13312     0%  
+ Number of Slice Flip Flops:             15  out of  26624     0%  
+ Number of 4 input LUTs:                 19  out of  26624     0%  
+ Number of IOs:                           7
+ Number of bonded IOBs:                   6  out of    221     2%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Sysclk                             | BUFGP                  | 4     |
+ctr1_3                             | NONE(ctr2_0)           | 8     |
+BclkX8_OBUF(Mmux_BclkX8_2_f6:O)    | NONE(*)(ctr3_1)        | 3     |
+-----------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 3.854ns (Maximum Frequency: 259.450MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 8.321ns
+   Maximum combinational path delay: 8.569ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Sysclk'
+  Clock period: 3.854ns (frequency: 259.450MHz)
+  Total number of paths / destination ports: 26 / 8
+-------------------------------------------------------------------------
+Delay:               3.854ns (Levels of Logic = 1)
+  Source:            ctr1_0 (FF)
+  Destination:       ctr1_0 (FF)
+  Source Clock:      Sysclk rising
+  Destination Clock: Sysclk rising
+
+  Data Path: ctr1_0 to ctr1_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              5   0.626   1.078  ctr1_0 (ctr1_0)
+     LUT4:I0->O            4   0.479   0.779  ctr1_cmp_eq00001 (ctr1_cmp_eq0000)
+     FDR:R                     0.892          ctr1_0
+    ----------------------------------------
+    Total                      3.854ns (1.997ns logic, 1.857ns route)
+                                       (51.8% logic, 48.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ctr1_3'
+  Clock period: 3.820ns (frequency: 261.784MHz)
+  Total number of paths / destination ports: 36 / 8
+-------------------------------------------------------------------------
+Delay:               3.820ns (Levels of Logic = 8)
+  Source:            ctr2_1 (FF)
+  Destination:       ctr2_7 (FF)
+  Source Clock:      ctr1_3 rising
+  Destination Clock: ctr1_3 rising
+
+  Data Path: ctr2_1 to ctr2_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.626   1.040  ctr2_1 (ctr2_1)
+     LUT1:I0->O            1   0.479   0.000  Mcount_ctr2_cy<1>_rt (Mcount_ctr2_cy<1>_rt)
+     MUXCY:S->O            1   0.435   0.000  Mcount_ctr2_cy<1> (Mcount_ctr2_cy<1>)
+     MUXCY:CI->O           1   0.056   0.000  Mcount_ctr2_cy<2> (Mcount_ctr2_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  Mcount_ctr2_cy<3> (Mcount_ctr2_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  Mcount_ctr2_cy<4> (Mcount_ctr2_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  Mcount_ctr2_cy<5> (Mcount_ctr2_cy<5>)
+     MUXCY:CI->O           0   0.056   0.000  Mcount_ctr2_cy<6> (Mcount_ctr2_cy<6>)
+     XORCY:CI->O           1   0.786   0.000  Mcount_ctr2_xor<7> (Result<7>)
+     FD:D                      0.176          ctr2_7
+    ----------------------------------------
+    Total                      3.820ns (2.780ns logic, 1.040ns route)
+                                       (72.8% logic, 27.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'BclkX8_OBUF'
+  Clock period: 2.321ns (frequency: 430.765MHz)
+  Total number of paths / destination ports: 6 / 3
+-------------------------------------------------------------------------
+Delay:               2.321ns (Levels of Logic = 1)
+  Source:            ctr3_1 (FF)
+  Destination:       ctr3_1 (FF)
+  Source Clock:      BclkX8_OBUF rising
+  Destination Clock: BclkX8_OBUF rising
+
+  Data Path: ctr3_1 to ctr3_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.626   1.040  ctr3_1 (ctr3_1)
+     LUT2:I0->O            1   0.479   0.000  Mcount_ctr3_xor<1>11 (Result<1>2)
+     FD:D                      0.176          ctr3_1
+    ----------------------------------------
+    Total                      2.321ns (1.281ns logic, 1.040ns route)
+                                       (55.2% logic, 44.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ctr1_3'
+  Total number of paths / destination ports: 8 / 1
+-------------------------------------------------------------------------
+Offset:              8.321ns (Levels of Logic = 4)
+  Source:            ctr2_0 (FF)
+  Destination:       BclkX8 (PAD)
+  Source Clock:      ctr1_3 rising
+
+  Data Path: ctr2_0 to BclkX8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.626   0.915  ctr2_0 (ctr2_0)
+     LUT3:I1->O            1   0.479   0.000  Mmux_BclkX8_6 (Mmux_BclkX8_6)
+     MUXF5:I0->O           1   0.314   0.000  Mmux_BclkX8_4_f5 (Mmux_BclkX8_4_f5)
+     MUXF6:I0->O           4   0.298   0.779  Mmux_BclkX8_2_f6 (BclkX8_OBUF)
+     OBUF:I->O                 4.909          BclkX8_OBUF (BclkX8)
+    ----------------------------------------
+    Total                      8.321ns (6.626ns logic, 1.695ns route)
+                                       (79.6% logic, 20.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'BclkX8_OBUF'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              6.280ns (Levels of Logic = 1)
+  Source:            ctr3_2 (FF)
+  Destination:       Bclk (PAD)
+  Source Clock:      BclkX8_OBUF rising
+
+  Data Path: ctr3_2 to Bclk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.626   0.745  ctr3_2 (ctr3_2)
+     OBUF:I->O                 4.909          Bclk_OBUF (Bclk)
+    ----------------------------------------
+    Total                      6.280ns (5.535ns logic, 0.745ns route)
+                                       (88.1% logic, 11.9% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 7 / 1
+-------------------------------------------------------------------------
+Delay:               8.569ns (Levels of Logic = 5)
+  Source:            Sel<0> (PAD)
+  Destination:       BclkX8 (PAD)
+
+  Data Path: Sel<0> to BclkX8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.715   1.074  Sel_0_IBUF (Sel_0_IBUF)
+     LUT3:I0->O            1   0.479   0.000  Mmux_BclkX8_4 (Mmux_BclkX8_4)
+     MUXF5:I1->O           1   0.314   0.000  Mmux_BclkX8_3_f5 (Mmux_BclkX8_3_f5)
+     MUXF6:I1->O           4   0.298   0.779  Mmux_BclkX8_2_f6 (BclkX8_OBUF)
+     OBUF:I->O                 4.909          BclkX8_OBUF (BclkX8)
+    ----------------------------------------
+    Total                      8.569ns (6.715ns logic, 1.854ns route)
+                                       (78.4% logic, 21.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.67 secs
+ 
+--> 
+
+Total memory usage is 4498324 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

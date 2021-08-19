@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/BaudGeneretor.xst" -ofn "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/BaudGeneretor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1500-fg320-5 "BaudGeneretor.ngc" BaudGeneretor.ngd  
+map -intstyle ise -p xc3s1500-fg320-5 -cm area -ir off -pr off -c 100 -o BaudGeneretor_map.ncd BaudGeneretor.ngd BaudGeneretor.pcf 
+map -intstyle ise -p xc3s1500-fg320-5 -cm area -ir off -pr off -c 100 -o BaudGeneretor_map.ncd BaudGeneretor.ngd BaudGeneretor.pcf 
+xst -intstyle ise -ifn "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/BaudGeneretor.xst" -ofn "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/BaudGeneretor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1500-fg320-5 "BaudGeneretor.ngc" BaudGeneretor.ngd  
+map -intstyle ise -p xc3s1500-fg320-5 -cm area -ir off -pr off -c 100 -o BaudGeneretor_map.ncd BaudGeneretor.ngd BaudGeneretor.pcf 
+par -w -intstyle ise -ol high -t 1 BaudGeneretor_map.ncd BaudGeneretor.ncd BaudGeneretor.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml BaudGeneretor.twx BaudGeneretor.ncd -o BaudGeneretor.twr BaudGeneretor.pcf 

@@ -4,3 +4,11 @@ spl2sym -intstyle ise -family spartan3 Mux_8_1.spl {C:/Users/Flavio/OneDrive - P
 vhdtdtfi -lib work Mux_8_1.vhd -prj UART -o MUX_8_1.spl -module MUX_8_1 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
 spl2sym -intstyle ise -family spartan3 MUX_8_1.spl {C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/MUX_8_1.sym} 
 xst -intstyle ise -ifn "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/MUX_8_1.xst" -ofn "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/MUX_8_1.syr" 
+xst -intstyle ise -ifn "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/MUX_8_1.xst" -ofn "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/MUX_8_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1500-fg320-5 "MUX_8_1.ngc" MUX_8_1.ngd  
+map -intstyle ise -p xc3s1500-fg320-5 -cm area -ir off -pr off -c 100 -o MUX_8_1_map.ncd MUX_8_1.ngd MUX_8_1.pcf 
+map -intstyle ise -p xc3s1500-fg320-5 -cm area -ir off -pr off -c 100 -o MUX_8_1_map.ncd MUX_8_1.ngd MUX_8_1.pcf 
+map -intstyle ise -p xc3s1500-fg320-5 -cm area -ir off -pr off -c 100 -o MUX_8_1_map.ncd MUX_8_1.ngd MUX_8_1.pcf 
+map -intstyle ise -p xc3s1500-fg320-5 -cm area -ir off -pr off -c 100 -o MUX_8_1_map.ncd MUX_8_1.ngd MUX_8_1.pcf 
+par -w -intstyle ise -ol high -t 1 MUX_8_1_map.ncd MUX_8_1.ncd MUX_8_1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MUX_8_1.twx MUX_8_1.ncd -o MUX_8_1.twr MUX_8_1.pcf 

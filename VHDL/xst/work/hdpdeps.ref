@@ -1,4 +1,11 @@
-V3 7
+V3 9
+FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/BaudGeneretor.vhd" 2021/08/13.10:35:22 P.20131013
+EN work/BaudGeneretor 1628844697 \
+      FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/BaudGeneretor.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/BaudGeneretor/baudgen 1628844698 \
+      FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/BaudGeneretor.vhd" \
+      EN work/BaudGeneretor 1628844697
 FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/MUX_2_1.vhd" 2021/05/21.11:31:36 P.20131013
 EN work/mux_2_1 1621590641 \
       FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/MUX_2_1.vhd" \
@@ -7,9 +14,9 @@ AR work/MUX_2_1/rtl 1621590642 \
       FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/MUX_2_1.vhd" \
       EN work/mux_2_1 1621590641
 FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/Mux_8_1.vhd" 2021/05/21.11:51:45 P.20131013
-EN work/MUX_8_1 1621590967 \
+EN work/MUX_8_1 1628843977 \
       FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/Mux_8_1.vhd" \
       PB ieee/std_logic_1164 1381692176
-AR work/MUX_8_1/rtl 1621590968 \
+AR work/MUX_8_1/rtl 1628843978 \
       FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/Mux_8_1.vhd" \
-      EN work/MUX_8_1 1621590967
+      EN work/MUX_8_1 1628843977

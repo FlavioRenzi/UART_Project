@@ -1,0 +1,46 @@
+# ----- REMOVE LINES ABOVE HERE --------------------------
+#
+# This license is valid from Thu May 20 08:25:28 UTC 2021.
+#
+# This is license NODELOCKED to HOSTID=9cb6d0fdb70e;
+# there is no need to run lmgrd for this license.
+#
+#
+# This is a permanent license generated on Thu May 20 08:25:28 UTC 2021
+INCREMENT SDK xilinxd 2022.05 permanent uncounted ECFD57AF8A6B \
+VENDOR_STRING=flavio.renzi@mail.polimi.it,SDK,software,permanent,_212174391_0_0_568 \
+HOSTID=ANY ISSUER="Xilinx Inc" START=20-May-2021 TS_OK
+#
+# This is a permanent license generated on Thu May 20 08:25:28 UTC 2021
+INCREMENT Analyzer xilinxd 2022.05 permanent uncounted F12728171248 \
+VENDOR_STRING=flavio.renzi@mail.polimi.it,Analyzer,software,permanent,_212174391_0_0_144 \
+HOSTID=ANY ISSUER="Xilinx Inc" START=20-May-2021 TS_OK
+#
+# This is a permanent license generated on Thu May 20 08:25:28 UTC 2021
+INCREMENT HLS xilinxd 2022.05 permanent uncounted E4FA8E0D925B \
+VENDOR_STRING=flavio.renzi@mail.polimi.it,HLS,software,permanent,_212174391_0_0_204 \
+HOSTID=ANY ISSUER="Xilinx Inc" START=20-May-2021 TS_OK
+#
+# This is a permanent license generated on Thu May 20 08:25:28 UTC 2021
+INCREMENT V_WebPACK xilinxd 2022.05 permanent uncounted 5DE82AE3870F \
+VENDOR_STRING=flavio.renzi@mail.polimi.it,V_WebPACK,software,permanent,_212174391_0_0_664 \
+HOSTID=ANY ISSUER="Xilinx Inc" START=20-May-2021 TS_OK
+#
+# This is a permanent license generated on Thu May 20 08:25:28 UTC 2021
+INCREMENT ISE_Embedded_Edition xilinxd 2022.05 permanent uncounted \
+EE08E6EEFA07 \
+VENDOR_STRING=flavio.renzi@mail.polimi.it,ISE_Embedded_Edition,software,permanent,_212174391_0_0_600 \
+HOSTID=9cb6d0fdb70e ISSUER="Xilinx Inc" START=20-May-2021 \
+TS_OK
+#
+#
+# ----------------------------------------------------------------------
+#  The following PACKAGE definition is a REQUIRED part of this license:
+#
+PACKAGE ISE_Embedded_Edition xilinxd 2022.05 0886CE86407E \
+COMPONENTS="SDK ChipScopePro_SIOTK ChipscopePro ISE XPS ISIM \
+PlanAhead" OPTIONS=SUITE
+#
+# ------------------------------------------------------------------------------
+#
+# ----- REMOVE LINES BELOW HERE --------------------------

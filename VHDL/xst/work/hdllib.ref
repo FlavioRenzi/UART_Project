@@ -1,5 +1,7 @@
-EN mux_8_1 NULL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/Mux_8_1.vhd" sub00/vhpl02 1621590967
+EN mux_8_1 NULL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/Mux_8_1.vhd" sub00/vhpl02 1628843977
 AR mux_2_1 rtl "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/MUX_2_1.vhd" sub00/vhpl01 1621590642
 EN mux_2_1 NULL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/MUX_2_1.vhd" sub00/vhpl00 1621590641
 AR mux_8_1 mux_arch "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/Mux_8_1.vhd" sub00/vhpl03 1621590626
-AR mux_8_1 rtl "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/Mux_8_1.vhd" sub00/vhpl04 1621590968
+AR baudgeneretor baudgen "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/BaudGeneretor.vhd" sub00/vhpl06 1628844698
+EN baudgeneretor NULL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/BaudGeneretor.vhd" sub00/vhpl05 1628844697
+AR mux_8_1 rtl "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/Mux_8_1.vhd" sub00/vhpl04 1628843978
