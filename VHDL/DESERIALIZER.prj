@@ -1,0 +1,5 @@
+vhdl work "REG_SP_8_BIT.vhd"
+vhdl work "REG_PP_8_BIT.vhd"
+vhdl work "COUNTER_MOD_2_N.vhd"
+vhdl work "CLK_DELAYER_4.vhd"
+vhdl work "DESERIALIZER.vhd"

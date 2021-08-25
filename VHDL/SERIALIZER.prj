@@ -1,0 +1,3 @@
+vhdl work "REG_PS_9_BIT.vhd"
+vhdl work "COUNTER_MOD_2_N.vhd"
+vhdl work "SERIALIZER.vhd"

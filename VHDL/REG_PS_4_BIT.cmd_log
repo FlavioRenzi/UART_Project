@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/REG_PS_4_BIT.xst" -ofn "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/REG_PS_4_BIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/REG_PS_4_BIT.xst" -ofn "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/REG_PS_4_BIT.syr" 

@@ -1,0 +1,30 @@
+Command line:
+   BAUD_GEN_TEST_isim_par.exe
+     -simmode  gui
+     -sdfmax  /uut/=netgen/par/BAUD_GEN_timesim.sdf
+     -sdfroot  /uut
+     -simrunnum  0
+     -socket  57500
+
+Wed Aug 25 21:18:40 2021
+
+
+ Elaboration Time: 0.078125 sec
+
+ Current Memory Usage: 5479.81 Meg
+
+ Total Signals          : 1467
+ Total Nets             : 891
+ Total Signal Drivers   : 864
+ Total Blocks           : 421
+ Total Primitive Blocks : 223
+ Total Processes        : 864
+ Total Traceable Variables  : 2120
+ Total Scalar Nets and Variables : 11137
+
+ Total Simulation Time: 0.125 sec
+
+ Current Memory Usage: 5479.81 Meg
+
+Wed Aug 25 21:18:45 2021
+

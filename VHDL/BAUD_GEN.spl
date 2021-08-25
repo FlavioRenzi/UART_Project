@@ -1,0 +1,7 @@
+[Inputs]
+CLK
+=SEL_B[2:0]=
+[Outputs]
+CLK_T
+CLK_R
+[BiDir]

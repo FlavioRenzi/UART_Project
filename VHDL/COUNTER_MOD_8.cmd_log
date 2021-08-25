@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/COUNTER_MOD_8.xst" -ofn "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/COUNTER_MOD_8.syr" 

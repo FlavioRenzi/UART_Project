@@ -1,0 +1,51 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/COUNTER_MOD_2_N.vhd" in Library work.
+ERROR:HDLParsers:800 - "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/COUNTER_MOD_2_N.vhd" Line 8. Type of CLK is incompatible with type of 0.
+ERROR:HDLParsers:3010 - "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/COUNTER_MOD_2_N.vhd" Line 13. Entity COUNTER_MOD_2_N does not exist.
+ERROR:HDLParsers:3312 - "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/COUNTER_MOD_2_N.vhd" Line 14. Undefined symbol 'std_logic_vector'.
+ERROR:HDLParsers:1209 - "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/COUNTER_MOD_2_N.vhd" Line 14. std_logic_vector: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/COUNTER_MOD_2_N.vhd" Line 14. Undefined symbol 'N'.
+ERROR:HDLParsers:1209 - "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/COUNTER_MOD_2_N.vhd" Line 14. N: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/COUNTER_MOD_2_N.vhd" Line 16. Undefined symbol 'CLK'.
+ERROR:HDLParsers:1209 - "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/COUNTER_MOD_2_N.vhd" Line 16. CLK: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/COUNTER_MOD_2_N.vhd" Line 16. Undefined symbol 'RESET'.
+ERROR:HDLParsers:1209 - "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/COUNTER_MOD_2_N.vhd" Line 16. RESET: Undefined symbol (last report in this block)
+ERROR:HDLParsers:808 - "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/COUNTER_MOD_2_N.vhd" Line 18. = can not have such operands in this context.
+ERROR:HDLParsers:3312 - "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/COUNTER_MOD_2_N.vhd" Line 19. Undefined symbol 'TY'.
+ERROR:HDLParsers:808 - "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/COUNTER_MOD_2_N.vhd" Line 20. = can not have such operands in this context.
+ERROR:HDLParsers:1209 - "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/COUNTER_MOD_2_N.vhd" Line 21. TY: Undefined symbol (last report in this block)
+WARNING:HDLParsers:1406 - "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/COUNTER_MOD_2_N.vhd" Line 16. No sensitivity list and no wait in the process
+ERROR:HDLParsers:3312 - "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/COUNTER_MOD_2_N.vhd" Line 24. Undefined symbol 'Y'.
+ERROR:HDLParsers:3312 - "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/COUNTER_MOD_2_N.vhd" Line 24. Undefined symbol 'TY'.
+ERROR:HDLParsers:1209 - "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/COUNTER_MOD_2_N.vhd" Line 24. TY: Undefined symbol (last report in this block)
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> 
+
+Total memory usage is 4471088 kilobytes
+
+Number of errors   :   17 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

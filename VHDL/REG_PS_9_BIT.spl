@@ -1,0 +1,8 @@
+[Inputs]
+CLK
+RESET
+LOAD
+=XP[8:0]=
+[Outputs]
+Y
+[BiDir]

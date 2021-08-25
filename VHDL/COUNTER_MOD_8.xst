@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/xst"
+elaborate
+-ifn COUNTER_MOD_8.prj
+-ifmt mixed

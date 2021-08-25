@@ -1,0 +1,8 @@
+[Inputs]
+RESET
+CLK
+RX
+[Outputs]
+READY
+=BUS_OUT[7:0]=
+[BiDir]

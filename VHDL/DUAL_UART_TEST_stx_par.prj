@@ -1,0 +1,2 @@
+vhdl isim_temp "netgen/par/UART_timesim.vhd"
+vhdl isim_temp "DUAL_UART_TEST.vhd"

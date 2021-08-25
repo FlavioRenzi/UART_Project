@@ -1,4 +1,4 @@
-V3 9
+V3 51
 FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/BaudGeneretor.vhd" 2021/08/13.10:35:22 P.20131013
 EN work/BaudGeneretor 1628844697 \
       FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/BaudGeneretor.vhd" \
@@ -6,6 +6,42 @@ EN work/BaudGeneretor 1628844697 \
 AR work/BaudGeneretor/baudgen 1628844698 \
       FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/BaudGeneretor.vhd" \
       EN work/BaudGeneretor 1628844697
+FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/BAUD_GEN.vhd" 2021/08/25.21:17:56 P.20131013
+EN work/BAUD_GEN 1629919444 \
+      FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/BAUD_GEN.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/BAUD_GEN/rtl 1629919445 \
+      FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/BAUD_GEN.vhd" \
+      EN work/BAUD_GEN 1629919444 CP COUNTER_MOD_2_N
+FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/CLK_DELAYER_4.vhd" 2021/08/22.15:23:48 P.20131013
+EN work/CLK_DELAYER_4 1629919438 \
+      FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/CLK_DELAYER_4.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/CLK_DELAYER_4/rtl 1629919439 \
+      FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/CLK_DELAYER_4.vhd" \
+      EN work/CLK_DELAYER_4 1629919438
+FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/COUNTER_MOD_2_N.vhd" 2021/08/23.10:29:57 P.20131013
+EN work/COUNTER_MOD_2_N 1629919440 \
+      FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/COUNTER_MOD_2_N.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/COUNTER_MOD_2_N/rtl 1629919441 \
+      FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/COUNTER_MOD_2_N.vhd" \
+      EN work/COUNTER_MOD_2_N 1629919440
+FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/COUNTER_MOD_8.vhd" 2021/08/22.18:33:21 P.20131013
+EN work/COUNTER_MOD_8 1629650125 \
+      FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/COUNTER_MOD_8.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/COUNTER_MOD_8/rtl 1629650126 \
+      FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/COUNTER_MOD_8.vhd" \
+      EN work/COUNTER_MOD_8 1629650125
+FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/DESERIALIZER.vhd" 2021/08/25.19:35:15 P.20131013
+EN work/DESERIALIZER 1629919448 \
+      FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/DESERIALIZER.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/DESERIALIZER/STRUCT 1629919449 \
+      FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/DESERIALIZER.vhd" \
+      EN work/DESERIALIZER 1629919448 CP REG_PP_8_BIT CP REG_SP_8_BIT \
+      CP CLK_DELAYER_4 CP COUNTER_MOD_2_N
 FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/MUX_2_1.vhd" 2021/05/21.11:31:36 P.20131013
 EN work/mux_2_1 1621590641 \
       FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/MUX_2_1.vhd" \
@@ -20,3 +56,48 @@ EN work/MUX_8_1 1628843977 \
 AR work/MUX_8_1/rtl 1628843978 \
       FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/Mux_8_1.vhd" \
       EN work/MUX_8_1 1628843977
+FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/REG_PP_8_BIT.vhd" 2021/08/22.15:03:51 P.20131013
+EN work/REG_PP_8_BIT 1629919434 \
+      FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/REG_PP_8_BIT.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/REG_PP_8_BIT/rtl 1629919435 \
+      FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/REG_PP_8_BIT.vhd" \
+      EN work/REG_PP_8_BIT 1629919434
+FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/REG_PS_4_BIT.vhd" 2021/08/22.18:46:31 P.20131013
+AR work/REG_PS_4_BIT/rtl -1 \
+      FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/REG_PS_4_BIT.vhd" \
+      EN work/REG_PS_4_BIT 1629650821
+EN work/REG_PS_4_BIT 1629650821 \
+      FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/REG_PS_4_BIT.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/REG_PS_4_BIT/Behavioral 1629650822 \
+      FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/REG_PS_4_BIT.vhd" \
+      EN work/REG_PS_4_BIT 1629650821
+FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/REG_PS_9_BIT.vhd" 2021/08/22.11:46:35 P.20131013
+EN work/REG_PS_9_BIT 1629919442 \
+      FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/REG_PS_9_BIT.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/REG_PS_9_BIT/rtl 1629919443 \
+      FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/REG_PS_9_BIT.vhd" \
+      EN work/REG_PS_9_BIT 1629919442
+FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/REG_SP_8_BIT.vhd" 2021/08/22.14:29:32 P.20131013
+EN work/REG_SP_8_BIT 1629919436 \
+      FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/REG_SP_8_BIT.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/REG_SP_8_BIT/rtl 1629919437 \
+      FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/REG_SP_8_BIT.vhd" \
+      EN work/REG_SP_8_BIT 1629919436
+FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/SERIALIZER.vhd" 2021/08/25.17:39:24 P.20131013
+EN work/SERIALIZER 1629919446 \
+      FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/SERIALIZER.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/SERIALIZER/rtl 1629919447 \
+      FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/SERIALIZER.vhd" \
+      EN work/SERIALIZER 1629919446 CP REG_PS_9_BIT CP COUNTER_MOD_2_N
+FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/UART.vhd" 2021/08/25.19:45:42 P.20131013
+EN work/UART 1629919450 \
+      FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/UART.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/UART/STRUCT 1629919451 \
+      FL "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/UART.vhd" \
+      EN work/UART 1629919450 CP BAUD_GEN CP SERIALIZER CP DESERIALIZER
