@@ -1,0 +1,30 @@
+Command line:
+   DUAL_UART_BURST_TEST_isim_par.exe
+     -simmode  gui
+     -sdfmax  /UART_1/=netgen/par/UART_timesim.sdf
+     -sdfroot  /UART_1
+     -simrunnum  0
+     -socket  58459
+
+Fri Aug 27 00:06:37 2021
+
+
+ Elaboration Time: 0.296875 sec
+
+ Current Memory Usage: 5497.88 Meg
+
+ Total Signals          : 7333
+ Total Nets             : 4683
+ Total Signal Drivers   : 4596
+ Total Blocks           : 1953
+ Total Primitive Blocks : 1048
+ Total Processes        : 4588
+ Total Traceable Variables  : 10887
+ Total Scalar Nets and Variables : 36208
+
+ Total Simulation Time: 1.20313 sec
+
+ Current Memory Usage: 4711.45 Meg
+
+Fri Aug 27 00:09:48 2021
+

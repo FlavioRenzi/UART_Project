@@ -68,7 +68,7 @@ BEGIN
 		RESET <= '0';
       wait for CLK_period*10;
 		
-		SEL_B <= "011";
+		SEL_B <= "110";
 
       -- insert stimulus here 
       wait;

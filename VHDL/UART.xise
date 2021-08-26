@@ -120,7 +120,7 @@
     <file xil_pn:name="DUAL_UART_BAUD_TEST.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
       <association xil_pn:name="PostMapSimulation" xil_pn:seqID="383"/>
-      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="383"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="0"/>
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="383"/>
     </file>
   </files>

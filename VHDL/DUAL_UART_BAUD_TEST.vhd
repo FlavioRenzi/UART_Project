@@ -172,7 +172,7 @@ BEGIN
 			wait for CLK_period*MULT*12;
 			START_2 <= '0';
 			wait until RX_READY_1 = '1' and RX_READY_2 = '1';
-			wait for CLK_period*MULT*5;
+			wait for CLK_period*MULT*10;
 		end loop;
 		wait;
    end process;
