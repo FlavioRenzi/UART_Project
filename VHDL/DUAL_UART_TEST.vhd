@@ -74,13 +74,13 @@ ARCHITECTURE behavior OF DUAL_UART_TEST IS
 	
 	
    -- Clock period definitions
-   constant CLK_period : time := 1000 ns;
+   constant CLK_period : time := 500 ns;
 	
-	constant MY_SEL : std_logic_vector(2 downto 0) := "011";
-	shared variable MULT : integer:= 8;
+	constant MY_SEL : std_logic_vector(2 downto 0) := "001";
+	shared variable MULT : integer:= 2;
 	
 	
-	
+
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
@@ -172,8 +172,16 @@ BEGIN
 		START_2 <= '1';
 		wait for CLK_period*MULT*9;
 		START_2 <= '0';
+		wait until RX_READY_1 = '1' and RX_READY_2 = '1';
+		wait for CLK_period*MULT*9;
+		RESET_1 <= '1';
+		RESET_2 <= '1';
+      wait for CLK_period*11;	
+		RESET_1 <= '0';
+		RESET_2 <= '0';
       wait;
    end process;
 	
+
 
 END;

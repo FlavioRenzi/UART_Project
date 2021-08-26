@@ -147,10 +147,14 @@ static void work_a_1705587032_3708392848_p_2(char *t0)
     unsigned char t34;
     char *t35;
     char *t36;
-    char *t37;
-    char *t38;
-    char *t39;
+    unsigned char t37;
+    unsigned char t38;
+    unsigned char t39;
     char *t40;
+    char *t41;
+    char *t42;
+    char *t43;
+    char *t44;
 
 LAB0:    xsi_set_current_line(108, ng0);
 
@@ -192,16 +196,21 @@ LAB3:    t1 = (t0 + 3112U);
     t32 = *((unsigned char *)t26);
     t33 = ieee_p_2592010699_sub_1690584930_503743352(IEEE_P_2592010699, t32);
     t34 = ieee_p_2592010699_sub_1605435078_503743352(IEEE_P_2592010699, t25, t33);
+    t35 = (t0 + 1832U);
+    t36 = *((char **)t35);
+    t37 = *((unsigned char *)t36);
+    t38 = ieee_p_2592010699_sub_1690584930_503743352(IEEE_P_2592010699, t37);
+    t39 = ieee_p_2592010699_sub_1605435078_503743352(IEEE_P_2592010699, t34, t38);
     t35 = (t0 + 7088);
-    t36 = (t35 + 56U);
-    t37 = *((char **)t36);
-    t38 = (t37 + 56U);
-    t39 = *((char **)t38);
-    *((unsigned char *)t39) = t34;
+    t40 = (t35 + 56U);
+    t41 = *((char **)t40);
+    t42 = (t41 + 56U);
+    t43 = *((char **)t42);
+    *((unsigned char *)t43) = t39;
     xsi_driver_first_trans_fast(t35);
 
-LAB2:    t40 = (t0 + 6800);
-    *((int *)t40) = 1;
+LAB2:    t44 = (t0 + 6800);
+    *((int *)t44) = 1;
 
 LAB1:    return;
 LAB4:    goto LAB2;

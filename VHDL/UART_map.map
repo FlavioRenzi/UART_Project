@@ -9,7 +9,7 @@ Target Device  : xc3s1500
 Target Package : fg320
 Target Speed   : -5
 Mapper Version : spartan3 -- $Revision: 1.55 $
-Mapped Date    : Wed Aug 25 21:24:03 2021
+Mapped Date    : Thu Aug 26 22:12:40 2021
 
 Mapping design into LUTs...
 Running directed packing...
@@ -19,10 +19,10 @@ Updating timing models...
 WARNING:PhysDesignRules:372 - Gated clock. Clock net DES/T_START is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net DES/T_END is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net SER/T_RESET is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net SER/T_RESET is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net DES/T_END is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 
@@ -55,10 +55,10 @@ Logic Distribution:
     IOB Latches:                          1
   Number of BUFGMUXs:                     1 out of       8   12%
 
-Average Fanout of Non-Clock Nets:                2.95
+Average Fanout of Non-Clock Nets:                2.92
 
-Peak Memory Usage:  4414 MB
-Total REAL time to MAP completion:  1 secs 
+Peak Memory Usage:  4415 MB
+Total REAL time to MAP completion:  2 secs 
 Total CPU time to MAP completion:   1 secs 
 
 NOTES:

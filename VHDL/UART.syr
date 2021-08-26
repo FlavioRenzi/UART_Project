@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Reading design: UART.prj
 
@@ -119,7 +119,8 @@ Architecture rtl of Entity baud_gen is up to date.
 Compiling vhdl file "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/SERIALIZER.vhd" in Library work.
 Architecture rtl of Entity serializer is up to date.
 Compiling vhdl file "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/DESERIALIZER.vhd" in Library work.
-Architecture struct of Entity deserializer is up to date.
+Entity <deserializer> compiled.
+Entity <deserializer> (Architecture <struct>) compiled.
 Compiling vhdl file "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/UART.vhd" in Library work.
 Architecture struct of Entity uart is up to date.
 
@@ -408,8 +409,8 @@ Cell Usage :
 #      GND                         : 1
 #      INV                         : 9
 #      LUT2                        : 10
-#      LUT3                        : 13
-#      LUT4                        : 35
+#      LUT3                        : 15
+#      LUT4                        : 33
 #      LUT4_D                      : 3
 #      MUXCY                       : 11
 #      MUXF5                       : 2
@@ -489,7 +490,7 @@ Control Signal                           | Buffer(FF name)        | Load  |
 RESET                                    | IBUF                   | 33    |
 DES/T_START(DES/T_START1:O)              | NONE(DES/U4/TY_0)      | 7     |
 SER/T_LOAD(SER/T_LOAD:Q)                 | NONE(SER/COUNT/TY_0)   | 4     |
-DES/RD_or0000(DES/RD_or0000:O)           | NONE(DES/RD)           | 2     |
+DES/RD_or0000(DES/RD_or00001:O)          | NONE(DES/RD)           | 2     |
 BG/CLK_SEL_and0000(BG/CLK_SEL_and00001:O)| NONE(BG/CLK_SEL)       | 1     |
 BG/CLK_SEL_or0000(BG/CLK_SEL_or0000_f5:O)| NONE(BG/CLK_SEL)       | 1     |
 SER/RD_or0000(SER/RD_or0000:O)           | NONE(SER/RD)           | 1     |
@@ -610,10 +611,10 @@ Delay:               3.067ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'DES/U4/TY_2'
-  Clock period: 2.868ns (frequency: 348.681MHz)
+  Clock period: 2.814ns (frequency: 355.315MHz)
   Total number of paths / destination ports: 17 / 11
 -------------------------------------------------------------------------
-Delay:               2.868ns (Levels of Logic = 1)
+Delay:               2.814ns (Levels of Logic = 1)
   Source:            DES/U5/TY_0 (FF)
   Destination:       DES/U5/TY_0 (FF)
   Source Clock:      DES/U4/TY_2 falling
@@ -623,12 +624,12 @@ Delay:               2.868ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              7   0.626   0.906  DES/U5/TY_0 (DES/U5/TY_0)
+     FDC:C->Q              6   0.626   0.853  DES/U5/TY_0 (DES/U5/TY_0)
      INV:I->O              1   0.479   0.681  DES/U5/Mcount_TY_xor<0>11_INV_0 (DES/Result<0>1)
      FDC:D                     0.176          DES/U5/TY_0
     ----------------------------------------
-    Total                      2.868ns (1.281ns logic, 1.587ns route)
-                                       (44.7% logic, 55.3% route)
+    Total                      2.814ns (1.281ns logic, 1.533ns route)
+                                       (45.5% logic, 54.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
@@ -859,12 +860,12 @@ Delay:               7.465ns (Levels of Logic = 3)
 =========================================================================
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 3.66 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.23 secs
  
 --> 
 
-Total memory usage is 4503548 kilobytes
+Total memory usage is 4503484 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   19 (   0 filtered)

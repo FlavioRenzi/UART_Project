@@ -1,7 +1,7 @@
 (DELAYFILE
   (SDFVERSION "3.0")
   (DESIGN "UART")
-  (DATE "Wed Aug 25 21:24:15 2021")
+  (DATE "Thu Aug 26 22:12:58 2021")
   (VENDOR "Xilinx")
   (PROGRAM "Xilinx SDF Writer")
   (VERSION "P.20131013")
@@ -21,7 +21,7 @@
     (INSTANCE DES_U4_TY_2_CLKINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 3084 ))
+          (IOPATH I O ( 3140 ))
         )
       )
   )
@@ -37,7 +37,7 @@
     (INSTANCE BG_U1_TY_2_CLKINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 2973 ))
+          (IOPATH I O ( 2705 ))
         )
       )
   )
@@ -61,7 +61,7 @@
     (INSTANCE SER_REG_PS_Z_7_SRINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 2832 ))
+          (IOPATH I O ( 3132 ))
         )
       )
   )
@@ -69,7 +69,7 @@
     (INSTANCE SER_REG_PS_Z_7_CLKINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 3018 ))
+          (IOPATH I O ( 3036 ))
         )
       )
   )
@@ -85,40 +85,21 @@
     (INSTANCE SER_REG_PS_Z_8_CLKINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 3026 ))
+          (IOPATH I O ( 3036 ))
         )
       )
   )
   (CELL (CELLTYPE "X_LUT4")
-    (INSTANCE BG_T_mux0001_8_1)
+    (INSTANCE SER_REG_PS_Y1)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 211 ))
-          (PORT ADR1 ( 521 ))
-          (PORT ADR2 ( 697 ))
-          (PORT ADR3 ( 1021 ))
-          (IOPATH ADR0 O ( 519 )( 519 ))
-          (IOPATH ADR1 O ( 519 )( 519 ))
-          (IOPATH ADR2 O ( 519 )( 519 ))
-          (IOPATH ADR3 O ( 519 )( 519 ))
+          (PORT ADR0 ( 663 ))
+          (PORT ADR1 ( 1080 ))
+          (IOPATH ADR0 O ( 469 )( 469 ))
+          (IOPATH ADR1 O ( 469 )( 469 ))
+          (IOPATH ADR2 O ( 469 )( 469 ))
+          (IOPATH ADR3 O ( 469 )( 469 ))
         )
-      )
-  )
-  (CELL (CELLTYPE "X_FF")
-    (INSTANCE BG_T_10)
-      (DELAY
-        (ABSOLUTE
-          (IOPATH CLK O ( 626 )( 626 ))
-          (IOPATH SET O ( 0 )( 0 ))
-          (IOPATH RST O ( 0 )( 0 ))
-        )
-      )
-      (TIMINGCHECK
-        (SETUPHOLD (posedge I) (posedge CLK) (70)(331))
-        (SETUPHOLD (negedge I) (posedge CLK) (70)(331))
-        (SETUPHOLD (posedge CE) (posedge CLK) (524)(0))
-        (SETUPHOLD (negedge CE) (posedge CLK) (524)(0))
-        (PERIOD (posedge CLK) (1366))
       )
   )
   (CELL (CELLTYPE "X_BUF")
@@ -141,7 +122,7 @@
     (INSTANCE BG_T_11_CLKINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 877 ))
+          (IOPATH I O ( 845 ))
         )
       )
   )
@@ -149,7 +130,7 @@
     (INSTANCE BG_T_11_CEINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 645 ))
+          (IOPATH I O ( 958 ))
         )
       )
   )
@@ -157,10 +138,10 @@
     (INSTANCE BG_T_mux0001_9_1)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 888 ))
-          (PORT ADR1 ( 613 ))
-          (PORT ADR2 ( 365 ))
-          (PORT ADR3 ( 81 ))
+          (PORT ADR0 ( 948 ))
+          (PORT ADR1 ( 577 ))
+          (PORT ADR2 ( 798 ))
+          (PORT ADR3 ( 364 ))
           (IOPATH ADR0 O ( 519 )( 519 ))
           (IOPATH ADR1 O ( 519 )( 519 ))
           (IOPATH ADR2 O ( 519 )( 519 ))
@@ -188,7 +169,7 @@
     (INSTANCE BG_T_9_CLKINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 877 ))
+          (IOPATH I O ( 845 ))
         )
       )
   )
@@ -196,7 +177,7 @@
     (INSTANCE BG_T_9_CEINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 645 ))
+          (IOPATH I O ( 958 ))
         )
       )
   )
@@ -220,7 +201,7 @@
     (INSTANCE BG_T_13_CLKINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 824 ))
+          (IOPATH I O ( 838 ))
         )
       )
   )
@@ -228,7 +209,7 @@
     (INSTANCE BG_T_13_CEINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1276 ))
+          (IOPATH I O ( 1234 ))
         )
       )
   )
@@ -252,7 +233,7 @@
     (INSTANCE BG_T_15_CLKINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 857 ))
+          (IOPATH I O ( 848 ))
         )
       )
   )
@@ -260,7 +241,7 @@
     (INSTANCE BG_T_15_CEINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1260 ))
+          (IOPATH I O ( 1573 ))
         )
       )
   )
@@ -284,7 +265,7 @@
     (INSTANCE BG_T_17_CLKINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 815 ))
+          (IOPATH I O ( 819 ))
         )
       )
   )
@@ -292,7 +273,7 @@
     (INSTANCE BG_T_17_CEINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1251 ))
+          (IOPATH I O ( 640 ))
         )
       )
   )
@@ -316,7 +297,7 @@
     (INSTANCE DES_U5_TY_3_SRINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1242 ))
+          (IOPATH I O ( 1280 ))
         )
       )
   )
@@ -324,7 +305,7 @@
     (INSTANCE DES_U5_TY_3_CLKINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 3243 ))
+          (IOPATH I O ( 2673 ))
         )
       )
   )
@@ -340,7 +321,7 @@
     (INSTANCE DES_U3_Y1_DIG_MUX)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1230 ))
+          (IOPATH I O ( 1523 ))
         )
       )
   )
@@ -356,12 +337,12 @@
     (INSTANCE DES_U3_Y1_CLKINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 2955 ))
+          (IOPATH I O ( 2980 ))
         )
       )
   )
   (CELL (CELLTYPE "X_BUF")
-    (INSTANCE DES_T_START_YUSED)
+    (INSTANCE DES_T_START_XUSED)
       (DELAY
         (ABSOLUTE
           (IOPATH I O ( 10 ))
@@ -372,7 +353,7 @@
     (INSTANCE RESET_IBUF_shift2_DXMUX)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 950 ))
+          (IOPATH I O ( 664 ))
         )
       )
   )
@@ -396,7 +377,7 @@
     (INSTANCE RESET_IBUF_shift2_SRINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 2820 ))
+          (IOPATH I O ( 2878 ))
         )
       )
   )
@@ -404,7 +385,7 @@
     (INSTANCE RESET_IBUF_shift2_CLKINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 2955 ))
+          (IOPATH I O ( 2985 ))
         )
       )
   )
@@ -412,7 +393,7 @@
     (INSTANCE SER_T_LOAD_DYMUX)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1910 ))
+          (IOPATH I O ( 1281 ))
         )
       )
   )
@@ -420,7 +401,7 @@
     (INSTANCE SER_T_LOAD_SRINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1542 ))
+          (IOPATH I O ( 1467 ))
         )
       )
   )
@@ -428,7 +409,7 @@
     (INSTANCE SER_T_LOAD_CLKINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 3018 ))
+          (IOPATH I O ( 3036 ))
         )
       )
   )
@@ -436,7 +417,7 @@
     (INSTANCE RESET_IBUF_shift4_DXMUX)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 963 ))
+          (IOPATH I O ( 664 ))
         )
       )
   )
@@ -444,7 +425,7 @@
     (INSTANCE RESET_IBUF_shift4_DYMUX)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1032 ))
+          (IOPATH I O ( 740 ))
         )
       )
   )
@@ -452,7 +433,7 @@
     (INSTANCE RESET_IBUF_shift4_SRINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 3135 ))
+          (IOPATH I O ( 3182 ))
         )
       )
   )
@@ -460,7 +441,7 @@
     (INSTANCE RESET_IBUF_shift4_CLKINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 2955 ))
+          (IOPATH I O ( 2980 ))
         )
       )
   )
@@ -468,7 +449,7 @@
     (INSTANCE SER_COUNT_TY_0_DXMUX)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1003 ))
+          (IOPATH I O ( 713 ))
         )
       )
   )
@@ -484,7 +465,7 @@
     (INSTANCE SER_COUNT_TY_0_SRINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1276 ))
+          (IOPATH I O ( 1157 ))
         )
       )
   )
@@ -492,7 +473,7 @@
     (INSTANCE SER_COUNT_TY_0_CLKINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 3265 ))
+          (IOPATH I O ( 3239 ))
         )
       )
   )
@@ -516,7 +497,7 @@
     (INSTANCE DES_RD_CLKINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 736 ))
+          (IOPATH I O ( 2133 ))
         )
       )
   )
@@ -524,7 +505,7 @@
     (INSTANCE DES_RD_CEINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1206 ))
+          (IOPATH I O ( 623 ))
         )
       )
   )
@@ -532,7 +513,7 @@
     (INSTANCE SER_r1_input_DYMUX)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 728 ))
+          (IOPATH I O ( 760 ))
         )
       )
   )
@@ -540,12 +521,28 @@
     (INSTANCE SER_r1_input_CLKINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 3030 ))
+          (IOPATH I O ( 3025 ))
         )
       )
   )
   (CELL (CELLTYPE "X_BUF")
-    (INSTANCE DES_T_END_XUSED)
+    (INSTANCE DES_U5_TY_1_DXMUX)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 10 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_INV")
+    (INSTANCE DES_U5_TY_1_DYMUX)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 1033 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE DES_U5_TY_1_YUSED)
       (DELAY
         (ABSOLUTE
           (IOPATH I O ( 10 ))
@@ -553,10 +550,18 @@
       )
   )
   (CELL (CELLTYPE "X_BUF")
-    (INSTANCE DES_T_END_YUSED)
+    (INSTANCE DES_U5_TY_1_SRINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 10 ))
+          (IOPATH I O ( 367 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_INV")
+    (INSTANCE DES_U5_TY_1_CLKINV)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 2673 ))
         )
       )
   )
@@ -572,7 +577,7 @@
     (INSTANCE BG_CLK_SEL_DXMUX)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1567 ))
+          (IOPATH I O ( 721 ))
         )
       )
   )
@@ -580,7 +585,7 @@
     (INSTANCE BG_CLK_SEL_CLKINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 815 ))
+          (IOPATH I O ( 812 ))
         )
       )
   )
@@ -588,7 +593,7 @@
     (INSTANCE BG_CLK_SEL_CEINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 602 ))
+          (IOPATH I O ( 317 ))
         )
       )
   )
@@ -596,7 +601,7 @@
     (INSTANCE DES_U4_TY_0_DXMUX)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 963 ))
+          (IOPATH I O ( 665 ))
         )
       )
   )
@@ -612,7 +617,7 @@
     (INSTANCE DES_U4_TY_0_SRINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1111 ))
+          (IOPATH I O ( 1279 ))
         )
       )
   )
@@ -620,7 +625,7 @@
     (INSTANCE DES_U4_TY_0_CLKINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 3084 ))
+          (IOPATH I O ( 3140 ))
         )
       )
   )
@@ -628,7 +633,7 @@
     (INSTANCE BG_U1_TY_0_DXMUX)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 963 ))
+          (IOPATH I O ( 712 ))
         )
       )
   )
@@ -644,7 +649,7 @@
     (INSTANCE BG_U1_TY_0_SRINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 3426 ))
+          (IOPATH I O ( 2583 ))
         )
       )
   )
@@ -652,7 +657,7 @@
     (INSTANCE BG_U1_TY_0_CLKINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 2973 ))
+          (IOPATH I O ( 2705 ))
         )
       )
   )
@@ -676,7 +681,7 @@
     (INSTANCE SER_r0_input_DYMUX)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 826 ))
+          (IOPATH I O ( 1125 ))
         )
       )
   )
@@ -684,12 +689,20 @@
     (INSTANCE SER_r0_input_CLKINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 3026 ))
+          (IOPATH I O ( 3025 ))
         )
       )
   )
   (CELL (CELLTYPE "X_BUF")
-    (INSTANCE DES_RD_or0000_XUSED)
+    (INSTANCE DES_T_END_XUSED)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 10 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE DES_T_END_YUSED)
       (DELAY
         (ABSOLUTE
           (IOPATH I O ( 10 ))
@@ -701,38 +714,6 @@
       (DELAY
         (ABSOLUTE
           (IOPATH I O ( 10 ))
-        )
-      )
-  )
-  (CELL (CELLTYPE "X_INV")
-    (INSTANCE DES_U5_TY_0_DXMUX)
-      (DELAY
-        (ABSOLUTE
-          (IOPATH I O ( 1243 ))
-        )
-      )
-  )
-  (CELL (CELLTYPE "X_BUF")
-    (INSTANCE DES_U5_TY_0_DYMUX)
-      (DELAY
-        (ABSOLUTE
-          (IOPATH I O ( 10 ))
-        )
-      )
-  )
-  (CELL (CELLTYPE "X_BUF")
-    (INSTANCE DES_U5_TY_0_SRINV)
-      (DELAY
-        (ABSOLUTE
-          (IOPATH I O ( 357 ))
-        )
-      )
-  )
-  (CELL (CELLTYPE "X_INV")
-    (INSTANCE DES_U5_TY_0_CLKINV)
-      (DELAY
-        (ABSOLUTE
-          (IOPATH I O ( 3261 ))
         )
       )
   )
@@ -748,7 +729,7 @@
     (INSTANCE DES_U2_T_1_DYMUX)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1452 ))
+          (IOPATH I O ( 2386 ))
         )
       )
   )
@@ -756,7 +737,7 @@
     (INSTANCE DES_U2_T_1_SRINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 2391 ))
+          (IOPATH I O ( 2630 ))
         )
       )
   )
@@ -764,7 +745,7 @@
     (INSTANCE DES_U2_T_1_CLKINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 3272 ))
+          (IOPATH I O ( 2935 ))
         )
       )
   )
@@ -772,7 +753,7 @@
     (INSTANCE DES_U2_T_3_DXMUX)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 721 ))
+          (IOPATH I O ( 685 ))
         )
       )
   )
@@ -780,7 +761,7 @@
     (INSTANCE DES_U2_T_3_DYMUX)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1046 ))
+          (IOPATH I O ( 1337 ))
         )
       )
   )
@@ -788,7 +769,7 @@
     (INSTANCE DES_U2_T_3_SRINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 2391 ))
+          (IOPATH I O ( 2956 ))
         )
       )
   )
@@ -796,7 +777,7 @@
     (INSTANCE DES_U2_T_3_CLKINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 2963 ))
+          (IOPATH I O ( 2972 ))
         )
       )
   )
@@ -804,7 +785,7 @@
     (INSTANCE DES_U2_T_5_DXMUX)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 712 ))
+          (IOPATH I O ( 685 ))
         )
       )
   )
@@ -812,7 +793,7 @@
     (INSTANCE DES_U2_T_5_DYMUX)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1296 ))
+          (IOPATH I O ( 1059 ))
         )
       )
   )
@@ -820,7 +801,7 @@
     (INSTANCE DES_U2_T_5_SRINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1767 ))
+          (IOPATH I O ( 3263 ))
         )
       )
   )
@@ -828,7 +809,7 @@
     (INSTANCE DES_U2_T_5_CLKINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 2938 ))
+          (IOPATH I O ( 3074 ))
         )
       )
   )
@@ -852,7 +833,7 @@
     (INSTANCE SER_RD_CLKINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 897 ))
+          (IOPATH I O ( 1248 ))
         )
       )
   )
@@ -860,7 +841,7 @@
     (INSTANCE SER_RD_CEINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 863 ))
+          (IOPATH I O ( 859 ))
         )
       )
   )
@@ -868,7 +849,7 @@
     (INSTANCE DES_U2_T_7_DXMUX)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 729 ))
+          (IOPATH I O ( 685 ))
         )
       )
   )
@@ -876,7 +857,7 @@
     (INSTANCE DES_U2_T_7_DYMUX)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1316 ))
+          (IOPATH I O ( 1297 ))
         )
       )
   )
@@ -884,7 +865,7 @@
     (INSTANCE DES_U2_T_7_SRINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1784 ))
+          (IOPATH I O ( 1629 ))
         )
       )
   )
@@ -892,7 +873,7 @@
     (INSTANCE DES_U2_T_7_CLKINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 2888 ))
+          (IOPATH I O ( 3041 ))
         )
       )
   )
@@ -940,7 +921,7 @@
     (INSTANCE BG_T_addsub0000_8_CY0F)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1279 ))
+          (IOPATH I O ( 1886 ))
         )
       )
   )
@@ -1004,7 +985,7 @@
     (INSTANCE BG_T_addsub0000_8_CY0G)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1229 ))
+          (IOPATH I O ( 1277 ))
         )
       )
   )
@@ -1072,7 +1053,7 @@
     (INSTANCE BG_T_addsub0000_10_CY0F)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1540 ))
+          (IOPATH I O ( 1516 ))
         )
       )
   )
@@ -1115,7 +1096,7 @@
     (INSTANCE BG_T_addsub0000_10_FASTCARRY)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 111 ))
+          (IOPATH I O ( 104 ))
         )
       )
   )
@@ -1155,7 +1136,7 @@
     (INSTANCE BG_T_addsub0000_10_CY0G)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1532 ))
+          (IOPATH I O ( 1516 ))
         )
       )
   )
@@ -1223,7 +1204,7 @@
     (INSTANCE BG_T_addsub0000_12_CY0F)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1277 ))
+          (IOPATH I O ( 1228 ))
         )
       )
   )
@@ -1266,7 +1247,7 @@
     (INSTANCE BG_T_addsub0000_12_FASTCARRY)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 111 ))
+          (IOPATH I O ( 104 ))
         )
       )
   )
@@ -1306,7 +1287,7 @@
     (INSTANCE BG_T_addsub0000_12_CY0G)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1633 ))
+          (IOPATH I O ( 1286 ))
         )
       )
   )
@@ -1374,7 +1355,7 @@
     (INSTANCE BG_T_addsub0000_14_CY0F)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1291 ))
+          (IOPATH I O ( 1538 ))
         )
       )
   )
@@ -1417,7 +1398,7 @@
     (INSTANCE BG_T_addsub0000_14_FASTCARRY)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 111 ))
+          (IOPATH I O ( 104 ))
         )
       )
   )
@@ -1457,7 +1438,7 @@
     (INSTANCE BG_T_addsub0000_14_CY0G)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1470 ))
+          (IOPATH I O ( 1292 ))
         )
       )
   )
@@ -1470,32 +1451,17 @@
       )
   )
   (CELL (CELLTYPE "X_LUT4")
-    (INSTANCE BG_Madd_T_addsub0000_lut_14_Q)
-      (DELAY
-        (ABSOLUTE
-          (PORT ADR0 ( 729 ))
-          (PORT ADR1 ( 539 ))
-          (PORT ADR2 ( 593 ))
-          (PORT ADR3 ( 1255 ))
-          (IOPATH ADR0 O ( 469 )( 469 ))
-          (IOPATH ADR1 O ( 469 )( 469 ))
-          (IOPATH ADR2 O ( 469 )( 469 ))
-          (IOPATH ADR3 O ( 469 )( 469 ))
-        )
-      )
-  )
-  (CELL (CELLTYPE "X_LUT4")
     (INSTANCE BG_Madd_T_addsub0000_lut_16_Q)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 778 ))
-          (PORT ADR1 ( 515 ))
-          (PORT ADR2 ( 946 ))
-          (PORT ADR3 ( 612 ))
-          (IOPATH ADR0 O ( 469 )( 469 ))
-          (IOPATH ADR1 O ( 469 )( 469 ))
-          (IOPATH ADR2 O ( 469 )( 469 ))
-          (IOPATH ADR3 O ( 469 )( 469 ))
+          (PORT ADR0 ( 1833 ))
+          (PORT ADR1 ( 808 ))
+          (PORT ADR2 ( 1428 ))
+          (PORT ADR3 ( 1340 ))
+          (IOPATH ADR0 O ( 519 )( 519 ))
+          (IOPATH ADR1 O ( 519 )( 519 ))
+          (IOPATH ADR2 O ( 519 )( 519 ))
+          (IOPATH ADR3 O ( 519 )( 519 ))
         )
       )
   )
@@ -1555,7 +1521,7 @@
     (INSTANCE BG_T_addsub0000_16_CY0F)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1267 ))
+          (IOPATH I O ( 1560 ))
         )
       )
   )
@@ -1590,7 +1556,7 @@
     (INSTANCE BG_T_addsub0000_16_FASTCARRY)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 111 ))
+          (IOPATH I O ( 104 ))
         )
       )
   )
@@ -1630,7 +1596,7 @@
     (INSTANCE BG_T_addsub0000_16_CY0G)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1436 ))
+          (IOPATH I O ( 1286 ))
         )
       )
   )
@@ -1646,14 +1612,14 @@
     (INSTANCE BG_Madd_T_addsub0000_lut_17_Q)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 952 ))
-          (PORT ADR1 ( 684 ))
-          (PORT ADR2 ( 659 ))
-          (PORT ADR3 ( 1282 ))
-          (IOPATH ADR0 O ( 469 )( 469 ))
-          (IOPATH ADR1 O ( 469 )( 469 ))
-          (IOPATH ADR2 O ( 469 )( 469 ))
-          (IOPATH ADR3 O ( 469 )( 469 ))
+          (PORT ADR0 ( 534 ))
+          (PORT ADR1 ( 1252 ))
+          (PORT ADR2 ( 1446 ))
+          (PORT ADR3 ( 1715 ))
+          (IOPATH ADR0 O ( 519 )( 519 ))
+          (IOPATH ADR1 O ( 519 )( 519 ))
+          (IOPATH ADR2 O ( 519 )( 519 ))
+          (IOPATH ADR3 O ( 519 )( 519 ))
         )
       )
   )
@@ -1661,14 +1627,14 @@
     (INSTANCE BG_Madd_T_addsub0000_lut_18_Q)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 825 ))
-          (PORT ADR1 ( 519 ))
-          (PORT ADR2 ( 601 ))
-          (PORT ADR3 ( 1260 ))
-          (IOPATH ADR0 O ( 469 )( 469 ))
-          (IOPATH ADR1 O ( 469 )( 469 ))
-          (IOPATH ADR2 O ( 469 )( 469 ))
-          (IOPATH ADR3 O ( 469 )( 469 ))
+          (PORT ADR0 ( 1537 ))
+          (PORT ADR1 ( 484 ))
+          (PORT ADR2 ( 1428 ))
+          (PORT ADR3 ( 1636 ))
+          (IOPATH ADR0 O ( 519 )( 519 ))
+          (IOPATH ADR1 O ( 519 )( 519 ))
+          (IOPATH ADR2 O ( 519 )( 519 ))
+          (IOPATH ADR3 O ( 519 )( 519 ))
         )
       )
   )
@@ -1716,7 +1682,7 @@
     (INSTANCE BG_T_addsub0000_18_CY0F)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1271 ))
+          (IOPATH I O ( 1236 ))
         )
       )
   )
@@ -1760,7 +1726,7 @@
     (INSTANCE RX_READY_OUTPUT_OTCLK1INV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 710 ))
+          (IOPATH I O ( 500 ))
         )
       )
   )
@@ -2086,7 +2052,7 @@
     (INSTANCE SER_RD_0_not0000_BXINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 693 ))
+          (IOPATH I O ( 716 ))
         )
       )
   )
@@ -2107,7 +2073,7 @@
     (INSTANCE BG_CLK_SEL_or0000_BXINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 988 ))
+          (IOPATH I O ( 2006 ))
         )
       )
   )
@@ -2131,7 +2097,7 @@
     (INSTANCE BG_T_19_CLKINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 857 ))
+          (IOPATH I O ( 848 ))
         )
       )
   )
@@ -2139,7 +2105,7 @@
     (INSTANCE BG_T_19_CEINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1260 ))
+          (IOPATH I O ( 1573 ))
         )
       )
   )
@@ -2163,7 +2129,7 @@
     (INSTANCE BG_T_18_CLKINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 824 ))
+          (IOPATH I O ( 819 ))
         )
       )
   )
@@ -2171,7 +2137,7 @@
     (INSTANCE BG_T_18_CEINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1276 ))
+          (IOPATH I O ( 640 ))
         )
       )
   )
@@ -2203,7 +2169,7 @@
     (INSTANCE SER_COUNT_TY_3_SRINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 752 ))
+          (IOPATH I O ( 1157 ))
         )
       )
   )
@@ -2211,7 +2177,7 @@
     (INSTANCE SER_COUNT_TY_3_CLKINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 3264 ))
+          (IOPATH I O ( 3239 ))
         )
       )
   )
@@ -2227,7 +2193,7 @@
     (INSTANCE DES_U3_Y_CLKINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 2955 ))
+          (IOPATH I O ( 2980 ))
         )
       )
   )
@@ -2251,7 +2217,7 @@
     (INSTANCE SER_REG_PS_Z_1_SRINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 3153 ))
+          (IOPATH I O ( 2257 ))
         )
       )
   )
@@ -2259,7 +2225,7 @@
     (INSTANCE SER_REG_PS_Z_1_CLKINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 3026 ))
+          (IOPATH I O ( 3036 ))
         )
       )
   )
@@ -2283,7 +2249,7 @@
     (INSTANCE SER_REG_PS_Z_3_SRINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 2832 ))
+          (IOPATH I O ( 2878 ))
         )
       )
   )
@@ -2291,7 +2257,7 @@
     (INSTANCE SER_REG_PS_Z_3_CLKINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 3018 ))
+          (IOPATH I O ( 3028 ))
         )
       )
   )
@@ -2315,7 +2281,7 @@
     (INSTANCE SER_REG_PS_Z_5_SRINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 3134 ))
+          (IOPATH I O ( 2256 ))
         )
       )
   )
@@ -2323,7 +2289,22 @@
     (INSTANCE SER_REG_PS_Z_5_CLKINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 3018 ))
+          (IOPATH I O ( 3025 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_LUT4")
+    (INSTANCE BG_Madd_T_addsub0000_lut_14_Q)
+      (DELAY
+        (ABSOLUTE
+          (PORT ADR0 ( 1241 ))
+          (PORT ADR1 ( 786 ))
+          (PORT ADR2 ( 755 ))
+          (PORT ADR3 ( 1629 ))
+          (IOPATH ADR0 O ( 519 )( 519 ))
+          (IOPATH ADR1 O ( 519 )( 519 ))
+          (IOPATH ADR2 O ( 519 )( 519 ))
+          (IOPATH ADR3 O ( 519 )( 519 ))
         )
       )
   )
@@ -2331,14 +2312,14 @@
     (INSTANCE BG_Madd_T_addsub0000_lut_19_Q)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 905 ))
-          (PORT ADR1 ( 757 ))
-          (PORT ADR2 ( 1004 ))
-          (PORT ADR3 ( 634 ))
-          (IOPATH ADR0 O ( 469 )( 469 ))
-          (IOPATH ADR1 O ( 469 )( 469 ))
-          (IOPATH ADR2 O ( 469 )( 469 ))
-          (IOPATH ADR3 O ( 469 )( 469 ))
+          (PORT ADR0 ( 1846 ))
+          (PORT ADR1 ( 541 ))
+          (PORT ADR2 ( 1446 ))
+          (PORT ADR3 ( 1419 ))
+          (IOPATH ADR0 O ( 519 )( 519 ))
+          (IOPATH ADR1 O ( 519 )( 519 ))
+          (IOPATH ADR2 O ( 519 )( 519 ))
+          (IOPATH ADR3 O ( 519 )( 519 ))
         )
       )
   )
@@ -2375,7 +2356,7 @@
     (INSTANCE RX_READY_OUTPUT_OFF_OSR_USED)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 921 ))
+          (IOPATH I O ( 917 ))
         )
       )
   )
@@ -2383,7 +2364,7 @@
     (INSTANCE RX_READY_OUTPUT_OFF_OCEINV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1221 ))
+          (IOPATH I O ( 1232 ))
         )
       )
   )
@@ -2395,13 +2376,30 @@
         )
       )
   )
+  (CELL (CELLTYPE "X_FF")
+    (INSTANCE BG_T_10)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH CLK O ( 626 )( 626 ))
+          (IOPATH SET O ( 0 )( 0 ))
+          (IOPATH RST O ( 0 )( 0 ))
+        )
+      )
+      (TIMINGCHECK
+        (SETUPHOLD (posedge I) (posedge CLK) (70)(331))
+        (SETUPHOLD (negedge I) (posedge CLK) (70)(331))
+        (SETUPHOLD (posedge CE) (posedge CLK) (524)(0))
+        (SETUPHOLD (negedge CE) (posedge CLK) (524)(0))
+        (PERIOD (posedge CLK) (1366))
+      )
+  )
   (CELL (CELLTYPE "X_LUT4")
     (INSTANCE DES_U4_Mcount_TY_xor_2_11)
       (DELAY
         (ABSOLUTE
           (PORT ADR0 ( 571 ))
-          (PORT ADR2 ( 355 ))
-          (PORT ADR3 ( 383 ))
+          (PORT ADR2 ( 346 ))
+          (PORT ADR3 ( 391 ))
           (IOPATH ADR0 O ( 519 )( 519 ))
           (IOPATH ADR1 O ( 519 )( 519 ))
           (IOPATH ADR2 O ( 519 )( 519 ))
@@ -2430,7 +2428,7 @@
     (INSTANCE DES_U4_TY_2_FFY_RSTAND)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1111 )( 1111 ))
+          (IOPATH I O ( 1279 )( 1279 ))
         )
       )
   )
@@ -2438,13 +2436,13 @@
     (INSTANCE BG_U1_Mcount_TY_xor_2_11)
       (DELAY
         (ABSOLUTE
-          (PORT ADR1 ( 611 ))
-          (PORT ADR2 ( 355 ))
-          (PORT ADR3 ( 406 ))
-          (IOPATH ADR0 O ( 519 )( 519 ))
-          (IOPATH ADR1 O ( 519 )( 519 ))
-          (IOPATH ADR2 O ( 519 )( 519 ))
-          (IOPATH ADR3 O ( 519 )( 519 ))
+          (PORT ADR0 ( 598 ))
+          (PORT ADR1 ( 475 ))
+          (PORT ADR2 ( 500 ))
+          (IOPATH ADR0 O ( 469 )( 469 ))
+          (IOPATH ADR1 O ( 469 )( 469 ))
+          (IOPATH ADR2 O ( 469 )( 469 ))
+          (IOPATH ADR3 O ( 469 )( 469 ))
         )
       )
   )
@@ -2460,7 +2458,7 @@
       (TIMINGCHECK
         (SETUPHOLD (posedge I) (posedge CLK) (70)(331))
         (SETUPHOLD (negedge I) (posedge CLK) (70)(331))
-        (PERIOD (posedge CLK) (1366))
+        (PERIOD (posedge CLK) (1316))
         (RECOVERY (negedge RST) (posedge CLK) (768))
         (WIDTH (posedge RST) (751))
       )
@@ -2469,7 +2467,7 @@
     (INSTANCE BG_U1_TY_2_FFY_RSTAND)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 2527 )( 2527 ))
+          (IOPATH I O ( 2583 )( 2583 ))
         )
       )
   )
@@ -2477,13 +2475,13 @@
     (INSTANCE SER_REG_PS_Z_6_mux00011)
       (DELAY
         (ABSOLUTE
-          (PORT ADR1 ( 632 ))
-          (PORT ADR2 ( 386 ))
-          (PORT ADR3 ( 441 ))
-          (IOPATH ADR0 O ( 469 )( 469 ))
-          (IOPATH ADR1 O ( 469 )( 469 ))
-          (IOPATH ADR2 O ( 469 )( 469 ))
-          (IOPATH ADR3 O ( 469 )( 469 ))
+          (PORT ADR0 ( 798 ))
+          (PORT ADR1 ( 761 ))
+          (PORT ADR2 ( 434 ))
+          (IOPATH ADR0 O ( 519 )( 519 ))
+          (IOPATH ADR1 O ( 519 )( 519 ))
+          (IOPATH ADR2 O ( 519 )( 519 ))
+          (IOPATH ADR3 O ( 519 )( 519 ))
         )
       )
   )
@@ -2499,7 +2497,7 @@
       (TIMINGCHECK
         (SETUPHOLD (posedge I) (posedge CLK) (70)(331))
         (SETUPHOLD (negedge I) (posedge CLK) (70)(331))
-        (PERIOD (posedge CLK) (1316))
+        (PERIOD (posedge CLK) (1366))
         (RECOVERY (negedge SET) (posedge CLK) (768))
         (WIDTH (posedge SET) (751))
       )
@@ -2508,13 +2506,13 @@
     (INSTANCE SER_REG_PS_Z_7_mux00011)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 741 ))
-          (PORT ADR1 ( 519 ))
-          (PORT ADR3 ( 419 ))
-          (IOPATH ADR0 O ( 469 )( 469 ))
-          (IOPATH ADR1 O ( 469 )( 469 ))
-          (IOPATH ADR2 O ( 469 )( 469 ))
-          (IOPATH ADR3 O ( 469 )( 469 ))
+          (PORT ADR0 ( 798 ))
+          (PORT ADR1 ( 484 ))
+          (PORT ADR3 ( 496 ))
+          (IOPATH ADR0 O ( 519 )( 519 ))
+          (IOPATH ADR1 O ( 519 )( 519 ))
+          (IOPATH ADR2 O ( 519 )( 519 ))
+          (IOPATH ADR3 O ( 519 )( 519 ))
         )
       )
   )
@@ -2530,7 +2528,7 @@
       (TIMINGCHECK
         (SETUPHOLD (posedge I) (posedge CLK) (70)(331))
         (SETUPHOLD (negedge I) (posedge CLK) (70)(331))
-        (PERIOD (posedge CLK) (1316))
+        (PERIOD (posedge CLK) (1366))
         (RECOVERY (negedge SET) (posedge CLK) (768))
         (WIDTH (posedge SET) (751))
       )
@@ -2539,8 +2537,8 @@
     (INSTANCE SER_REG_PS_Z_8_mux00011)
       (DELAY
         (ABSOLUTE
-          (PORT ADR1 ( 546 ))
-          (PORT ADR3 ( 263 ))
+          (PORT ADR1 ( 364 ))
+          (PORT ADR3 ( 438 ))
           (IOPATH ADR0 O ( 469 )( 469 ))
           (IOPATH ADR1 O ( 469 )( 469 ))
           (IOPATH ADR2 O ( 469 )( 469 ))
@@ -2569,20 +2567,22 @@
     (INSTANCE SER_REG_PS_Z_8_FFY_SETOR)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 2833 )( 2833 ))
+          (IOPATH I O ( 2257 )( 2257 ))
         )
       )
   )
   (CELL (CELLTYPE "X_LUT4")
-    (INSTANCE SER_REG_PS_Y1)
+    (INSTANCE BG_T_mux0001_8_1)
       (DELAY
         (ABSOLUTE
-          (PORT ADR1 ( 592 ))
-          (PORT ADR3 ( 326 ))
-          (IOPATH ADR0 O ( 469 )( 469 ))
-          (IOPATH ADR1 O ( 469 )( 469 ))
-          (IOPATH ADR2 O ( 469 )( 469 ))
-          (IOPATH ADR3 O ( 469 )( 469 ))
+          (PORT ADR0 ( 935 ))
+          (PORT ADR1 ( 485 ))
+          (PORT ADR2 ( 780 ))
+          (PORT ADR3 ( 630 ))
+          (IOPATH ADR0 O ( 519 )( 519 ))
+          (IOPATH ADR1 O ( 519 )( 519 ))
+          (IOPATH ADR2 O ( 519 )( 519 ))
+          (IOPATH ADR3 O ( 519 )( 519 ))
         )
       )
   )
@@ -2624,10 +2624,10 @@
     (INSTANCE BG_T_mux0001_11_1)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 805 ))
-          (PORT ADR1 ( 613 ))
-          (PORT ADR2 ( 715 ))
-          (PORT ADR3 ( 647 ))
+          (PORT ADR0 ( 948 ))
+          (PORT ADR1 ( 1070 ))
+          (PORT ADR2 ( 798 ))
+          (PORT ADR3 ( 744 ))
           (IOPATH ADR0 O ( 519 )( 519 ))
           (IOPATH ADR1 O ( 519 )( 519 ))
           (IOPATH ADR2 O ( 519 )( 519 ))
@@ -2639,10 +2639,10 @@
     (INSTANCE BG_T_mux0001_10_1)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 898 ))
-          (PORT ADR1 ( 148 ))
-          (PORT ADR2 ( 697 ))
-          (PORT ADR3 ( 1021 ))
+          (PORT ADR0 ( 935 ))
+          (PORT ADR1 ( 447 ))
+          (PORT ADR2 ( 780 ))
+          (PORT ADR3 ( 665 ))
           (IOPATH ADR0 O ( 519 )( 519 ))
           (IOPATH ADR1 O ( 519 )( 519 ))
           (IOPATH ADR2 O ( 519 )( 519 ))
@@ -2681,21 +2681,21 @@
         (SETUPHOLD (negedge I) (posedge CLK) (70)(331))
         (SETUPHOLD (posedge CE) (posedge CLK) (524)(0))
         (SETUPHOLD (negedge CE) (posedge CLK) (524)(0))
-        (PERIOD (posedge CLK) (1366))
+        (PERIOD (posedge CLK) (1316))
       )
   )
   (CELL (CELLTYPE "X_LUT4")
     (INSTANCE BG_T_mux0001_7_1)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 590 ))
-          (PORT ADR1 ( 921 ))
-          (PORT ADR2 ( 60 ))
-          (PORT ADR3 ( 364 ))
-          (IOPATH ADR0 O ( 519 )( 519 ))
-          (IOPATH ADR1 O ( 519 )( 519 ))
-          (IOPATH ADR2 O ( 519 )( 519 ))
-          (IOPATH ADR3 O ( 519 )( 519 ))
+          (PORT ADR0 ( 649 ))
+          (PORT ADR1 ( 791 ))
+          (PORT ADR2 ( 695 ))
+          (PORT ADR3 ( 323 ))
+          (IOPATH ADR0 O ( 469 )( 469 ))
+          (IOPATH ADR1 O ( 469 )( 469 ))
+          (IOPATH ADR2 O ( 469 )( 469 ))
+          (IOPATH ADR3 O ( 469 )( 469 ))
         )
       )
   )
@@ -2703,14 +2703,14 @@
     (INSTANCE BG_T_mux0001_6_1)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 565 ))
-          (PORT ADR1 ( 829 ))
-          (PORT ADR2 ( 302 ))
-          (PORT ADR3 ( 677 ))
-          (IOPATH ADR0 O ( 519 )( 519 ))
-          (IOPATH ADR1 O ( 519 )( 519 ))
-          (IOPATH ADR2 O ( 519 )( 519 ))
-          (IOPATH ADR3 O ( 519 )( 519 ))
+          (PORT ADR0 ( 522 ))
+          (PORT ADR1 ( 837 ))
+          (PORT ADR2 ( 637 ))
+          (PORT ADR3 ( 313 ))
+          (IOPATH ADR0 O ( 469 )( 469 ))
+          (IOPATH ADR1 O ( 469 )( 469 ))
+          (IOPATH ADR2 O ( 469 )( 469 ))
+          (IOPATH ADR3 O ( 469 )( 469 ))
         )
       )
   )
@@ -2728,7 +2728,7 @@
         (SETUPHOLD (negedge I) (posedge CLK) (70)(331))
         (SETUPHOLD (posedge CE) (posedge CLK) (524)(0))
         (SETUPHOLD (negedge CE) (posedge CLK) (524)(0))
-        (PERIOD (posedge CLK) (1366))
+        (PERIOD (posedge CLK) (1316))
       )
   )
   (CELL (CELLTYPE "X_FF")
@@ -2745,21 +2745,21 @@
         (SETUPHOLD (negedge I) (posedge CLK) (70)(331))
         (SETUPHOLD (posedge CE) (posedge CLK) (524)(0))
         (SETUPHOLD (negedge CE) (posedge CLK) (524)(0))
-        (PERIOD (posedge CLK) (1366))
+        (PERIOD (posedge CLK) (1316))
       )
   )
   (CELL (CELLTYPE "X_LUT4")
     (INSTANCE BG_T_mux0001_5_1)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 866 ))
-          (PORT ADR1 ( 620 ))
-          (PORT ADR2 ( 407 ))
-          (PORT ADR3 ( 81 ))
-          (IOPATH ADR0 O ( 519 )( 519 ))
-          (IOPATH ADR1 O ( 519 )( 519 ))
-          (IOPATH ADR2 O ( 519 )( 519 ))
-          (IOPATH ADR3 O ( 519 )( 519 ))
+          (PORT ADR0 ( 714 ))
+          (PORT ADR1 ( 452 ))
+          (PORT ADR2 ( 60 ))
+          (PORT ADR3 ( 447 ))
+          (IOPATH ADR0 O ( 469 )( 469 ))
+          (IOPATH ADR1 O ( 469 )( 469 ))
+          (IOPATH ADR2 O ( 469 )( 469 ))
+          (IOPATH ADR3 O ( 469 )( 469 ))
         )
       )
   )
@@ -2767,14 +2767,14 @@
     (INSTANCE BG_T_mux0001_4_1)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 211 ))
-          (PORT ADR1 ( 528 ))
-          (PORT ADR2 ( 389 ))
-          (PORT ADR3 ( 656 ))
-          (IOPATH ADR0 O ( 519 )( 519 ))
-          (IOPATH ADR1 O ( 519 )( 519 ))
-          (IOPATH ADR2 O ( 519 )( 519 ))
-          (IOPATH ADR3 O ( 519 )( 519 ))
+          (PORT ADR0 ( 587 ))
+          (PORT ADR1 ( 183 ))
+          (PORT ADR2 ( 40 ))
+          (PORT ADR3 ( 425 ))
+          (IOPATH ADR0 O ( 469 )( 469 ))
+          (IOPATH ADR1 O ( 469 )( 469 ))
+          (IOPATH ADR2 O ( 469 )( 469 ))
+          (IOPATH ADR3 O ( 469 )( 469 ))
         )
       )
   )
@@ -2792,7 +2792,7 @@
         (SETUPHOLD (negedge I) (posedge CLK) (70)(331))
         (SETUPHOLD (posedge CE) (posedge CLK) (524)(0))
         (SETUPHOLD (negedge CE) (posedge CLK) (524)(0))
-        (PERIOD (posedge CLK) (1366))
+        (PERIOD (posedge CLK) (1316))
       )
   )
   (CELL (CELLTYPE "X_FF")
@@ -2816,10 +2816,10 @@
     (INSTANCE BG_T_mux0001_3_1)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 664 ))
-          (PORT ADR1 ( 175 ))
-          (PORT ADR2 ( 429 ))
-          (PORT ADR3 ( 307 ))
+          (PORT ADR0 ( 1003 ))
+          (PORT ADR1 ( 477 ))
+          (PORT ADR2 ( 483 ))
+          (PORT ADR3 ( 24 ))
           (IOPATH ADR0 O ( 469 )( 469 ))
           (IOPATH ADR1 O ( 469 )( 469 ))
           (IOPATH ADR2 O ( 469 )( 469 ))
@@ -2831,10 +2831,10 @@
     (INSTANCE BG_T_mux0001_2_1)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 537 ))
-          (PORT ADR1 ( 221 ))
-          (PORT ADR2 ( 328 ))
-          (PORT ADR3 ( 982 ))
+          (PORT ADR0 ( 181 ))
+          (PORT ADR1 ( 523 ))
+          (PORT ADR2 ( 425 ))
+          (PORT ADR3 ( 74 ))
           (IOPATH ADR0 O ( 469 )( 469 ))
           (IOPATH ADR1 O ( 469 )( 469 ))
           (IOPATH ADR2 O ( 469 )( 469 ))
@@ -2863,13 +2863,13 @@
     (INSTANCE DES_U5_Mcount_TY_xor_2_11)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 664 ))
-          (PORT ADR1 ( 497 ))
-          (PORT ADR3 ( 365 ))
-          (IOPATH ADR0 O ( 469 )( 469 ))
-          (IOPATH ADR1 O ( 469 )( 469 ))
-          (IOPATH ADR2 O ( 469 )( 469 ))
-          (IOPATH ADR3 O ( 469 )( 469 ))
+          (PORT ADR0 ( 567 ))
+          (PORT ADR1 ( 576 ))
+          (PORT ADR3 ( 435 ))
+          (IOPATH ADR0 O ( 519 )( 519 ))
+          (IOPATH ADR1 O ( 519 )( 519 ))
+          (IOPATH ADR2 O ( 519 )( 519 ))
+          (IOPATH ADR3 O ( 519 )( 519 ))
         )
       )
   )
@@ -2885,7 +2885,7 @@
       (TIMINGCHECK
         (SETUPHOLD (posedge I) (posedge CLK) (70)(331))
         (SETUPHOLD (negedge I) (posedge CLK) (70)(331))
-        (PERIOD (posedge CLK) (1316))
+        (PERIOD (posedge CLK) (1366))
         (RECOVERY (negedge RST) (posedge CLK) (768))
         (WIDTH (posedge RST) (751))
       )
@@ -2894,14 +2894,14 @@
     (INSTANCE DES_U5_Mcount_TY_xor_3_11)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 537 ))
-          (PORT ADR1 ( 543 ))
-          (PORT ADR2 ( 657 ))
-          (PORT ADR3 ( 396 ))
-          (IOPATH ADR0 O ( 469 )( 469 ))
-          (IOPATH ADR1 O ( 469 )( 469 ))
-          (IOPATH ADR2 O ( 469 )( 469 ))
-          (IOPATH ADR3 O ( 469 )( 469 ))
+          (PORT ADR0 ( 554 ))
+          (PORT ADR1 ( 484 ))
+          (PORT ADR2 ( 671 ))
+          (PORT ADR3 ( 601 ))
+          (IOPATH ADR0 O ( 519 )( 519 ))
+          (IOPATH ADR1 O ( 519 )( 519 ))
+          (IOPATH ADR2 O ( 519 )( 519 ))
+          (IOPATH ADR3 O ( 519 )( 519 ))
         )
       )
   )
@@ -2917,7 +2917,7 @@
       (TIMINGCHECK
         (SETUPHOLD (posedge I) (posedge CLK) (70)(331))
         (SETUPHOLD (negedge I) (posedge CLK) (70)(331))
-        (PERIOD (posedge CLK) (1316))
+        (PERIOD (posedge CLK) (1366))
         (RECOVERY (negedge RST) (posedge CLK) (768))
         (WIDTH (posedge RST) (751))
       )
@@ -2961,8 +2961,8 @@
     (INSTANCE DES_T_START1)
       (DELAY
         (ABSOLUTE
-          (PORT ADR1 ( 554 ))
-          (PORT ADR3 ( 683 ))
+          (PORT ADR0 ( 828 ))
+          (PORT ADR1 ( 504 ))
           (IOPATH ADR0 O ( 519 )( 519 ))
           (IOPATH ADR1 O ( 519 )( 519 ))
           (IOPATH ADR2 O ( 519 )( 519 ))
@@ -2982,7 +2982,7 @@
       (TIMINGCHECK
         (SETUPHOLD (posedge I) (posedge CLK) (70)(331))
         (SETUPHOLD (negedge I) (posedge CLK) (70)(331))
-        (PERIOD (posedge CLK) (1316))
+        (PERIOD (posedge CLK) (1366))
         (RECOVERY (negedge RST) (posedge CLK) (768))
         (WIDTH (posedge RST) (751))
       )
@@ -2999,7 +2999,7 @@
       (TIMINGCHECK
         (SETUPHOLD (posedge I) (posedge CLK) (70)(331))
         (SETUPHOLD (negedge I) (posedge CLK) (70)(331))
-        (PERIOD (posedge CLK) (1316))
+        (PERIOD (posedge CLK) (1366))
         (RECOVERY (negedge RST) (posedge CLK) (768))
         (WIDTH (posedge RST) (751))
       )
@@ -3059,12 +3059,12 @@
     (INSTANCE SER_COUNT_Mcount_TY_xor_1_11)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 624 ))
-          (PORT ADR2 ( 435 ))
-          (IOPATH ADR0 O ( 469 )( 469 ))
-          (IOPATH ADR1 O ( 469 )( 469 ))
-          (IOPATH ADR2 O ( 469 )( 469 ))
-          (IOPATH ADR3 O ( 469 )( 469 ))
+          (PORT ADR2 ( 397 ))
+          (PORT ADR3 ( 440 ))
+          (IOPATH ADR0 O ( 519 )( 519 ))
+          (IOPATH ADR1 O ( 519 )( 519 ))
+          (IOPATH ADR2 O ( 519 )( 519 ))
+          (IOPATH ADR3 O ( 519 )( 519 ))
         )
       )
   )
@@ -3080,7 +3080,7 @@
       (TIMINGCHECK
         (SETUPHOLD (posedge I) (posedge CLK) (70)(331))
         (SETUPHOLD (negedge I) (posedge CLK) (70)(331))
-        (PERIOD (posedge CLK) (1316))
+        (PERIOD (posedge CLK) (1366))
         (RECOVERY (negedge RST) (posedge CLK) (768))
         (WIDTH (posedge RST) (751))
       )
@@ -3097,7 +3097,7 @@
       (TIMINGCHECK
         (SETUPHOLD (posedge I) (posedge CLK) (70)(331))
         (SETUPHOLD (negedge I) (posedge CLK) (70)(331))
-        (PERIOD (posedge CLK) (1316))
+        (PERIOD (posedge CLK) (1366))
         (RECOVERY (negedge RST) (posedge CLK) (768))
         (WIDTH (posedge RST) (751))
       )
@@ -3118,7 +3118,7 @@
         (SETUPHOLD (negedge I) (negedge CLK) (70)(331))
         (SETUPHOLD (posedge GE) (negedge CLK) (524)(0))
         (SETUPHOLD (negedge GE) (negedge CLK) (524)(0))
-        (WIDTH (posedge CLK) (658))
+        (WIDTH (posedge CLK) (683))
         (RECOVERY (negedge SET) (negedge CLK) (768))
         (WIDTH (posedge SET) (751))
       )
@@ -3127,7 +3127,7 @@
     (INSTANCE DES_RD_FFY_SETOR)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 343 )( 343 ))
+          (IOPATH I O ( 1230 )( 1230 ))
         )
       )
   )
@@ -3150,10 +3150,10 @@
     (INSTANCE DES_RD_0_not00001)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 664 ))
-          (PORT ADR1 ( 497 ))
-          (PORT ADR2 ( 432 ))
-          (PORT ADR3 ( 365 ))
+          (PORT ADR0 ( 895 ))
+          (PORT ADR1 ( 794 ))
+          (PORT ADR2 ( 408 ))
+          (PORT ADR3 ( 379 ))
           (IOPATH ADR0 O ( 469 )( 469 ))
           (IOPATH ADR1 O ( 469 )( 469 ))
           (IOPATH ADR2 O ( 469 )( 469 ))
@@ -3161,27 +3161,59 @@
         )
       )
   )
-  (CELL (CELLTYPE "X_LUT4")
-    (INSTANCE DES_T_END1)
+  (CELL (CELLTYPE "X_FF")
+    (INSTANCE DES_U5_TY_0)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 537 ))
-          (PORT ADR1 ( 543 ))
-          (PORT ADR2 ( 374 ))
-          (PORT ADR3 ( 343 ))
+          (IOPATH CLK O ( 626 )( 626 ))
+          (IOPATH SET O ( 0 )( 0 ))
+          (IOPATH RST O ( 1299 )( 1299 ))
+        )
+      )
+      (TIMINGCHECK
+        (SETUPHOLD (posedge I) (posedge CLK) (70)(331))
+        (SETUPHOLD (negedge I) (posedge CLK) (70)(331))
+        (PERIOD (posedge CLK) (1316))
+        (RECOVERY (negedge RST) (posedge CLK) (768))
+        (WIDTH (posedge RST) (751))
+      )
+  )
+  (CELL (CELLTYPE "X_LUT4")
+    (INSTANCE DES_U5_Mcount_TY_xor_1_11)
+      (DELAY
+        (ABSOLUTE
+          (PORT ADR0 ( 523 ))
+          (PORT ADR3 ( 357 ))
           (IOPATH ADR0 O ( 469 )( 469 ))
           (IOPATH ADR1 O ( 469 )( 469 ))
           (IOPATH ADR2 O ( 469 )( 469 ))
           (IOPATH ADR3 O ( 469 )( 469 ))
         )
+      )
+  )
+  (CELL (CELLTYPE "X_FF")
+    (INSTANCE DES_U5_TY_1)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH CLK O ( 626 )( 626 ))
+          (IOPATH SET O ( 0 )( 0 ))
+          (IOPATH RST O ( 1299 )( 1299 ))
+        )
+      )
+      (TIMINGCHECK
+        (SETUPHOLD (posedge I) (posedge CLK) (70)(331))
+        (SETUPHOLD (negedge I) (posedge CLK) (70)(331))
+        (PERIOD (posedge CLK) (1316))
+        (RECOVERY (negedge RST) (posedge CLK) (768))
+        (WIDTH (posedge RST) (751))
       )
   )
   (CELL (CELLTYPE "X_LUT4")
     (INSTANCE SER_T_RESET1)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 806 ))
-          (PORT ADR1 ( 491 ))
+          (PORT ADR1 ( 800 ))
+          (PORT ADR2 ( 679 ))
           (IOPATH ADR0 O ( 469 )( 469 ))
           (IOPATH ADR1 O ( 469 )( 469 ))
           (IOPATH ADR2 O ( 469 )( 469 ))
@@ -3214,7 +3246,7 @@
     (INSTANCE BG_CLK_SEL_FFX_SETOR)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 987 )( 987 ))
+          (IOPATH I O ( 959 )( 959 ))
         )
       )
   )
@@ -3222,7 +3254,7 @@
     (INSTANCE BG_CLK_SEL_FFX_RSTAND)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1063 )( 1063 ))
+          (IOPATH I O ( 777 )( 777 ))
         )
       )
   )
@@ -3230,8 +3262,8 @@
     (INSTANCE DES_U4_Mcount_TY_xor_1_11)
       (DELAY
         (ABSOLUTE
-          (PORT ADR2 ( 355 ))
-          (PORT ADR3 ( 383 ))
+          (PORT ADR2 ( 346 ))
+          (PORT ADR3 ( 391 ))
           (IOPATH ADR0 O ( 519 )( 519 ))
           (IOPATH ADR1 O ( 519 )( 519 ))
           (IOPATH ADR2 O ( 519 )( 519 ))
@@ -3277,8 +3309,8 @@
     (INSTANCE BG_U1_Mcount_TY_xor_1_11)
       (DELAY
         (ABSOLUTE
-          (PORT ADR1 ( 460 ))
-          (PORT ADR3 ( 349 ))
+          (PORT ADR0 ( 598 ))
+          (PORT ADR1 ( 475 ))
           (IOPATH ADR0 O ( 469 )( 469 ))
           (IOPATH ADR1 O ( 469 )( 469 ))
           (IOPATH ADR2 O ( 469 )( 469 ))
@@ -3324,10 +3356,10 @@
     (INSTANCE BG_T_and00011)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 506 ))
-          (PORT ADR1 ( 522 ))
-          (PORT ADR2 ( 638 ))
-          (PORT ADR3 ( 2882 ))
+          (PORT ADR0 ( 1170 ))
+          (PORT ADR1 ( 3024 ))
+          (PORT ADR2 ( 1091 ))
+          (PORT ADR3 ( 1641 ))
           (IOPATH ADR0 O ( 519 )( 519 ))
           (IOPATH ADR1 O ( 519 )( 519 ))
           (IOPATH ADR2 O ( 519 )( 519 ))
@@ -3339,10 +3371,10 @@
     (INSTANCE BG_CLK_SEL_and00001)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 493 ))
-          (PORT ADR1 ( 757 ))
-          (PORT ADR2 ( 620 ))
-          (PORT ADR3 ( 636 ))
+          (PORT ADR0 ( 1851 ))
+          (PORT ADR1 ( 841 ))
+          (PORT ADR2 ( 1073 ))
+          (PORT ADR3 ( 1025 ))
           (IOPATH ADR0 O ( 519 )( 519 ))
           (IOPATH ADR1 O ( 519 )( 519 ))
           (IOPATH ADR2 O ( 519 )( 519 ))
@@ -3354,10 +3386,10 @@
     (INSTANCE SER_RD_or0000_SW0)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 473 ))
-          (PORT ADR1 ( 816 ))
-          (PORT ADR2 ( 357 ))
-          (PORT ADR3 ( 729 ))
+          (PORT ADR0 ( 562 ))
+          (PORT ADR1 ( 506 ))
+          (PORT ADR2 ( 907 ))
+          (PORT ADR3 ( 435 ))
           (IOPATH ADR0 O ( 519 )( 519 ))
           (IOPATH ADR1 O ( 519 )( 519 ))
           (IOPATH ADR2 O ( 519 )( 519 ))
@@ -3369,10 +3401,10 @@
     (INSTANCE SER_RD_or0000)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 533 ))
-          (PORT ADR1 ( 493 ))
-          (PORT ADR2 ( 2811 ))
-          (PORT ADR3 ( 743 ))
+          (PORT ADR0 ( 3339 ))
+          (PORT ADR1 ( 514 ))
+          (PORT ADR2 ( 653 ))
+          (PORT ADR3 ( 14 ))
           (IOPATH ADR0 O ( 519 )( 519 ))
           (IOPATH ADR1 O ( 519 )( 519 ))
           (IOPATH ADR2 O ( 519 )( 519 ))
@@ -3392,84 +3424,50 @@
       (TIMINGCHECK
         (SETUPHOLD (posedge I) (posedge CLK) (70)(331))
         (SETUPHOLD (negedge I) (posedge CLK) (70)(331))
-        (PERIOD (posedge CLK) (1316))
-      )
-  )
-  (CELL (CELLTYPE "X_LUT4")
-    (INSTANCE DES_RD_or0000_SW0)
-      (DELAY
-        (ABSOLUTE
-          (PORT ADR0 ( 553 ))
-          (PORT ADR1 ( 554 ))
-          (PORT ADR2 ( 392 ))
-          (PORT ADR3 ( 683 ))
-          (IOPATH ADR0 O ( 519 )( 519 ))
-          (IOPATH ADR1 O ( 519 )( 519 ))
-          (IOPATH ADR2 O ( 519 )( 519 ))
-          (IOPATH ADR3 O ( 519 )( 519 ))
-        )
-      )
-  )
-  (CELL (CELLTYPE "X_LUT4")
-    (INSTANCE DES_RD_or0000)
-      (DELAY
-        (ABSOLUTE
-          (PORT ADR0 ( 593 ))
-          (PORT ADR1 ( 2005 ))
-          (PORT ADR2 ( 14 ))
-          (PORT ADR3 ( 370 ))
-          (IOPATH ADR0 O ( 519 )( 519 ))
-          (IOPATH ADR1 O ( 519 )( 519 ))
-          (IOPATH ADR2 O ( 519 )( 519 ))
-          (IOPATH ADR3 O ( 519 )( 519 ))
-        )
-      )
-  )
-  (CELL (CELLTYPE "X_LUT4")
-    (INSTANCE DES_U5_Mcount_TY_xor_1_11)
-      (DELAY
-        (ABSOLUTE
-          (PORT ADR0 ( 553 ))
-          (PORT ADR3 ( 403 ))
-          (IOPATH ADR0 O ( 519 )( 519 ))
-          (IOPATH ADR1 O ( 519 )( 519 ))
-          (IOPATH ADR2 O ( 519 )( 519 ))
-          (IOPATH ADR3 O ( 519 )( 519 ))
-        )
-      )
-  )
-  (CELL (CELLTYPE "X_FF")
-    (INSTANCE DES_U5_TY_1)
-      (DELAY
-        (ABSOLUTE
-          (IOPATH CLK O ( 626 )( 626 ))
-          (IOPATH SET O ( 0 )( 0 ))
-          (IOPATH RST O ( 1299 )( 1299 ))
-        )
-      )
-      (TIMINGCHECK
-        (SETUPHOLD (posedge I) (posedge CLK) (70)(331))
-        (SETUPHOLD (negedge I) (posedge CLK) (70)(331))
         (PERIOD (posedge CLK) (1366))
-        (RECOVERY (negedge RST) (posedge CLK) (768))
-        (WIDTH (posedge RST) (751))
       )
   )
-  (CELL (CELLTYPE "X_FF")
-    (INSTANCE DES_U5_TY_0)
+  (CELL (CELLTYPE "X_LUT4")
+    (INSTANCE DES_T_END11)
       (DELAY
         (ABSOLUTE
-          (IOPATH CLK O ( 626 )( 626 ))
-          (IOPATH SET O ( 0 )( 0 ))
-          (IOPATH RST O ( 1299 )( 1299 ))
+          (PORT ADR0 ( 895 ))
+          (PORT ADR2 ( 408 ))
+          (PORT ADR3 ( 379 ))
+          (IOPATH ADR0 O ( 469 )( 469 ))
+          (IOPATH ADR1 O ( 469 )( 469 ))
+          (IOPATH ADR2 O ( 469 )( 469 ))
+          (IOPATH ADR3 O ( 469 )( 469 ))
         )
       )
-      (TIMINGCHECK
-        (SETUPHOLD (posedge I) (posedge CLK) (70)(331))
-        (SETUPHOLD (negedge I) (posedge CLK) (70)(331))
-        (PERIOD (posedge CLK) (1366))
-        (RECOVERY (negedge RST) (posedge CLK) (768))
-        (WIDTH (posedge RST) (751))
+  )
+  (CELL (CELLTYPE "X_LUT4")
+    (INSTANCE DES_T_END1)
+      (DELAY
+        (ABSOLUTE
+          (PORT ADR0 ( 523 ))
+          (PORT ADR1 ( 539 ))
+          (PORT ADR2 ( 25 ))
+          (IOPATH ADR0 O ( 469 )( 469 ))
+          (IOPATH ADR1 O ( 469 )( 469 ))
+          (IOPATH ADR2 O ( 469 )( 469 ))
+          (IOPATH ADR3 O ( 469 )( 469 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_LUT4")
+    (INSTANCE DES_RD_or00001)
+      (DELAY
+        (ABSOLUTE
+          (PORT ADR0 ( 650 ))
+          (PORT ADR1 ( 420 ))
+          (PORT ADR2 ( 2551 ))
+          (PORT ADR3 ( 615 ))
+          (IOPATH ADR0 O ( 469 )( 469 ))
+          (IOPATH ADR1 O ( 469 )( 469 ))
+          (IOPATH ADR2 O ( 469 )( 469 ))
+          (IOPATH ADR3 O ( 469 )( 469 ))
+        )
       )
   )
   (CELL (CELLTYPE "X_FF")
@@ -3544,7 +3542,7 @@
     (INSTANCE DES_U3_not00001_INV_0)
       (DELAY
         (ABSOLUTE
-          (PORT ADR3 ( 311 ))
+          (PORT ADR0 ( 507 ))
           (IOPATH ADR0 O ( 519 )( 519 ))
           (IOPATH ADR1 O ( 519 )( 519 ))
           (IOPATH ADR2 O ( 519 )( 519 ))
@@ -3611,7 +3609,7 @@
     (INSTANCE SER_RD_FFY_SETOR)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 357 )( 357 ))
+          (IOPATH I O ( 1266 )( 1266 ))
         )
       )
   )
@@ -3627,7 +3625,7 @@
       (TIMINGCHECK
         (SETUPHOLD (posedge I) (posedge CLK) (70)(331))
         (SETUPHOLD (negedge I) (posedge CLK) (70)(331))
-        (PERIOD (posedge CLK) (1366))
+        (PERIOD (posedge CLK) (1316))
         (RECOVERY (negedge RST) (posedge CLK) (768))
         (WIDTH (posedge RST) (751))
       )
@@ -3644,7 +3642,7 @@
       (TIMINGCHECK
         (SETUPHOLD (posedge I) (posedge CLK) (70)(331))
         (SETUPHOLD (negedge I) (posedge CLK) (70)(331))
-        (PERIOD (posedge CLK) (1366))
+        (PERIOD (posedge CLK) (1316))
         (RECOVERY (negedge RST) (posedge CLK) (768))
         (WIDTH (posedge RST) (751))
       )
@@ -3653,14 +3651,14 @@
     (INSTANCE BG_Madd_T_addsub0000_lut_9_Q)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 1203 ))
-          (PORT ADR1 ( 477 ))
-          (PORT ADR2 ( 344 ))
-          (PORT ADR3 ( 315 ))
-          (IOPATH ADR0 O ( 469 )( 469 ))
-          (IOPATH ADR1 O ( 469 )( 469 ))
-          (IOPATH ADR2 O ( 469 )( 469 ))
-          (IOPATH ADR3 O ( 469 )( 469 ))
+          (PORT ADR0 ( 525 ))
+          (PORT ADR1 ( 948 ))
+          (PORT ADR2 ( 757 ))
+          (PORT ADR3 ( 1365 ))
+          (IOPATH ADR0 O ( 519 )( 519 ))
+          (IOPATH ADR1 O ( 519 )( 519 ))
+          (IOPATH ADR2 O ( 519 )( 519 ))
+          (IOPATH ADR3 O ( 519 )( 519 ))
         )
       )
   )
@@ -3668,13 +3666,13 @@
     (INSTANCE BG_Madd_T_addsub0000_lut_8_Q)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 527 ))
-          (PORT ADR1 ( 477 ))
-          (PORT ADR2 ( 619 ))
-          (IOPATH ADR0 O ( 469 )( 469 ))
-          (IOPATH ADR1 O ( 469 )( 469 ))
-          (IOPATH ADR2 O ( 469 )( 469 ))
-          (IOPATH ADR3 O ( 469 )( 469 ))
+          (PORT ADR0 ( 1134 ))
+          (PORT ADR1 ( 856 ))
+          (PORT ADR2 ( 739 ))
+          (IOPATH ADR0 O ( 519 )( 519 ))
+          (IOPATH ADR1 O ( 519 )( 519 ))
+          (IOPATH ADR2 O ( 519 )( 519 ))
+          (IOPATH ADR3 O ( 519 )( 519 ))
         )
       )
   )
@@ -3682,14 +3680,14 @@
     (INSTANCE BG_Madd_T_addsub0000_lut_11_Q)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 591 ))
-          (PORT ADR1 ( 780 ))
-          (PORT ADR2 ( 718 ))
-          (PORT ADR3 ( 315 ))
-          (IOPATH ADR0 O ( 469 )( 469 ))
-          (IOPATH ADR1 O ( 469 )( 469 ))
-          (IOPATH ADR2 O ( 469 )( 469 ))
-          (IOPATH ADR3 O ( 469 )( 469 ))
+          (PORT ADR0 ( 764 ))
+          (PORT ADR1 ( 1786 ))
+          (PORT ADR2 ( 757 ))
+          (PORT ADR3 ( 1115 ))
+          (IOPATH ADR0 O ( 519 )( 519 ))
+          (IOPATH ADR1 O ( 519 )( 519 ))
+          (IOPATH ADR2 O ( 519 )( 519 ))
+          (IOPATH ADR3 O ( 519 )( 519 ))
         )
       )
   )
@@ -3697,14 +3695,14 @@
     (INSTANCE BG_Madd_T_addsub0000_lut_10_Q)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 788 ))
-          (PORT ADR1 ( 779 ))
-          (PORT ADR2 ( 660 ))
-          (PORT ADR3 ( 293 ))
-          (IOPATH ADR0 O ( 469 )( 469 ))
-          (IOPATH ADR1 O ( 469 )( 469 ))
-          (IOPATH ADR2 O ( 469 )( 469 ))
-          (IOPATH ADR3 O ( 469 )( 469 ))
+          (PORT ADR0 ( 2071 ))
+          (PORT ADR1 ( 764 ))
+          (PORT ADR2 ( 739 ))
+          (PORT ADR3 ( 1036 ))
+          (IOPATH ADR0 O ( 519 )( 519 ))
+          (IOPATH ADR1 O ( 519 )( 519 ))
+          (IOPATH ADR2 O ( 519 )( 519 ))
+          (IOPATH ADR3 O ( 519 )( 519 ))
         )
       )
   )
@@ -3712,14 +3710,14 @@
     (INSTANCE BG_Madd_T_addsub0000_lut_13_Q)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 881 ))
-          (PORT ADR1 ( 427 ))
-          (PORT ADR2 ( 651 ))
-          (PORT ADR3 ( 1277 ))
-          (IOPATH ADR0 O ( 469 )( 469 ))
-          (IOPATH ADR1 O ( 469 )( 469 ))
-          (IOPATH ADR2 O ( 469 )( 469 ))
-          (IOPATH ADR3 O ( 469 )( 469 ))
+          (PORT ADR0 ( 534 ))
+          (PORT ADR1 ( 956 ))
+          (PORT ADR2 ( 773 ))
+          (PORT ADR3 ( 1708 ))
+          (IOPATH ADR0 O ( 519 )( 519 ))
+          (IOPATH ADR1 O ( 519 )( 519 ))
+          (IOPATH ADR2 O ( 519 )( 519 ))
+          (IOPATH ADR3 O ( 519 )( 519 ))
         )
       )
   )
@@ -3727,14 +3725,14 @@
     (INSTANCE BG_Madd_T_addsub0000_lut_12_Q)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 771 ))
-          (PORT ADR1 ( 525 ))
-          (PORT ADR2 ( 941 ))
-          (PORT ADR3 ( 330 ))
-          (IOPATH ADR0 O ( 469 )( 469 ))
-          (IOPATH ADR1 O ( 469 )( 469 ))
-          (IOPATH ADR2 O ( 469 )( 469 ))
-          (IOPATH ADR3 O ( 469 )( 469 ))
+          (PORT ADR0 ( 1826 ))
+          (PORT ADR1 ( 476 ))
+          (PORT ADR2 ( 755 ))
+          (PORT ADR3 ( 1044 ))
+          (IOPATH ADR0 O ( 519 )( 519 ))
+          (IOPATH ADR1 O ( 519 )( 519 ))
+          (IOPATH ADR2 O ( 519 )( 519 ))
+          (IOPATH ADR3 O ( 519 )( 519 ))
         )
       )
   )
@@ -3742,14 +3740,14 @@
     (INSTANCE BG_Madd_T_addsub0000_lut_15_Q)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 898 ))
-          (PORT ADR1 ( 718 ))
-          (PORT ADR2 ( 999 ))
-          (PORT ADR3 ( 352 ))
-          (IOPATH ADR0 O ( 469 )( 469 ))
-          (IOPATH ADR1 O ( 469 )( 469 ))
-          (IOPATH ADR2 O ( 469 )( 469 ))
-          (IOPATH ADR3 O ( 469 )( 469 ))
+          (PORT ADR0 ( 540 ))
+          (PORT ADR1 ( 836 ))
+          (PORT ADR2 ( 773 ))
+          (PORT ADR3 ( 1123 ))
+          (IOPATH ADR0 O ( 519 )( 519 ))
+          (IOPATH ADR1 O ( 519 )( 519 ))
+          (IOPATH ADR2 O ( 519 )( 519 ))
+          (IOPATH ADR3 O ( 519 )( 519 ))
         )
       )
   )
@@ -3813,7 +3811,7 @@
     (INSTANCE BUS_OUT_0_OUTPUT_OFF_O1INV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1371 ))
+          (IOPATH I O ( 1071 ))
         )
       )
   )
@@ -3846,7 +3844,7 @@
     (INSTANCE BUS_OUT_0_OUTPUT_OFF_OFF1_RSTAND)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 632 )( 632 ))
+          (IOPATH I O ( 1145 )( 1145 ))
         )
       )
   )
@@ -3854,7 +3852,7 @@
     (INSTANCE BUS_OUT_0_OUTPUT_OTCLK1INV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 3054 ))
+          (IOPATH I O ( 3148 ))
         )
       )
   )
@@ -3870,7 +3868,7 @@
     (INSTANCE BUS_OUT_1_OUTPUT_OFF_O1INV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1248 ))
+          (IOPATH I O ( 325 ))
         )
       )
   )
@@ -3903,7 +3901,7 @@
     (INSTANCE BUS_OUT_1_OUTPUT_OFF_OFF1_RSTAND)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 778 )( 778 ))
+          (IOPATH I O ( 1471 )( 1471 ))
         )
       )
   )
@@ -3911,7 +3909,7 @@
     (INSTANCE BUS_OUT_1_OUTPUT_OTCLK1INV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 3108 ))
+          (IOPATH I O ( 3169 ))
         )
       )
   )
@@ -3927,7 +3925,7 @@
     (INSTANCE BUS_OUT_2_OUTPUT_OFF_O1INV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1349 ))
+          (IOPATH I O ( 924 ))
         )
       )
   )
@@ -3960,7 +3958,7 @@
     (INSTANCE BUS_OUT_2_OUTPUT_OFF_OFF1_RSTAND)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 939 )( 939 ))
+          (IOPATH I O ( 1543 )( 1543 ))
         )
       )
   )
@@ -3968,7 +3966,7 @@
     (INSTANCE BUS_OUT_2_OUTPUT_OTCLK1INV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 3108 ))
+          (IOPATH I O ( 3169 ))
         )
       )
   )
@@ -3976,7 +3974,7 @@
     (INSTANCE BUS_OUT_3_OUTPUT_OFF_O1INV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 983 ))
+          (IOPATH I O ( 325 ))
         )
       )
   )
@@ -4009,7 +4007,7 @@
     (INSTANCE BUS_OUT_3_OUTPUT_OFF_OFF1_RSTAND)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 796 )( 796 ))
+          (IOPATH I O ( 1422 )( 1422 ))
         )
       )
   )
@@ -4017,7 +4015,7 @@
     (INSTANCE BUS_OUT_3_OUTPUT_OTCLK1INV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 3121 ))
+          (IOPATH I O ( 3115 ))
         )
       )
   )
@@ -4025,7 +4023,7 @@
     (INSTANCE BUS_OUT_4_OUTPUT_OFF_O1INV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1552 ))
+          (IOPATH I O ( 962 ))
         )
       )
   )
@@ -4058,7 +4056,7 @@
     (INSTANCE BUS_OUT_4_OUTPUT_OFF_OFF1_RSTAND)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1257 )( 1257 ))
+          (IOPATH I O ( 1422 )( 1422 ))
         )
       )
   )
@@ -4066,7 +4064,7 @@
     (INSTANCE BUS_OUT_4_OUTPUT_OTCLK1INV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 3121 ))
+          (IOPATH I O ( 3115 ))
         )
       )
   )
@@ -4074,7 +4072,7 @@
     (INSTANCE BUS_OUT_5_OUTPUT_OFF_O1INV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1263 ))
+          (IOPATH I O ( 335 ))
         )
       )
   )
@@ -4107,7 +4105,7 @@
     (INSTANCE BUS_OUT_5_OUTPUT_OFF_OFF1_RSTAND)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1124 )( 1124 ))
+          (IOPATH I O ( 1956 )( 1956 ))
         )
       )
   )
@@ -4115,7 +4113,7 @@
     (INSTANCE BUS_OUT_5_OUTPUT_OTCLK1INV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 3103 ))
+          (IOPATH I O ( 3097 ))
         )
       )
   )
@@ -4123,7 +4121,7 @@
     (INSTANCE BUS_OUT_6_OUTPUT_OFF_O1INV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1077 ))
+          (IOPATH I O ( 958 ))
         )
       )
   )
@@ -4156,7 +4154,7 @@
     (INSTANCE BUS_OUT_6_OUTPUT_OFF_OFF1_RSTAND)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1564 )( 1564 ))
+          (IOPATH I O ( 1972 )( 1972 ))
         )
       )
   )
@@ -4164,7 +4162,7 @@
     (INSTANCE BUS_OUT_6_OUTPUT_OTCLK1INV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 3103 ))
+          (IOPATH I O ( 3097 ))
         )
       )
   )
@@ -4172,7 +4170,7 @@
     (INSTANCE BUS_OUT_7_OUTPUT_OFF_O1INV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 930 ))
+          (IOPATH I O ( 1351 ))
         )
       )
   )
@@ -4205,7 +4203,7 @@
     (INSTANCE BUS_OUT_7_OUTPUT_OFF_OFF1_RSTAND)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 2369 )( 2369 ))
+          (IOPATH I O ( 3749 )( 3749 ))
         )
       )
   )
@@ -4213,7 +4211,7 @@
     (INSTANCE BUS_OUT_7_OUTPUT_OTCLK1INV)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 2897 ))
+          (IOPATH I O ( 3214 ))
         )
       )
   )
@@ -4237,10 +4235,10 @@
     (INSTANCE SER_RD_0_not00001)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 1037 ))
-          (PORT ADR1 ( 462 ))
-          (PORT ADR2 ( 459 ))
-          (PORT ADR3 ( 695 ))
+          (PORT ADR0 ( 633 ))
+          (PORT ADR1 ( 502 ))
+          (PORT ADR2 ( 438 ))
+          (PORT ADR3 ( 662 ))
           (IOPATH ADR0 O ( 469 )( 469 ))
           (IOPATH ADR1 O ( 469 )( 469 ))
           (IOPATH ADR2 O ( 469 )( 469 ))
@@ -4252,14 +4250,14 @@
     (INSTANCE BG_CLK_SEL_or00001)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 506 ))
-          (PORT ADR1 ( 849 ))
-          (PORT ADR2 ( 638 ))
-          (PORT ADR3 ( 2882 ))
-          (IOPATH ADR0 O ( 519 )( 519 ))
-          (IOPATH ADR1 O ( 519 )( 519 ))
-          (IOPATH ADR2 O ( 519 )( 519 ))
-          (IOPATH ADR3 O ( 519 )( 519 ))
+          (PORT ADR0 ( 3141 ))
+          (PORT ADR1 ( 1196 ))
+          (PORT ADR2 ( 765 ))
+          (PORT ADR3 ( 982 ))
+          (IOPATH ADR0 O ( 469 )( 469 ))
+          (IOPATH ADR1 O ( 469 )( 469 ))
+          (IOPATH ADR2 O ( 469 )( 469 ))
+          (IOPATH ADR3 O ( 469 )( 469 ))
         )
       )
   )
@@ -4267,11 +4265,11 @@
     (INSTANCE RESET_IBUF_rt)
       (DELAY
         (ABSOLUTE
-          (PORT ADR3 ( 3124 ))
-          (IOPATH ADR0 O ( 519 )( 519 ))
-          (IOPATH ADR1 O ( 519 )( 519 ))
-          (IOPATH ADR2 O ( 519 )( 519 ))
-          (IOPATH ADR3 O ( 519 )( 519 ))
+          (PORT ADR2 ( 2798 ))
+          (IOPATH ADR0 O ( 469 )( 469 ))
+          (IOPATH ADR1 O ( 469 )( 469 ))
+          (IOPATH ADR2 O ( 469 )( 469 ))
+          (IOPATH ADR3 O ( 469 )( 469 ))
         )
       )
   )
@@ -4279,14 +4277,14 @@
     (INSTANCE BG_CLK_SEL_cmp_eq000042)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 498 ))
-          (PORT ADR1 ( 551 ))
-          (PORT ADR2 ( 331 ))
-          (PORT ADR3 ( 430 ))
-          (IOPATH ADR0 O ( 519 )( 519 ))
-          (IOPATH ADR1 O ( 519 )( 519 ))
-          (IOPATH ADR2 O ( 519 )( 519 ))
-          (IOPATH ADR3 O ( 519 )( 519 ))
+          (PORT ADR0 ( 599 ))
+          (PORT ADR1 ( 466 ))
+          (PORT ADR2 ( 390 ))
+          (PORT ADR3 ( 337 ))
+          (IOPATH ADR0 O ( 469 )( 469 ))
+          (IOPATH ADR1 O ( 469 )( 469 ))
+          (IOPATH ADR2 O ( 469 )( 469 ))
+          (IOPATH ADR3 O ( 469 )( 469 ))
         )
       )
   )
@@ -4294,14 +4292,14 @@
     (INSTANCE BG_T_mux0001_0_1)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 853 ))
-          (PORT ADR1 ( 528 ))
-          (PORT ADR2 ( 389 ))
-          (PORT ADR3 ( 319 ))
-          (IOPATH ADR0 O ( 519 )( 519 ))
-          (IOPATH ADR1 O ( 519 )( 519 ))
-          (IOPATH ADR2 O ( 519 )( 519 ))
-          (IOPATH ADR3 O ( 519 )( 519 ))
+          (PORT ADR0 ( 587 ))
+          (PORT ADR1 ( 498 ))
+          (PORT ADR2 ( 739 ))
+          (PORT ADR3 ( 313 ))
+          (IOPATH ADR0 O ( 469 )( 469 ))
+          (IOPATH ADR1 O ( 469 )( 469 ))
+          (IOPATH ADR2 O ( 469 )( 469 ))
+          (IOPATH ADR3 O ( 469 )( 469 ))
         )
       )
   )
@@ -4319,21 +4317,21 @@
         (SETUPHOLD (negedge I) (posedge CLK) (70)(331))
         (SETUPHOLD (posedge CE) (posedge CLK) (524)(0))
         (SETUPHOLD (negedge CE) (posedge CLK) (524)(0))
-        (PERIOD (posedge CLK) (1366))
+        (PERIOD (posedge CLK) (1316))
       )
   )
   (CELL (CELLTYPE "X_LUT4")
     (INSTANCE BG_CLK_SEL_cmp_eq000019)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 498 ))
-          (PORT ADR1 ( 852 ))
-          (PORT ADR2 ( 977 ))
-          (PORT ADR3 ( 411 ))
-          (IOPATH ADR0 O ( 519 )( 519 ))
-          (IOPATH ADR1 O ( 519 )( 519 ))
-          (IOPATH ADR2 O ( 519 )( 519 ))
-          (IOPATH ADR3 O ( 519 )( 519 ))
+          (PORT ADR0 ( 609 ))
+          (PORT ADR1 ( 411 ))
+          (PORT ADR2 ( 376 ))
+          (PORT ADR3 ( 310 ))
+          (IOPATH ADR0 O ( 469 )( 469 ))
+          (IOPATH ADR1 O ( 469 )( 469 ))
+          (IOPATH ADR2 O ( 469 )( 469 ))
+          (IOPATH ADR3 O ( 469 )( 469 ))
         )
       )
   )
@@ -4341,14 +4339,14 @@
     (INSTANCE BG_T_mux0001_1_1)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 577 ))
-          (PORT ADR1 ( 829 ))
-          (PORT ADR2 ( 42 ))
-          (PORT ADR3 ( 14 ))
-          (IOPATH ADR0 O ( 519 )( 519 ))
-          (IOPATH ADR1 O ( 519 )( 519 ))
-          (IOPATH ADR2 O ( 519 )( 519 ))
-          (IOPATH ADR3 O ( 519 )( 519 ))
+          (PORT ADR0 ( 876 ))
+          (PORT ADR1 ( 523 ))
+          (PORT ADR2 ( 14 ))
+          (PORT ADR3 ( 368 ))
+          (IOPATH ADR0 O ( 469 )( 469 ))
+          (IOPATH ADR1 O ( 469 )( 469 ))
+          (IOPATH ADR2 O ( 469 )( 469 ))
+          (IOPATH ADR3 O ( 469 )( 469 ))
         )
       )
   )
@@ -4366,17 +4364,17 @@
         (SETUPHOLD (negedge I) (posedge CLK) (70)(331))
         (SETUPHOLD (posedge CE) (posedge CLK) (524)(0))
         (SETUPHOLD (negedge CE) (posedge CLK) (524)(0))
-        (PERIOD (posedge CLK) (1366))
+        (PERIOD (posedge CLK) (1316))
       )
   )
   (CELL (CELLTYPE "X_LUT4")
     (INSTANCE BG_CLK_SEL_cmp_eq00007)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 522 ))
-          (PORT ADR1 ( 834 ))
-          (PORT ADR2 ( 368 ))
-          (PORT ADR3 ( 403 ))
+          (PORT ADR0 ( 1058 ))
+          (PORT ADR1 ( 576 ))
+          (PORT ADR2 ( 370 ))
+          (PORT ADR3 ( 397 ))
           (IOPATH ADR0 O ( 519 )( 519 ))
           (IOPATH ADR1 O ( 519 )( 519 ))
           (IOPATH ADR2 O ( 519 )( 519 ))
@@ -4388,9 +4386,9 @@
     (INSTANCE BG_CLK_SEL_cmp_eq000044)
       (DELAY
         (ABSOLUTE
-          (PORT ADR1 ( 505 ))
-          (PORT ADR2 ( 52 ))
-          (PORT ADR3 ( 370 ))
+          (PORT ADR0 ( 571 ))
+          (PORT ADR2 ( 672 ))
+          (PORT ADR3 ( 68 ))
           (IOPATH ADR0 O ( 519 )( 519 ))
           (IOPATH ADR1 O ( 519 )( 519 ))
           (IOPATH ADR2 O ( 519 )( 519 ))
@@ -4402,9 +4400,9 @@
     (INSTANCE SER_COUNT_Mcount_TY_xor_2_11)
       (DELAY
         (ABSOLUTE
-          (PORT ADR1 ( 1217 ))
-          (PORT ADR2 ( 357 ))
-          (PORT ADR3 ( 442 ))
+          (PORT ADR0 ( 556 ))
+          (PORT ADR2 ( 397 ))
+          (PORT ADR3 ( 440 ))
           (IOPATH ADR0 O ( 519 )( 519 ))
           (IOPATH ADR1 O ( 519 )( 519 ))
           (IOPATH ADR2 O ( 519 )( 519 ))
@@ -4433,10 +4431,10 @@
     (INSTANCE SER_COUNT_Mcount_TY_xor_3_11)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 870 ))
-          (PORT ADR1 ( 535 ))
-          (PORT ADR2 ( 339 ))
-          (PORT ADR3 ( 743 ))
+          (PORT ADR0 ( 543 ))
+          (PORT ADR1 ( 514 ))
+          (PORT ADR2 ( 379 ))
+          (PORT ADR3 ( 361 ))
           (IOPATH ADR0 O ( 519 )( 519 ))
           (IOPATH ADR1 O ( 519 )( 519 ))
           (IOPATH ADR2 O ( 519 )( 519 ))
@@ -4495,7 +4493,7 @@
     (INSTANCE DES_U3_Y_FFY_RSTAND)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 2820 )( 2820 ))
+          (IOPATH I O ( 2521 )( 2521 ))
         )
       )
   )
@@ -4503,12 +4501,12 @@
     (INSTANCE SER_REG_PS_Z_0_mux00011)
       (DELAY
         (ABSOLUTE
-          (PORT ADR2 ( 441 ))
-          (PORT ADR3 ( 383 ))
-          (IOPATH ADR0 O ( 519 )( 519 ))
-          (IOPATH ADR1 O ( 519 )( 519 ))
-          (IOPATH ADR2 O ( 519 )( 519 ))
-          (IOPATH ADR3 O ( 519 )( 519 ))
+          (PORT ADR1 ( 749 ))
+          (PORT ADR3 ( 438 ))
+          (IOPATH ADR0 O ( 469 )( 469 ))
+          (IOPATH ADR1 O ( 469 )( 469 ))
+          (IOPATH ADR2 O ( 469 )( 469 ))
+          (IOPATH ADR3 O ( 469 )( 469 ))
         )
       )
   )
@@ -4524,7 +4522,7 @@
       (TIMINGCHECK
         (SETUPHOLD (posedge I) (posedge CLK) (70)(331))
         (SETUPHOLD (negedge I) (posedge CLK) (70)(331))
-        (PERIOD (posedge CLK) (1366))
+        (PERIOD (posedge CLK) (1316))
         (RECOVERY (negedge SET) (posedge CLK) (768))
         (WIDTH (posedge SET) (751))
       )
@@ -4533,13 +4531,13 @@
     (INSTANCE SER_REG_PS_Z_1_mux00011)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 1103 ))
-          (PORT ADR1 ( 456 ))
-          (PORT ADR2 ( 423 ))
-          (IOPATH ADR0 O ( 519 )( 519 ))
-          (IOPATH ADR1 O ( 519 )( 519 ))
-          (IOPATH ADR2 O ( 519 )( 519 ))
-          (IOPATH ADR3 O ( 519 )( 519 ))
+          (PORT ADR0 ( 663 ))
+          (PORT ADR1 ( 491 ))
+          (PORT ADR3 ( 291 ))
+          (IOPATH ADR0 O ( 469 )( 469 ))
+          (IOPATH ADR1 O ( 469 )( 469 ))
+          (IOPATH ADR2 O ( 469 )( 469 ))
+          (IOPATH ADR3 O ( 469 )( 469 ))
         )
       )
   )
@@ -4555,7 +4553,7 @@
       (TIMINGCHECK
         (SETUPHOLD (posedge I) (posedge CLK) (70)(331))
         (SETUPHOLD (negedge I) (posedge CLK) (70)(331))
-        (PERIOD (posedge CLK) (1366))
+        (PERIOD (posedge CLK) (1316))
         (RECOVERY (negedge SET) (posedge CLK) (768))
         (WIDTH (posedge SET) (751))
       )
@@ -4564,13 +4562,13 @@
     (INSTANCE SER_REG_PS_Z_2_mux00011)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 889 ))
-          (PORT ADR1 ( 709 ))
-          (PORT ADR2 ( 725 ))
-          (IOPATH ADR0 O ( 469 )( 469 ))
-          (IOPATH ADR1 O ( 469 )( 469 ))
-          (IOPATH ADR2 O ( 469 )( 469 ))
-          (IOPATH ADR3 O ( 469 )( 469 ))
+          (PORT ADR0 ( 514 ))
+          (PORT ADR1 ( 1093 ))
+          (PORT ADR3 ( 517 ))
+          (IOPATH ADR0 O ( 519 )( 519 ))
+          (IOPATH ADR1 O ( 519 )( 519 ))
+          (IOPATH ADR2 O ( 519 )( 519 ))
+          (IOPATH ADR3 O ( 519 )( 519 ))
         )
       )
   )
@@ -4586,7 +4584,7 @@
       (TIMINGCHECK
         (SETUPHOLD (posedge I) (posedge CLK) (70)(331))
         (SETUPHOLD (negedge I) (posedge CLK) (70)(331))
-        (PERIOD (posedge CLK) (1316))
+        (PERIOD (posedge CLK) (1366))
         (RECOVERY (negedge SET) (posedge CLK) (768))
         (WIDTH (posedge SET) (751))
       )
@@ -4595,13 +4593,13 @@
     (INSTANCE SER_REG_PS_Z_3_mux00011)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 471 ))
-          (PORT ADR1 ( 519 ))
-          (PORT ADR3 ( 419 ))
-          (IOPATH ADR0 O ( 469 )( 469 ))
-          (IOPATH ADR1 O ( 469 )( 469 ))
-          (IOPATH ADR2 O ( 469 )( 469 ))
-          (IOPATH ADR3 O ( 469 )( 469 ))
+          (PORT ADR0 ( 512 ))
+          (PORT ADR2 ( 620 ))
+          (PORT ADR3 ( 438 ))
+          (IOPATH ADR0 O ( 519 )( 519 ))
+          (IOPATH ADR1 O ( 519 )( 519 ))
+          (IOPATH ADR2 O ( 519 )( 519 ))
+          (IOPATH ADR3 O ( 519 )( 519 ))
         )
       )
   )
@@ -4617,7 +4615,7 @@
       (TIMINGCHECK
         (SETUPHOLD (posedge I) (posedge CLK) (70)(331))
         (SETUPHOLD (negedge I) (posedge CLK) (70)(331))
-        (PERIOD (posedge CLK) (1316))
+        (PERIOD (posedge CLK) (1366))
         (RECOVERY (negedge SET) (posedge CLK) (768))
         (WIDTH (posedge SET) (751))
       )
@@ -4626,13 +4624,13 @@
     (INSTANCE SER_REG_PS_Z_4_mux00011)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 629 ))
-          (PORT ADR1 ( 821 ))
-          (PORT ADR3 ( 355 ))
-          (IOPATH ADR0 O ( 519 )( 519 ))
-          (IOPATH ADR1 O ( 519 )( 519 ))
-          (IOPATH ADR2 O ( 519 )( 519 ))
-          (IOPATH ADR3 O ( 519 )( 519 ))
+          (PORT ADR0 ( 598 ))
+          (PORT ADR1 ( 658 ))
+          (PORT ADR3 ( 471 ))
+          (IOPATH ADR0 O ( 469 )( 469 ))
+          (IOPATH ADR1 O ( 469 )( 469 ))
+          (IOPATH ADR2 O ( 469 )( 469 ))
+          (IOPATH ADR3 O ( 469 )( 469 ))
         )
       )
   )
@@ -4648,7 +4646,7 @@
       (TIMINGCHECK
         (SETUPHOLD (posedge I) (posedge CLK) (70)(331))
         (SETUPHOLD (negedge I) (posedge CLK) (70)(331))
-        (PERIOD (posedge CLK) (1366))
+        (PERIOD (posedge CLK) (1316))
         (RECOVERY (negedge SET) (posedge CLK) (768))
         (WIDTH (posedge SET) (751))
       )
@@ -4657,13 +4655,13 @@
     (INSTANCE SER_REG_PS_Z_5_mux00011)
       (DELAY
         (ABSOLUTE
-          (PORT ADR0 ( 616 ))
-          (PORT ADR1 ( 438 ))
-          (PORT ADR3 ( 326 ))
-          (IOPATH ADR0 O ( 519 )( 519 ))
-          (IOPATH ADR1 O ( 519 )( 519 ))
-          (IOPATH ADR2 O ( 519 )( 519 ))
-          (IOPATH ADR3 O ( 519 )( 519 ))
+          (PORT ADR0 ( 489 ))
+          (PORT ADR2 ( 304 ))
+          (PORT ADR3 ( 449 ))
+          (IOPATH ADR0 O ( 469 )( 469 ))
+          (IOPATH ADR1 O ( 469 )( 469 ))
+          (IOPATH ADR2 O ( 469 )( 469 ))
+          (IOPATH ADR3 O ( 469 )( 469 ))
         )
       )
   )
@@ -4679,7 +4677,7 @@
       (TIMINGCHECK
         (SETUPHOLD (posedge I) (posedge CLK) (70)(331))
         (SETUPHOLD (negedge I) (posedge CLK) (70)(331))
-        (PERIOD (posedge CLK) (1366))
+        (PERIOD (posedge CLK) (1316))
         (RECOVERY (negedge SET) (posedge CLK) (768))
         (WIDTH (posedge SET) (751))
       )
@@ -4696,7 +4694,7 @@
     (INSTANCE CLK_R_OUTPUT_OFF_OMUX)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 2586 ))
+          (IOPATH I O ( 3579 ))
         )
       )
   )
@@ -4704,7 +4702,7 @@
     (INSTANCE CLK_T_OUTPUT_OFF_OMUX)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 2697 ))
+          (IOPATH I O ( 1620 ))
         )
       )
   )
@@ -4720,7 +4718,7 @@
     (INSTANCE TX_READY_OUTPUT_OFF_OMUX)
       (DELAY
         (ABSOLUTE
-          (IOPATH I O ( 1190 ))
+          (IOPATH I O ( 922 ))
         )
       )
   )

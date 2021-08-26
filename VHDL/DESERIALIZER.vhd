@@ -105,7 +105,7 @@ architecture STRUCT of DESERIALIZER is
              );
 	T_START <= OUT_D4 and RD;
 	CLK8 <= OUT_C8(2);
-	T_END <= OUT_C16(3) and (not  OUT_C16(2)) and  not OUT_C16(1) and  not OUT_C16(0);
+	T_END <= OUT_C16(3) and (not  OUT_C16(2)) and  not OUT_C16(1) and  not OUT_C16(0) and not RD;
 	T_READY <= OUT_C16(3) and (not  OUT_C16(2)) and OUT_C16(1) and (not OUT_C16(0)) ;
 	RX_READY <= RD;
 	latchSR : process(T_END,T_START, RESET)

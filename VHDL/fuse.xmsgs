@@ -5,5 +5,11 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/DESERIALIZER.vhd" Line 89: Actual for formal port <arg fmt="%s" index="1">x</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/DESERIALIZER.vhd" Line 103: Actual for formal port <arg fmt="%s" index="1">clk</arg> is neither a static name nor a globally static expression
+</msg>
+
 </messages>
 

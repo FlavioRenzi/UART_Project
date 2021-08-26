@@ -12,13 +12,13 @@
          <ClosedNode>/UART - STRUCT C:|Users|Flavio|OneDrive - Politecnico di Milano|06_Prog_RL|UART_Project|VHDL|UART.vhd/DES - DESERIALIZER - STRUCT</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>UART - STRUCT (C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/UART.vhd)</SelectedItem>
+         <SelectedItem>xc3s1500-5fg320</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001b5000000020000000000000000000000000200000064ffffffff000000810000000300000002000001b50000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>UART - STRUCT (C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/UART.vhd)</CurrentItem>
+      <CurrentItem>xc3s1500-5fg320</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -31,13 +31,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000166000000010000000100000000000000000000000064ffffffff000000810000000000000001000001660000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -69,6 +69,9 @@
          <ClosedNode>/CLk_DELAYER_4_TEST - behavior C:|Users|Flavio|OneDrive - Politecnico di Milano|06_Prog_RL|UART_Project|VHDL|CLk_DELAYER_4_TEST.vhd</ClosedNode>
          <ClosedNode>/COUNTER_MOD_8_TEST - behavior C:|Users|Flavio|OneDrive - Politecnico di Milano|06_Prog_RL|UART_Project|VHDL|COUNTER_MOD_8_TEST.vhd</ClosedNode>
          <ClosedNode>/DESERIALIZER_TEST - behavior C:|Users|Flavio|OneDrive - Politecnico di Milano|06_Prog_RL|UART_Project|VHDL|DESERIALIZER_TEST.vhd</ClosedNode>
+         <ClosedNode>/DUAL_UART_BAUD_TEST - behavior C:|Users|Flavio|OneDrive - Politecnico di Milano|06_Prog_RL|UART_Project|VHDL|DUAL_UART_BAUD_TEST.vhd</ClosedNode>
+         <ClosedNode>/DUAL_UART_BURST_TEST - behavior C:|Users|Flavio|OneDrive - Politecnico di Milano|06_Prog_RL|UART_Project|VHDL|DUAL_UART_BURST_TEST.vhd</ClosedNode>
+         <ClosedNode>/DUAL_UART_TEST - behavior C:|Users|Flavio|OneDrive - Politecnico di Milano|06_Prog_RL|UART_Project|VHDL|DUAL_UART_BAUD_TEST.vhd</ClosedNode>
          <ClosedNode>/DUAL_UART_TEST - behavior C:|Users|Flavio|OneDrive - Politecnico di Milano|06_Prog_RL|UART_Project|VHDL|DUAL_UART_TEST.vhd</ClosedNode>
          <ClosedNode>/DUAL_UART_TEST - behavior C:|Users|Flavio|OneDrive - Politecnico di Milano|06_Prog_RL|UART_Project|VHDL|DUAL_UART_TEST.vhd/UART_1 - UART - STRUCT/BG - BAUD_GEN - rtl</ClosedNode>
          <ClosedNode>/DUAL_UART_TEST - behavior C:|Users|Flavio|OneDrive - Politecnico di Milano|06_Prog_RL|UART_Project|VHDL|DUAL_UART_TEST.vhd/UART_1 - UART - STRUCT/DES - DESERIALIZER - STRUCT</ClosedNode>
@@ -83,13 +86,13 @@
          <ClosedNode>/UART_TEST - behavior C:|Users|Flavio|OneDrive - Politecnico di Milano|06_Prog_RL|UART_Project|VHDL|UART_TEST.vhd/uut - UART - STRUCT/DES - DESERIALIZER - STRUCT</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>DUAL_UART_TEST - behavior (C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/DUAL_UART_TEST.vhd)</SelectedItem>
+         <SelectedItem>DUAL_UART_BURST_TEST - behavior (C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/DUAL_UART_BURST_TEST.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000019b000000020000000000000000000000000200000064ffffffff0000008100000003000000020000019b0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001a7000000020000000000000000000000000200000064ffffffff000000810000000300000002000001a70000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>DUAL_UART_TEST - behavior (C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/DUAL_UART_TEST.vhd)</CurrentItem>
+      <CurrentItem>DUAL_UART_BURST_TEST - behavior (C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/DUAL_UART_BURST_TEST.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -97,13 +100,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000166000000010000000100000000000000000000000064ffffffff000000810000000000000001000001660000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
@@ -120,12 +123,12 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000155000000010000000100000000000000000000000064ffffffff000000810000000000000001000001550000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000166000000010000000100000000000000000000000064ffffffff000000810000000000000001000001660000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
-   <CurrentView>Post-Route Simulation</CurrentView>
+   <CurrentView>Behavioral Simulation</CurrentView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
@@ -146,6 +149,7 @@
          <ClosedNode>/CLk_DELAYER_4_TEST - behavior C:|Users|Flavio|OneDrive - Politecnico di Milano|06_Prog_RL|UART_Project|VHDL|CLk_DELAYER_4_TEST.vhd</ClosedNode>
          <ClosedNode>/COUNTER_MOD_8_TEST - behavior C:|Users|Flavio|OneDrive - Politecnico di Milano|06_Prog_RL|UART_Project|VHDL|COUNTER_MOD_8_TEST.vhd</ClosedNode>
          <ClosedNode>/DESERIALIZER_TEST - behavior C:|Users|Flavio|OneDrive - Politecnico di Milano|06_Prog_RL|UART_Project|VHDL|DESERIALIZER_TEST.vhd</ClosedNode>
+         <ClosedNode>/DUAL_UART_BURST_TEST - behavior C:|Users|Flavio|OneDrive - Politecnico di Milano|06_Prog_RL|UART_Project|VHDL|DUAL_UART_BURST_TEST.vhd</ClosedNode>
          <ClosedNode>/DUAL_UART_TEST - behavior C:|Users|Flavio|OneDrive - Politecnico di Milano|06_Prog_RL|UART_Project|VHDL|DUAL_UART_TEST.vhd</ClosedNode>
          <ClosedNode>/REG_PP_8_BIT_TEST - behavior C:|Users|Flavio|OneDrive - Politecnico di Milano|06_Prog_RL|UART_Project|VHDL|REG_PP_8_BIT_TEST.vhd</ClosedNode>
          <ClosedNode>/REG_PS_9_BIT_TEST - behavior C:|Users|Flavio|OneDrive - Politecnico di Milano|06_Prog_RL|UART_Project|VHDL|REG_PS_9_BIT_TEST.vhd</ClosedNode>
@@ -154,13 +158,13 @@
          <ClosedNode>/UART_TEST - behavior C:|Users|Flavio|OneDrive - Politecnico di Milano|06_Prog_RL|UART_Project|VHDL|UART_TEST.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>DUAL_UART_TEST - behavior (C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/DUAL_UART_TEST.vhd)</SelectedItem>
+         <SelectedItem>DUAL_UART_BURST_TEST - behavior (C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/DUAL_UART_BURST_TEST.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000019b000000020000000000000000000000000200000064ffffffff0000008100000003000000020000019b0000000100000003000000000000000100000003</ViewHeaderState>
-      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>DUAL_UART_TEST - behavior (C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/DUAL_UART_TEST.vhd)</CurrentItem>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001a7000000020000000000000000000000000200000064ffffffff000000810000000300000002000001a70000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>DUAL_UART_BURST_TEST - behavior (C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/DUAL_UART_BURST_TEST.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="PostRouteSim" sourcetype="" guiview="Process" >
       <ClosedNodes>

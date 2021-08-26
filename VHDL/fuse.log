@@ -1,40 +1,40 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/DUAL_UART_TEST_isim_par.exe -prj C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/DUAL_UART_TEST_par.prj work.DUAL_UART_TEST 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/DUAL_UART_BURST_TEST_isim_beh.exe -prj C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/DUAL_UART_BURST_TEST_beh.prj work.DUAL_UART_BURST_TEST 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 12
 Turning on mult-threading, number of parallel sub-compilation jobs: 24 
 Determining compilation order of HDL files
-Parsing VHDL file "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/netgen/par/UART_timesim.vhd" into library work
-Parsing VHDL file "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/DUAL_UART_TEST.vhd" into library work
+Parsing VHDL file "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/REG_SP_8_BIT.vhd" into library work
+Parsing VHDL file "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/REG_PS_9_BIT.vhd" into library work
+Parsing VHDL file "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/REG_PP_8_BIT.vhd" into library work
+Parsing VHDL file "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/COUNTER_MOD_2_N.vhd" into library work
+Parsing VHDL file "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/CLK_DELAYER_4.vhd" into library work
+Parsing VHDL file "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/SERIALIZER.vhd" into library work
+Parsing VHDL file "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/DESERIALIZER.vhd" into library work
+WARNING:HDLCompiler:946 - "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/DESERIALIZER.vhd" Line 89: Actual for formal port x is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/DESERIALIZER.vhd" Line 103: Actual for formal port clk is neither a static name nor a globally static expression
+Parsing VHDL file "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/BAUD_GEN.vhd" into library work
+Parsing VHDL file "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/UART.vhd" into library work
+Parsing VHDL file "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/DUAL_UART_BURST_TEST.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
 Compiling package std_logic_1164
-Compiling package textio
-Compiling package vital_timing
-Compiling package vcomponents
-Compiling package vital_primitives
-Compiling package vpackage
-Compiling architecture x_buf_v of entity X_BUF [\X_BUF(true,true,"UNPLACED",(0,0...]
-Compiling architecture x_lut4_v of entity X_LUT4 [\X_LUT4(true,true,"UNPLACED",(0,...]
-Compiling architecture x_ff_v of entity X_FF [\X_FF(true,true,true,"UNPLACED",...]
-Compiling architecture x_inv_v of entity X_INV [\X_INV(true,true,"SLICE_X39Y1",(...]
-Compiling architecture x_xor2_v of entity X_XOR2 [\X_XOR2(true,true,"UNPLACED",(0,...]
-Compiling architecture x_mux2_v of entity X_MUX2 [\X_MUX2(true,true,"UNPLACED",(0,...]
-Compiling architecture x_and2_v of entity X_AND2 [\X_AND2(true,true,"UNPLACED",(0,...]
-Compiling architecture x_obuf_v of entity X_OBUF [\X_OBUF(true,true,"DONT_CARE",12...]
-Compiling architecture x_bufgmux_v of entity X_BUFGMUX [\X_BUFGMUX(true,"*",true,false,"...]
-Compiling architecture x_latche_v of entity X_LATCHE [\X_LATCHE(true,true,true,"UNPLAC...]
-Compiling architecture x_srlc16e_v of entity X_SRLC16E [\X_SRLC16E(true,true,true,"UNPLA...]
-Compiling architecture x_sff_v of entity X_SFF [\X_SFF(true,true,true,"UNPLACED"...]
-Compiling architecture x_zero_v of entity X_ZERO [\X_ZERO("UNPLACED")(1,8)\]
-Compiling architecture x_inv_v of entity X_INV [\X_INV(true,true,"UNPLACED",(0,0...]
-Compiling architecture x_one_v of entity X_ONE [\X_ONE("UNPLACED")(1,8)\]
-Compiling architecture x_roc_v of entity X_ROC [\X_ROC("UNPLACED",100000,"*")(1,...]
-Compiling architecture x_toc_v of entity X_TOC [\X_TOC("UNPLACED",0,"*")(1,8,1,1...]
-Compiling architecture structure of entity UART [uart_default]
-Compiling architecture behavior of entity dual_uart_test
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture rtl of entity COUNTER_MOD_2_N [\COUNTER_MOD_2_N(3)\]
+Compiling architecture rtl of entity BAUD_GEN [baud_gen_default]
+Compiling architecture rtl of entity REG_PS_9_BIT [reg_ps_9_bit_default]
+Compiling architecture rtl of entity COUNTER_MOD_2_N [\COUNTER_MOD_2_N(4)\]
+Compiling architecture rtl of entity SERIALIZER [serializer_default]
+Compiling architecture rtl of entity REG_PP_8_BIT [reg_pp_8_bit_default]
+Compiling architecture rtl of entity REG_SP_8_BIT [reg_sp_8_bit_default]
+Compiling architecture rtl of entity CLK_DELAYER_4 [clk_delayer_4_default]
+Compiling architecture struct of entity DESERIALIZER [deserializer_default]
+Compiling architecture struct of entity UART [uart_default]
+Compiling architecture behavior of entity dual_uart_burst_test
 Time Resolution for simulation is 1ps.
-Compiled 486 VHDL Units
-Built simulation executable C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/DUAL_UART_TEST_isim_par.exe
-Fuse Memory Usage: 80284 KB
-Fuse CPU Usage: 2061 ms
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 25 VHDL Units
+Built simulation executable C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/DUAL_UART_BURST_TEST_isim_beh.exe
+Fuse Memory Usage: 34648 KB
+Fuse CPU Usage: 593 ms
