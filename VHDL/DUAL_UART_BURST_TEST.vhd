@@ -72,10 +72,15 @@ ARCHITECTURE behavior OF DUAL_UART_BURST_TEST IS
 	
 	
 	
+	signal CHECK_1_TO_2 : std_logic:='0';
+	signal CHECK_2_TO_1 : std_logic:='0';
+	
+	
 	
    -- Clock period definitions
    constant CLK_period : time := 500 ns;
-	
+	shared variable X_1 : std_logic_vector(0 to 7);
+	shared variable X_2 : std_logic_vector(0 to 7);
 	constant MY_SEL : std_logic_vector(2 downto 0) := "000";
 	shared variable MULT : integer:= 1;
 	type VAL_TEST is array (0 to 7) of std_logic_vector(0 to 7);
@@ -189,6 +194,44 @@ BEGIN
       wait;
    end process;
 	
+	
+	check_1: process
+   begin		
+	
+      for I in 0 to 7 loop
+			wait until TX_READY_1 = '0';
+			X_1 := BUS_IN_1;
+			wait for CLK_period*MULT*8;
+			wait until RX_READY_2 = '1';
+			if (BUS_OUT_2 = X_1) then
+				CHECK_1_TO_2 <= '1';
+				wait for CLK_period*MULT*8;
+				CHECK_1_TO_2 <= '0';
+			else
+				CHECK_1_TO_2 <= '0';
+			end if;
+		end loop;
+		wait;
+   end process;
+	
+	check_2: process
+   begin		
+	
+      for I in 0 to 7 loop
+			wait until TX_READY_2 = '0';
+			X_2 := BUS_IN_2;
+			wait for CLK_period*MULT*8;
+			wait until RX_READY_1 = '1';
+			if (BUS_OUT_1 = X_2) then
+				CHECK_2_TO_1 <= '1';
+				wait for CLK_period*MULT*8;
+				CHECK_2_TO_1 <= '0';
+			else
+				CHECK_2_TO_1 <= '0';
+			end if;
+		end loop;
+		wait;
+   end process;
 	
 	
 
