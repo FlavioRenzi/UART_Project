@@ -1,0 +1,28 @@
+Command line:
+   DUAL_UART_BAUD_TEST_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  57745
+
+Sat Aug 28 00:06:38 2021
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 5467 Meg
+
+ Total Signals          : 214
+ Total Nets             : 290
+ Total Signal Drivers   : 86
+ Total Blocks           : 28
+ Total Primitive Blocks : 19
+ Total Processes        : 69
+ Total Traceable Variables  : 25
+ Total Scalar Nets and Variables : 715
+
+ Total Simulation Time: 0.359375 sec
+
+ Current Memory Usage: 5467 Meg
+
+Sat Aug 28 00:07:15 2021
+
