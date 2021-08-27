@@ -267,7 +267,7 @@ LAB5:    goto LAB4;
 LAB7:    goto LAB5;
 
 LAB8:    xsi_set_current_line(164, ng0);
-    t2 = (t0 + 13672);
+    t2 = (t0 + 13652);
     t4 = (t0 + 7832);
     t5 = (t4 + 56U);
     t6 = *((char **)t5);
@@ -348,7 +348,7 @@ LAB17:    goto LAB16;
 LAB19:    goto LAB17;
 
 LAB20:    xsi_set_current_line(170, ng0);
-    t2 = (t0 + 13680);
+    t2 = (t0 + 13660);
     t4 = (t0 + 7960);
     t5 = (t4 + 56U);
     t6 = *((char **)t5);
@@ -462,28 +462,6 @@ LAB36:    t3 = (t0 + 3912U);
     goto LAB38;
 
 LAB39:    xsi_set_current_line(177, ng0);
-    t2 = (t0 + 7704);
-    t3 = (t2 + 56U);
-    t4 = *((char **)t3);
-    t5 = (t4 + 56U);
-    t6 = *((char **)t5);
-    *((unsigned char *)t6) = (unsigned char)3;
-    xsi_driver_first_trans_fast(t2);
-    xsi_set_current_line(178, ng0);
-    t2 = (t0 + 7768);
-    t3 = (t2 + 56U);
-    t4 = *((char **)t3);
-    t5 = (t4 + 56U);
-    t6 = *((char **)t5);
-    *((unsigned char *)t6) = (unsigned char)3;
-    xsi_driver_first_trans_fast(t2);
-    xsi_set_current_line(179, ng0);
-    t2 = (t0 + 5328U);
-    t3 = *((char **)t2);
-    t8 = *((int64 *)t3);
-    t9 = (t8 * 11);
-    t2 = (t0 + 6856);
-    xsi_process_wait(t2, t9);
 
 LAB45:    *((char **)t1) = &&LAB46;
     goto LAB1;
@@ -492,36 +470,11 @@ LAB40:    goto LAB39;
 
 LAB42:    goto LAB40;
 
-LAB43:    xsi_set_current_line(180, ng0);
-    t2 = (t0 + 7704);
-    t3 = (t2 + 56U);
-    t4 = *((char **)t3);
-    t5 = (t4 + 56U);
-    t6 = *((char **)t5);
-    *((unsigned char *)t6) = (unsigned char)2;
-    xsi_driver_first_trans_fast(t2);
-    xsi_set_current_line(181, ng0);
-    t2 = (t0 + 7768);
-    t3 = (t2 + 56U);
-    t4 = *((char **)t3);
-    t5 = (t4 + 56U);
-    t6 = *((char **)t5);
-    *((unsigned char *)t6) = (unsigned char)2;
-    xsi_driver_first_trans_fast(t2);
-    xsi_set_current_line(182, ng0);
-
-LAB49:    *((char **)t1) = &&LAB50;
-    goto LAB1;
+LAB43:    goto LAB2;
 
 LAB44:    goto LAB43;
 
 LAB46:    goto LAB44;
-
-LAB47:    goto LAB2;
-
-LAB48:    goto LAB47;
-
-LAB50:    goto LAB48;
 
 }
 

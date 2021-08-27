@@ -2,14 +2,14 @@ Command line:
    DUAL_UART_TEST_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  62190
+     -socket  49848
 
-Thu Aug 26 22:42:30 2021
+Fri Aug 27 23:36:00 2021
 
 
- Elaboration Time: 0.046875 sec
+ Elaboration Time: 0.0625 sec
 
- Current Memory Usage: 5466.98 Meg
+ Current Memory Usage: 5467.01 Meg
 
  Total Signals          : 214
  Total Nets             : 290
@@ -20,9 +20,9 @@ Thu Aug 26 22:42:30 2021
  Total Traceable Variables  : 23
  Total Scalar Nets and Variables : 683
 
- Total Simulation Time: 0.140625 sec
+ Total Simulation Time: 0.21875 sec
 
- Current Memory Usage: 4680.54 Meg
+ Current Memory Usage: 4680.58 Meg
 
-Thu Aug 26 22:44:44 2021
+Fri Aug 27 23:38:16 2021
 

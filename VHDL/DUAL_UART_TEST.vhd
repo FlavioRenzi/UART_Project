@@ -174,11 +174,6 @@ BEGIN
 		START_2 <= '0';
 		wait until RX_READY_1 = '1' and RX_READY_2 = '1';
 		wait for CLK_period*MULT*9;
-		RESET_1 <= '1';
-		RESET_2 <= '1';
-      wait for CLK_period*11;	
-		RESET_1 <= '0';
-		RESET_2 <= '0';
       wait;
    end process;
 	

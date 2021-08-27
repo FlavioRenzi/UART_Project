@@ -78,7 +78,7 @@ ARCHITECTURE behavior OF DUAL_UART_BURST_TEST IS
 	
 	
    -- Clock period definitions
-   constant CLK_period : time := 500 ns;
+   constant CLK_period : time := 100 ns;
 	shared variable X_1 : std_logic_vector(0 to 7);
 	shared variable X_2 : std_logic_vector(0 to 7);
 	constant MY_SEL : std_logic_vector(2 downto 0) := "000";

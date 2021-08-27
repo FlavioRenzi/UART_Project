@@ -1,0 +1,28 @@
+Command line:
+   DUAL_UART_BURST_TEST_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  62629
+
+Fri Aug 27 23:38:24 2021
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5467 Meg
+
+ Total Signals          : 216
+ Total Nets             : 292
+ Total Signal Drivers   : 88
+ Total Blocks           : 28
+ Total Primitive Blocks : 19
+ Total Processes        : 72
+ Total Traceable Variables  : 27
+ Total Scalar Nets and Variables : 829
+
+ Total Simulation Time: 0.3125 sec
+
+ Current Memory Usage: 4995.15 Meg
+
+Fri Aug 27 23:40:09 2021
+
