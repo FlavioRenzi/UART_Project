@@ -1,2 +1,2 @@
 vhdl work "netgen/par/UART_timesim.vhd"
-vhdl work "DUAL_UART_BAUD_TEST.vhd"
+vhdl work "DUAL_UART_TEST.vhd"

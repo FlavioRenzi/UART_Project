@@ -74,7 +74,7 @@ ARCHITECTURE behavior OF DUAL_UART_TEST IS
 	
 	
    -- Clock period definitions
-   constant CLK_period : time := 500 ns;
+   constant CLK_period : time := 100 ns;
 	
 	constant MY_SEL : std_logic_vector(2 downto 0) := "001";
 	shared variable MULT : integer:= 2;

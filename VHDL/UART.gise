@@ -150,16 +150,16 @@
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="DESERIALIZER_summary.html"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="DESERIALIZER_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="DESERIALIZER_xst.xrpt"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="DUAL_UART_BAUD_TEST_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="DUAL_UART_BAUD_TEST_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="DUAL_UART_BAUD_TEST_isim_beh.wdb"/>
     <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="DUAL_UART_BAUD_TEST_isim_par.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="DUAL_UART_BAUD_TEST_isim_par.wdb"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="DUAL_UART_BAUD_TEST_par.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="DUAL_UART_BURST_TEST_isim_beh.exe"/>
     <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="DUAL_UART_BURST_TEST_isim_par.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="DUAL_UART_TEST_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="DUAL_UART_TEST_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="DUAL_UART_TEST_isim_beh.wdb"/>
     <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="DUAL_UART_TEST_isim_par.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="DUAL_UART_TEST_isim_par.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="DUAL_UART_TEST_par.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="DUAL_UART_TEST_stx_par.prj"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="MUX_2_1_envsettings.html"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="MUX_2_1_summary.html"/>
@@ -387,7 +387,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1630101993" xil_pn:in_ck="-3875813988221987810" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1630101993">
+    <transform xil_pn:end_ts="1630104671" xil_pn:in_ck="-3875813988221987810" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1630104671">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="BAUD_GEN.vhd"/>
@@ -412,11 +412,11 @@
       <outfile xil_pn:name="UART.vhd"/>
       <outfile xil_pn:name="UART_TEST.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1630101993" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-8283358848883979087" xil_pn:start_ts="1630101993">
+    <transform xil_pn:end_ts="1630104671" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-3398307348510961546" xil_pn:start_ts="1630104671">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1630101993" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="3835710249012051305" xil_pn:start_ts="1630101993">
+    <transform xil_pn:end_ts="1630104671" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-5511420617666450642" xil_pn:start_ts="1630104671">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -424,7 +424,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1630101993" xil_pn:in_ck="-3875813988221987810" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1630101993">
+    <transform xil_pn:end_ts="1630104671" xil_pn:in_ck="-3875813988221987810" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1630104671">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="BAUD_GEN.vhd"/>
@@ -449,24 +449,27 @@
       <outfile xil_pn:name="UART.vhd"/>
       <outfile xil_pn:name="UART_TEST.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1630101996" xil_pn:in_ck="-3875813988221987810" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="6938965620150506175" xil_pn:start_ts="1630101993">
+    <transform xil_pn:end_ts="1630104675" xil_pn:in_ck="-3875813988221987810" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6837068978056217975" xil_pn:start_ts="1630104671">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="DUAL_UART_BAUD_TEST_beh.prj"/>
-      <outfile xil_pn:name="DUAL_UART_BAUD_TEST_isim_beh.exe"/>
+      <outfile xil_pn:name="DUAL_UART_TEST_beh.prj"/>
+      <outfile xil_pn:name="DUAL_UART_TEST_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1630101997" xil_pn:in_ck="-675227320896704632" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="4516922281594452204" xil_pn:start_ts="1630101996">
+    <transform xil_pn:end_ts="1630104675" xil_pn:in_ck="-675227320896704632" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3645234026967712310" xil_pn:start_ts="1630104675">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="DUAL_UART_BAUD_TEST_isim_beh.wdb"/>
+      <outfile xil_pn:name="DUAL_UART_TEST_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
     </transform>
@@ -577,7 +580,7 @@
       <outfile xil_pn:name="netgen/par/UART_timesim.sdf"/>
       <outfile xil_pn:name="netgen/par/UART_timesim.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1630100522" xil_pn:in_ck="-2162068658528152675" xil_pn:name="TRAN_copyPost-ParAbstractToPreSimulation" xil_pn:start_ts="1630100522">
+    <transform xil_pn:end_ts="1630104718" xil_pn:in_ck="-2162068658528152675" xil_pn:name="TRAN_copyPost-ParAbstractToPreSimulation" xil_pn:start_ts="1630104718">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="BAUD_GEN_TEST.vhd"/>
@@ -603,24 +606,24 @@
       <outfile xil_pn:name="netgen/par/UART_timesim.sdf"/>
       <outfile xil_pn:name="netgen/par/UART_timesim.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1630102051" xil_pn:in_ck="7001147962372914117" xil_pn:name="TRAN_ISimulatePostPlace&amp;RouteModelRunFuse" xil_pn:prop_ck="-6843374991854553089" xil_pn:start_ts="1630102045">
+    <transform xil_pn:end_ts="1630104724" xil_pn:in_ck="7001147962372914117" xil_pn:name="TRAN_ISimulatePostPlace&amp;RouteModelRunFuse" xil_pn:prop_ck="7188525330373736233" xil_pn:start_ts="1630104718">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="DUAL_UART_BAUD_TEST_isim_par.exe"/>
-      <outfile xil_pn:name="DUAL_UART_BAUD_TEST_par.prj"/>
+      <outfile xil_pn:name="DUAL_UART_TEST_isim_par.exe"/>
+      <outfile xil_pn:name="DUAL_UART_TEST_par.prj"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1630102051" xil_pn:in_ck="-4694932087705256893" xil_pn:name="TRAN_ISimulatePostPlace&amp;RouteModel" xil_pn:prop_ck="1940188238326654311" xil_pn:start_ts="1630102051">
+    <transform xil_pn:end_ts="1630104724" xil_pn:in_ck="-4694932087705256893" xil_pn:name="TRAN_ISimulatePostPlace&amp;RouteModel" xil_pn:prop_ck="-3831815904963284842" xil_pn:start_ts="1630104724">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="DUAL_UART_BAUD_TEST_isim_par.wdb"/>
+      <outfile xil_pn:name="DUAL_UART_TEST_isim_par.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
     </transform>
