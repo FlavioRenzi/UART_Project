@@ -1,10 +1,10 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/DUAL_UART_TEST_isim_par.exe -prj C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/DUAL_UART_TEST_par.prj work.DUAL_UART_TEST 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/DUAL_UART_BUFFERFULL_isim_par.exe -prj C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/DUAL_UART_BUFFERFULL_par.prj work.DUAL_UART_BUFFERFULL 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 12
 Turning on mult-threading, number of parallel sub-compilation jobs: 24 
 Determining compilation order of HDL files
 Parsing VHDL file "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/netgen/par/UART_timesim.vhd" into library work
-Parsing VHDL file "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/DUAL_UART_TEST.vhd" into library work
+Parsing VHDL file "C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/DUAL_UART_BUFFERFULL.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
@@ -32,9 +32,9 @@ Compiling architecture x_inv_v of entity X_INV [\X_INV(true,true,"UNPLACED",(0,0
 Compiling architecture x_roc_v of entity X_ROC [\X_ROC("UNPLACED",100000,"*")(1,...]
 Compiling architecture x_toc_v of entity X_TOC [\X_TOC("UNPLACED",0,"*")(1,8,1,1...]
 Compiling architecture structure of entity UART [uart_default]
-Compiling architecture behavior of entity dual_uart_test
+Compiling architecture behavior of entity dual_uart_bufferfull
 Time Resolution for simulation is 1ps.
 Compiled 480 VHDL Units
-Built simulation executable C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/DUAL_UART_TEST_isim_par.exe
-Fuse Memory Usage: 80252 KB
-Fuse CPU Usage: 2109 ms
+Built simulation executable C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/DUAL_UART_BUFFERFULL_isim_par.exe
+Fuse Memory Usage: 79540 KB
+Fuse CPU Usage: 2093 ms
