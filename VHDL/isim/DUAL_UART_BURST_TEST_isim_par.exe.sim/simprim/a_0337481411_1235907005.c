@@ -1038,9 +1038,9 @@ LAB1:    return;
 }
 
 
-extern void simprim_a_0337481411_1235907005_0166324999_init()
+extern void simprim_a_0337481411_1235907005_2259230375_init()
 {
 	static char *pe[] = {(void *)simprim_a_0337481411_1235907005_p_0,(void *)simprim_a_0337481411_1235907005_p_1,(void *)simprim_a_0337481411_1235907005_p_2,(void *)simprim_a_0337481411_1235907005_p_3,(void *)simprim_a_0337481411_1235907005_p_4,(void *)simprim_a_0337481411_1235907005_p_5,(void *)simprim_a_0337481411_1235907005_p_6,(void *)simprim_a_0337481411_1235907005_p_7,(void *)simprim_a_0337481411_1235907005_p_8,(void *)simprim_a_0337481411_1235907005_p_9,(void *)simprim_a_0337481411_1235907005_p_10,(void *)simprim_a_0337481411_1235907005_p_11,(void *)simprim_a_0337481411_1235907005_p_12,(void *)simprim_a_0337481411_1235907005_p_13};
-	xsi_register_didat("simprim_a_0337481411_1235907005_0166324999", "isim/DUAL_UART_BURST_TEST_isim_par.exe.sim/simprim/a_0337481411_1235907005_0166324999.didat");
+	xsi_register_didat("simprim_a_0337481411_1235907005_2259230375", "isim/DUAL_UART_BURST_TEST_isim_par.exe.sim/simprim/a_0337481411_1235907005_2259230375.didat");
 	xsi_register_executes(pe);
 }

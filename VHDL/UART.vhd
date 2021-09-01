@@ -32,7 +32,7 @@ architecture STRUCT of UART is
      end component;
 	  
      component SERIALIZER is
-		port( 
+	  port( 
 			CLK: in std_logic; 
 			RESET: in std_logic; 
 			START: in std_logic; 
@@ -53,9 +53,10 @@ architecture STRUCT of UART is
 		  BUS_OUT: out std_logic_vector(7 downto 0)
      );
      end component;
-	  signal LOAD_SER: std_logic;
-	   signal CLK_TR: std_logic;
-		signal CLK_RE: std_logic;
+	  
+	  
+	signal CLK_TR: std_logic;
+	signal CLK_RE: std_logic;
 		
 begin
 BG: BAUD_GEN

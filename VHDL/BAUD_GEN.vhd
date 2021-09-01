@@ -30,10 +30,10 @@ architecture rtl of BAUD_GEN is
     U1: COUNTER_MOD_2_N
 		 generic map(N => 3)
 		 port map(
-					 RESET => RESET,
-					 CLK => CLK_SEL,
-					 Y => C_OUT
-					 );
+			 RESET => RESET,
+			 CLK => CLK_SEL,
+			 Y => C_OUT
+		);
 	with SEL_B select
 		ADD   <= "00000000000000000000" when "000",
 					"11100001000000000000" when "001",

@@ -44,10 +44,10 @@ Setup/Hold to clock CLK
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-RESET       |    4.786(R)|   -2.033(R)|CLK_IBUF          |   0.000|
-SEL<0>      |    3.202(R)|   -0.067(R)|CLK_IBUF          |   0.000|
-SEL<1>      |    4.129(R)|   -0.374(R)|CLK_IBUF          |   0.000|
-SEL<2>      |    3.403(R)|   -0.456(R)|CLK_IBUF          |   0.000|
+RESET       |    4.343(R)|   -2.076(R)|CLK_IBUF          |   0.000|
+SEL<0>      |    2.979(R)|    0.005(R)|CLK_IBUF          |   0.000|
+SEL<1>      |    3.523(R)|   -0.267(R)|CLK_IBUF          |   0.000|
+SEL<2>      |    3.399(R)|    0.025(R)|CLK_IBUF          |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock CLK to Pad
@@ -55,7 +55,7 @@ Clock CLK to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-CLK_R       |    9.997(R)|CLK_IBUF          |   0.000|
+CLK_R       |    7.991(R)|CLK_IBUF          |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock CLK
@@ -63,7 +63,7 @@ Clock to Setup on destination clock CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    4.786|         |         |         |
+CLK            |    4.419|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
@@ -74,7 +74,7 @@ BUFFER_FULL    |RTS            |    5.486|
 ---------------+---------------+---------+
 
 
-Analysis completed Thu Aug 26 22:12:54 2021 
+Analysis completed Wed Sep 01 22:22:58 2021 
 --------------------------------------------------------------------------------
 
 Trace Settings:

@@ -7,7 +7,7 @@
 -- \   \   \/     Version: P.20131013
 --  \   \         Application: netgen
 --  /   /         Filename: UART_timesim.vhd
--- /___/   /\     Timestamp: Thu Aug 26 22:12:58 2021
+-- /___/   /\     Timestamp: Wed Sep 01 22:23:01 2021
 -- \   \  /  \ 
 --  \___\/\___\
 --             
@@ -80,8 +80,8 @@ architecture Structure of UART is
   signal RESET_IBUF_shift4_645 : STD_LOGIC; 
   signal DES_RD_0_not0000_0 : STD_LOGIC; 
   signal DES_RD_or0000_0 : STD_LOGIC; 
-  signal SER_r0_input_650 : STD_LOGIC; 
-  signal SER_r1_input_651 : STD_LOGIC; 
+  signal SER_R0_INPUT_650 : STD_LOGIC; 
+  signal SER_R1_INPUT_651 : STD_LOGIC; 
   signal SER_T_RESET_0 : STD_LOGIC; 
   signal SEL_2_IBUF_656 : STD_LOGIC; 
   signal CLK_IBUF1 : STD_LOGIC; 
@@ -167,8 +167,8 @@ architecture Structure of UART is
   signal DES_RD_BYINV_1191 : STD_LOGIC; 
   signal DES_RD_CLKINVNOT : STD_LOGIC; 
   signal DES_RD_CEINV_1188 : STD_LOGIC; 
-  signal SER_r1_input_DYMUX_1204 : STD_LOGIC; 
-  signal SER_r1_input_CLKINV_1202 : STD_LOGIC; 
+  signal SER_R0_INPUT_DYMUX_1204 : STD_LOGIC; 
+  signal SER_R0_INPUT_CLKINV_1202 : STD_LOGIC; 
   signal DES_U5_TY_1_DXMUX_1246 : STD_LOGIC; 
   signal DES_Result_1_1 : STD_LOGIC; 
   signal DES_U5_TY_1_DYMUX_1230 : STD_LOGIC; 
@@ -191,24 +191,24 @@ architecture Structure of UART is
   signal BG_T_and0001 : STD_LOGIC; 
   signal SER_RD_or0000_1398 : STD_LOGIC; 
   signal N2_pack_1 : STD_LOGIC; 
-  signal SER_r0_input_DYMUX_1406 : STD_LOGIC; 
-  signal SER_r0_input_CLKINV_1404 : STD_LOGIC; 
   signal DES_T_END : STD_LOGIC; 
   signal DES_N01_pack_1 : STD_LOGIC; 
   signal DES_RD_or0000 : STD_LOGIC; 
-  signal DES_U2_T_1_DXMUX_1463 : STD_LOGIC; 
-  signal DES_U2_T_1_DYMUX_1455 : STD_LOGIC; 
-  signal DES_U2_T_1_SRINV_1453 : STD_LOGIC; 
-  signal DES_U2_T_1_CLKINV_1452 : STD_LOGIC; 
-  signal DES_U2_T_3_DXMUX_1487 : STD_LOGIC; 
-  signal DES_U2_T_3_DYMUX_1479 : STD_LOGIC; 
-  signal DES_U2_T_3_SRINV_1477 : STD_LOGIC; 
-  signal DES_U2_T_3_CLKINV_1476 : STD_LOGIC; 
+  signal DES_U2_T_1_DXMUX_1454 : STD_LOGIC; 
+  signal DES_U2_T_1_DYMUX_1446 : STD_LOGIC; 
+  signal DES_U2_T_1_SRINV_1444 : STD_LOGIC; 
+  signal DES_U2_T_1_CLKINV_1443 : STD_LOGIC; 
+  signal DES_U2_T_3_DXMUX_1478 : STD_LOGIC; 
+  signal DES_U2_T_3_DYMUX_1470 : STD_LOGIC; 
+  signal DES_U2_T_3_SRINV_1468 : STD_LOGIC; 
+  signal DES_U2_T_3_CLKINV_1467 : STD_LOGIC; 
   signal DES_U3_not0000 : STD_LOGIC; 
-  signal DES_U2_T_5_DXMUX_1523 : STD_LOGIC; 
-  signal DES_U2_T_5_DYMUX_1515 : STD_LOGIC; 
-  signal DES_U2_T_5_SRINV_1513 : STD_LOGIC; 
-  signal DES_U2_T_5_CLKINV_1512 : STD_LOGIC; 
+  signal DES_U2_T_5_DXMUX_1514 : STD_LOGIC; 
+  signal DES_U2_T_5_DYMUX_1506 : STD_LOGIC; 
+  signal DES_U2_T_5_SRINV_1504 : STD_LOGIC; 
+  signal DES_U2_T_5_CLKINV_1503 : STD_LOGIC; 
+  signal SER_R1_INPUT_DYMUX_1526 : STD_LOGIC; 
+  signal SER_R1_INPUT_CLKINV_1524 : STD_LOGIC; 
   signal SER_RD_DYMUX_1539 : STD_LOGIC; 
   signal SER_RD_BYINV_1538 : STD_LOGIC; 
   signal SER_RD_CLKINVNOT : STD_LOGIC; 
@@ -398,9 +398,9 @@ architecture Structure of UART is
   signal BUS_OUT_7_OUTPUT_OFF_OFF1_RSTAND_2127 : STD_LOGIC; 
   signal BUS_OUT_7_OUTPUT_OTCLK1INV_2116 : STD_LOGIC; 
   signal DES_U3_Y_FFY_RSTAND_2363 : STD_LOGIC; 
-  signal VCC : STD_LOGIC; 
   signal GND : STD_LOGIC; 
   signal NlwInverterSignal_DES_RD_1_CLK : STD_LOGIC; 
+  signal VCC : STD_LOGIC; 
   signal NLW_DES_U3_Mshreg_Y_SRL16E_Q15_UNCONNECTED : STD_LOGIC; 
   signal NlwInverterSignal_DES_RD_CLK : STD_LOGIC; 
   signal NlwInverterSignal_SER_RD_CLK : STD_LOGIC; 
@@ -439,7 +439,7 @@ begin
     );
   BG_U1_TY_2_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X49Y1",
+      LOC => "SLICE_X46Y2",
       PATHPULSE => 658 ps
     )
     port map (
@@ -448,7 +448,7 @@ begin
     );
   BG_U1_TY_2_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X49Y1",
+      LOC => "SLICE_X46Y2",
       PATHPULSE => 658 ps
     )
     port map (
@@ -457,7 +457,7 @@ begin
     );
   SER_REG_PS_Z_7_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X46Y1",
+      LOC => "SLICE_X45Y0",
       PATHPULSE => 658 ps
     )
     port map (
@@ -466,7 +466,7 @@ begin
     );
   SER_REG_PS_Z_7_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X46Y1",
+      LOC => "SLICE_X45Y0",
       PATHPULSE => 658 ps
     )
     port map (
@@ -475,7 +475,7 @@ begin
     );
   SER_REG_PS_Z_7_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X46Y1",
+      LOC => "SLICE_X45Y0",
       PATHPULSE => 658 ps
     )
     port map (
@@ -484,7 +484,7 @@ begin
     );
   SER_REG_PS_Z_7_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X46Y1",
+      LOC => "SLICE_X45Y0",
       PATHPULSE => 658 ps
     )
     port map (
@@ -493,7 +493,7 @@ begin
     );
   SER_REG_PS_Z_8_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X47Y1",
+      LOC => "SLICE_X46Y0",
       PATHPULSE => 658 ps
     )
     port map (
@@ -502,28 +502,28 @@ begin
     );
   SER_REG_PS_Z_8_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X47Y1",
+      LOC => "SLICE_X46Y0",
       PATHPULSE => 658 ps
     )
     port map (
       I => BG_U1_TY(2),
       O => SER_REG_PS_Z_8_CLKINV_791
     );
-  SER_REG_PS_Y1 : X_LUT4
+  BG_T_mux0001_8_1 : X_LUT4
     generic map(
-      INIT => X"EEEE",
-      LOC => "SLICE_X47Y1"
+      INIT => X"4CCC",
+      LOC => "SLICE_X49Y0"
     )
     port map (
-      ADR0 => SER_T_LOAD_596,
-      ADR1 => SER_REG_PS_Z(0),
-      ADR2 => VCC,
-      ADR3 => VCC,
-      O => TX_OBUF_814
+      ADR0 => BG_CLK_SEL_cmp_eq000042_607,
+      ADR1 => BG_T_addsub0000(11),
+      ADR2 => BG_CLK_SEL_cmp_eq000019_608,
+      ADR3 => BG_CLK_SEL_cmp_eq00007_609,
+      O => BG_T_mux0001(8)
     );
   BG_T_11_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X50Y2",
+      LOC => "SLICE_X49Y0",
       PATHPULSE => 658 ps
     )
     port map (
@@ -532,7 +532,7 @@ begin
     );
   BG_T_11_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X50Y2",
+      LOC => "SLICE_X49Y0",
       PATHPULSE => 658 ps
     )
     port map (
@@ -541,7 +541,7 @@ begin
     );
   BG_T_11_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X50Y2",
+      LOC => "SLICE_X49Y0",
       PATHPULSE => 658 ps
     )
     port map (
@@ -550,7 +550,7 @@ begin
     );
   BG_T_11_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X50Y2",
+      LOC => "SLICE_X49Y0",
       PATHPULSE => 658 ps
     )
     port map (
@@ -559,19 +559,19 @@ begin
     );
   BG_T_mux0001_9_1 : X_LUT4
     generic map(
-      INIT => X"7F00",
-      LOC => "SLICE_X50Y2"
+      INIT => X"70F0",
+      LOC => "SLICE_X49Y0"
     )
     port map (
       ADR0 => BG_CLK_SEL_cmp_eq000019_608,
       ADR1 => BG_CLK_SEL_cmp_eq000042_607,
-      ADR2 => BG_CLK_SEL_cmp_eq00007_609,
-      ADR3 => BG_T_addsub0000(10),
+      ADR2 => BG_T_addsub0000(10),
+      ADR3 => BG_CLK_SEL_cmp_eq00007_609,
       O => BG_T_mux0001(9)
     );
   BG_T_9_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X50Y3",
+      LOC => "SLICE_X49Y1",
       PATHPULSE => 658 ps
     )
     port map (
@@ -580,7 +580,7 @@ begin
     );
   BG_T_9_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X50Y3",
+      LOC => "SLICE_X49Y1",
       PATHPULSE => 658 ps
     )
     port map (
@@ -589,7 +589,7 @@ begin
     );
   BG_T_9_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X50Y3",
+      LOC => "SLICE_X49Y1",
       PATHPULSE => 658 ps
     )
     port map (
@@ -598,7 +598,7 @@ begin
     );
   BG_T_9_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X50Y3",
+      LOC => "SLICE_X49Y1",
       PATHPULSE => 658 ps
     )
     port map (
@@ -607,7 +607,7 @@ begin
     );
   BG_T_13_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X47Y2",
+      LOC => "SLICE_X50Y3",
       PATHPULSE => 658 ps
     )
     port map (
@@ -616,7 +616,7 @@ begin
     );
   BG_T_13_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X47Y2",
+      LOC => "SLICE_X50Y3",
       PATHPULSE => 658 ps
     )
     port map (
@@ -625,7 +625,7 @@ begin
     );
   BG_T_13_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X47Y2",
+      LOC => "SLICE_X50Y3",
       PATHPULSE => 658 ps
     )
     port map (
@@ -634,7 +634,7 @@ begin
     );
   BG_T_13_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X47Y2",
+      LOC => "SLICE_X50Y3",
       PATHPULSE => 658 ps
     )
     port map (
@@ -643,7 +643,7 @@ begin
     );
   BG_T_15_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X49Y3",
+      LOC => "SLICE_X49Y2",
       PATHPULSE => 658 ps
     )
     port map (
@@ -652,7 +652,7 @@ begin
     );
   BG_T_15_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X49Y3",
+      LOC => "SLICE_X49Y2",
       PATHPULSE => 658 ps
     )
     port map (
@@ -661,7 +661,7 @@ begin
     );
   BG_T_15_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X49Y3",
+      LOC => "SLICE_X49Y2",
       PATHPULSE => 658 ps
     )
     port map (
@@ -670,7 +670,7 @@ begin
     );
   BG_T_15_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X49Y3",
+      LOC => "SLICE_X49Y2",
       PATHPULSE => 658 ps
     )
     port map (
@@ -751,7 +751,7 @@ begin
     );
   DES_U3_Y1_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X42Y3",
+      LOC => "SLICE_X44Y3",
       PATHPULSE => 658 ps
     )
     port map (
@@ -760,7 +760,7 @@ begin
     );
   DES_U3_Y1_DIG_MUX : X_BUF
     generic map(
-      LOC => "SLICE_X42Y3",
+      LOC => "SLICE_X44Y3",
       PATHPULSE => 658 ps
     )
     port map (
@@ -769,7 +769,7 @@ begin
     );
   DES_U3_Y1_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X42Y3",
+      LOC => "SLICE_X44Y3",
       PATHPULSE => 658 ps
     )
     port map (
@@ -778,7 +778,7 @@ begin
     );
   DES_U3_Y1_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X42Y3",
+      LOC => "SLICE_X44Y3",
       PATHPULSE => 658 ps
     )
     port map (
@@ -796,7 +796,7 @@ begin
     );
   RESET_IBUF_shift2_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X44Y3",
+      LOC => "SLICE_X47Y2",
       PATHPULSE => 658 ps
     )
     port map (
@@ -805,7 +805,7 @@ begin
     );
   RESET_IBUF_shift2_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X44Y3",
+      LOC => "SLICE_X47Y2",
       PATHPULSE => 658 ps
     )
     port map (
@@ -814,7 +814,7 @@ begin
     );
   RESET_IBUF_shift2_BYINV : X_BUF
     generic map(
-      LOC => "SLICE_X44Y3",
+      LOC => "SLICE_X47Y2",
       PATHPULSE => 658 ps
     )
     port map (
@@ -823,7 +823,7 @@ begin
     );
   RESET_IBUF_shift2_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X44Y3",
+      LOC => "SLICE_X47Y2",
       PATHPULSE => 658 ps
     )
     port map (
@@ -832,7 +832,7 @@ begin
     );
   RESET_IBUF_shift2_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X44Y3",
+      LOC => "SLICE_X47Y2",
       PATHPULSE => 658 ps
     )
     port map (
@@ -841,7 +841,7 @@ begin
     );
   SER_T_LOAD_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X46Y0",
+      LOC => "SLICE_X44Y0",
       PATHPULSE => 658 ps
     )
     port map (
@@ -850,7 +850,7 @@ begin
     );
   SER_T_LOAD_SRINV : X_INV
     generic map(
-      LOC => "SLICE_X46Y0",
+      LOC => "SLICE_X44Y0",
       PATHPULSE => 658 ps
     )
     port map (
@@ -859,7 +859,7 @@ begin
     );
   SER_T_LOAD_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X46Y0",
+      LOC => "SLICE_X44Y0",
       PATHPULSE => 658 ps
     )
     port map (
@@ -868,7 +868,7 @@ begin
     );
   RESET_IBUF_shift4_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X42Y2",
+      LOC => "SLICE_X45Y3",
       PATHPULSE => 658 ps
     )
     port map (
@@ -877,7 +877,7 @@ begin
     );
   RESET_IBUF_shift4_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X42Y2",
+      LOC => "SLICE_X45Y3",
       PATHPULSE => 658 ps
     )
     port map (
@@ -886,7 +886,7 @@ begin
     );
   RESET_IBUF_shift4_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X42Y2",
+      LOC => "SLICE_X45Y3",
       PATHPULSE => 658 ps
     )
     port map (
@@ -895,7 +895,7 @@ begin
     );
   RESET_IBUF_shift4_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X42Y2",
+      LOC => "SLICE_X45Y3",
       PATHPULSE => 658 ps
     )
     port map (
@@ -904,7 +904,7 @@ begin
     );
   SER_COUNT_TY_0_DXMUX : X_INV
     generic map(
-      LOC => "SLICE_X52Y1",
+      LOC => "SLICE_X50Y0",
       PATHPULSE => 658 ps
     )
     port map (
@@ -913,7 +913,7 @@ begin
     );
   SER_COUNT_TY_0_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X52Y1",
+      LOC => "SLICE_X50Y0",
       PATHPULSE => 658 ps
     )
     port map (
@@ -922,7 +922,7 @@ begin
     );
   SER_COUNT_TY_0_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X52Y1",
+      LOC => "SLICE_X50Y0",
       PATHPULSE => 658 ps
     )
     port map (
@@ -931,7 +931,7 @@ begin
     );
   SER_COUNT_TY_0_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X52Y1",
+      LOC => "SLICE_X50Y0",
       PATHPULSE => 658 ps
     )
     port map (
@@ -974,23 +974,23 @@ begin
       I => DES_RD_0_not0000_0,
       O => DES_RD_CEINV_1188
     );
-  SER_r1_input_DYMUX : X_BUF
+  SER_R0_INPUT_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X44Y0",
+      LOC => "SLICE_X47Y1",
       PATHPULSE => 658 ps
     )
     port map (
-      I => SER_r0_input_650,
-      O => SER_r1_input_DYMUX_1204
+      I => SER_T_LOAD_596,
+      O => SER_R0_INPUT_DYMUX_1204
     );
-  SER_r1_input_CLKINV : X_BUF
+  SER_R0_INPUT_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X44Y0",
+      LOC => "SLICE_X47Y1",
       PATHPULSE => 658 ps
     )
     port map (
       I => BG_U1_TY(2),
-      O => SER_r1_input_CLKINV_1202
+      O => SER_R0_INPUT_CLKINV_1202
     );
   DES_U5_TY_1_DXMUX : X_BUF
     generic map(
@@ -1039,7 +1039,7 @@ begin
     );
   SER_T_RESET_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X51Y3",
+      LOC => "SLICE_X51Y0",
       PATHPULSE => 658 ps
     )
     port map (
@@ -1048,7 +1048,7 @@ begin
     );
   BG_CLK_SEL_DXMUX : X_INV
     generic map(
-      LOC => "SLICE_X46Y5",
+      LOC => "SLICE_X50Y4",
       PATHPULSE => 658 ps
     )
     port map (
@@ -1057,7 +1057,7 @@ begin
     );
   BG_CLK_SEL_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X46Y5",
+      LOC => "SLICE_X50Y4",
       PATHPULSE => 658 ps
     )
     port map (
@@ -1066,7 +1066,7 @@ begin
     );
   BG_CLK_SEL_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X46Y5",
+      LOC => "SLICE_X50Y4",
       PATHPULSE => 658 ps
     )
     port map (
@@ -1111,7 +1111,7 @@ begin
     );
   BG_U1_TY_0_DXMUX : X_INV
     generic map(
-      LOC => "SLICE_X49Y0",
+      LOC => "SLICE_X46Y3",
       PATHPULSE => 658 ps
     )
     port map (
@@ -1120,7 +1120,7 @@ begin
     );
   BG_U1_TY_0_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X49Y0",
+      LOC => "SLICE_X46Y3",
       PATHPULSE => 658 ps
     )
     port map (
@@ -1129,7 +1129,7 @@ begin
     );
   BG_U1_TY_0_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X49Y0",
+      LOC => "SLICE_X46Y3",
       PATHPULSE => 658 ps
     )
     port map (
@@ -1138,7 +1138,7 @@ begin
     );
   BG_U1_TY_0_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X49Y0",
+      LOC => "SLICE_X46Y3",
       PATHPULSE => 658 ps
     )
     port map (
@@ -1147,7 +1147,7 @@ begin
     );
   BG_CLK_SEL_and0000_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X46Y2",
+      LOC => "SLICE_X50Y2",
       PATHPULSE => 658 ps
     )
     port map (
@@ -1156,30 +1156,12 @@ begin
     );
   SER_RD_or0000_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X50Y0",
+      LOC => "SLICE_X52Y0",
       PATHPULSE => 658 ps
     )
     port map (
       I => N2_pack_1,
       O => N2
-    );
-  SER_r0_input_DYMUX : X_BUF
-    generic map(
-      LOC => "SLICE_X44Y1",
-      PATHPULSE => 658 ps
-    )
-    port map (
-      I => SER_T_LOAD_596,
-      O => SER_r0_input_DYMUX_1406
-    );
-  SER_r0_input_CLKINV : X_BUF
-    generic map(
-      LOC => "SLICE_X44Y1",
-      PATHPULSE => 658 ps
-    )
-    port map (
-      I => BG_U1_TY(2),
-      O => SER_r0_input_CLKINV_1404
     );
   DES_T_END_XUSED : X_BUF
     generic map(
@@ -1210,75 +1192,75 @@ begin
     );
   DES_U2_T_1_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X28Y0",
+      LOC => "SLICE_X34Y0",
       PATHPULSE => 658 ps
     )
     port map (
       I => DES_U2_T(0),
-      O => DES_U2_T_1_DXMUX_1463
+      O => DES_U2_T_1_DXMUX_1454
     );
   DES_U2_T_1_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X28Y0",
+      LOC => "SLICE_X34Y0",
       PATHPULSE => 658 ps
     )
     port map (
       I => RX_IBUF_668,
-      O => DES_U2_T_1_DYMUX_1455
+      O => DES_U2_T_1_DYMUX_1446
     );
   DES_U2_T_1_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X28Y0",
+      LOC => "SLICE_X34Y0",
       PATHPULSE => 658 ps
     )
     port map (
       I => RESET_IBUF_592,
-      O => DES_U2_T_1_SRINV_1453
+      O => DES_U2_T_1_SRINV_1444
     );
   DES_U2_T_1_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X28Y0",
+      LOC => "SLICE_X34Y0",
       PATHPULSE => 658 ps
     )
     port map (
       I => DES_U4_TY(2),
-      O => DES_U2_T_1_CLKINV_1452
+      O => DES_U2_T_1_CLKINV_1443
     );
   DES_U2_T_3_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X24Y0",
+      LOC => "SLICE_X30Y0",
       PATHPULSE => 658 ps
     )
     port map (
       I => DES_U2_T(2),
-      O => DES_U2_T_3_DXMUX_1487
+      O => DES_U2_T_3_DXMUX_1478
     );
   DES_U2_T_3_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X24Y0",
+      LOC => "SLICE_X30Y0",
       PATHPULSE => 658 ps
     )
     port map (
       I => DES_U2_T(1),
-      O => DES_U2_T_3_DYMUX_1479
+      O => DES_U2_T_3_DYMUX_1470
     );
   DES_U2_T_3_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X24Y0",
+      LOC => "SLICE_X30Y0",
       PATHPULSE => 658 ps
     )
     port map (
       I => RESET_IBUF_592,
-      O => DES_U2_T_3_SRINV_1477
+      O => DES_U2_T_3_SRINV_1468
     );
   DES_U2_T_3_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X24Y0",
+      LOC => "SLICE_X30Y0",
       PATHPULSE => 658 ps
     )
     port map (
       I => DES_U4_TY(2),
-      O => DES_U2_T_3_CLKINV_1476
+      O => DES_U2_T_3_CLKINV_1467
     );
   DES_U2_T_5_DXMUX : X_BUF
     generic map(
@@ -1287,7 +1269,7 @@ begin
     )
     port map (
       I => DES_U2_T(4),
-      O => DES_U2_T_5_DXMUX_1523
+      O => DES_U2_T_5_DXMUX_1514
     );
   DES_U2_T_5_DYMUX : X_BUF
     generic map(
@@ -1296,7 +1278,7 @@ begin
     )
     port map (
       I => DES_U2_T(3),
-      O => DES_U2_T_5_DYMUX_1515
+      O => DES_U2_T_5_DYMUX_1506
     );
   DES_U2_T_5_SRINV : X_BUF
     generic map(
@@ -1305,7 +1287,7 @@ begin
     )
     port map (
       I => RESET_IBUF_592,
-      O => DES_U2_T_5_SRINV_1513
+      O => DES_U2_T_5_SRINV_1504
     );
   DES_U2_T_5_CLKINV : X_BUF
     generic map(
@@ -1314,11 +1296,29 @@ begin
     )
     port map (
       I => DES_U4_TY(2),
-      O => DES_U2_T_5_CLKINV_1512
+      O => DES_U2_T_5_CLKINV_1503
+    );
+  SER_R1_INPUT_DYMUX : X_BUF
+    generic map(
+      LOC => "SLICE_X46Y1",
+      PATHPULSE => 658 ps
+    )
+    port map (
+      I => SER_R0_INPUT_650,
+      O => SER_R1_INPUT_DYMUX_1526
+    );
+  SER_R1_INPUT_CLKINV : X_BUF
+    generic map(
+      LOC => "SLICE_X46Y1",
+      PATHPULSE => 658 ps
+    )
+    port map (
+      I => BG_U1_TY(2),
+      O => SER_R1_INPUT_CLKINV_1524
     );
   SER_RD_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X51Y0",
+      LOC => "SLICE_X52Y1",
       PATHPULSE => 658 ps
     )
     port map (
@@ -1327,7 +1327,7 @@ begin
     );
   SER_RD_BYINV : X_BUF
     generic map(
-      LOC => "SLICE_X51Y0",
+      LOC => "SLICE_X52Y1",
       PATHPULSE => 658 ps
     )
     port map (
@@ -1336,7 +1336,7 @@ begin
     );
   SER_RD_CLKINV : X_INV
     generic map(
-      LOC => "SLICE_X51Y0",
+      LOC => "SLICE_X52Y1",
       PATHPULSE => 658 ps
     )
     port map (
@@ -1345,7 +1345,7 @@ begin
     );
   SER_RD_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X51Y0",
+      LOC => "SLICE_X52Y1",
       PATHPULSE => 658 ps
     )
     port map (
@@ -1354,7 +1354,7 @@ begin
     );
   DES_U2_T_7_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X15Y1",
+      LOC => "SLICE_X16Y0",
       PATHPULSE => 658 ps
     )
     port map (
@@ -1363,7 +1363,7 @@ begin
     );
   DES_U2_T_7_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X15Y1",
+      LOC => "SLICE_X16Y0",
       PATHPULSE => 658 ps
     )
     port map (
@@ -1372,7 +1372,7 @@ begin
     );
   DES_U2_T_7_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X15Y1",
+      LOC => "SLICE_X16Y0",
       PATHPULSE => 658 ps
     )
     port map (
@@ -1381,7 +1381,7 @@ begin
     );
   DES_U2_T_7_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X15Y1",
+      LOC => "SLICE_X16Y0",
       PATHPULSE => 658 ps
     )
     port map (
@@ -1803,6 +1803,18 @@ begin
       I => BG_Madd_T_addsub0000_lut(13),
       O => BG_T_addsub0000_12_CYSELG_1658
     );
+  BG_Madd_T_addsub0000_lut_14_Q : X_LUT4
+    generic map(
+      INIT => X"66C6",
+      LOC => "SLICE_X48Y3"
+    )
+    port map (
+      ADR0 => SEL_2_IBUF_656,
+      ADR1 => BG_T(14),
+      ADR2 => SEL_1_IBUF_658,
+      ADR3 => SEL_0_IBUF_659,
+      O => BG_Madd_T_addsub0000_lut(14)
+    );
   BG_T_addsub0000_14_XUSED : X_BUF
     generic map(
       LOC => "SLICE_X48Y3",
@@ -1953,14 +1965,14 @@ begin
     );
   BG_Madd_T_addsub0000_lut_16_Q : X_LUT4
     generic map(
-      INIT => X"C966",
+      INIT => X"C696",
       LOC => "SLICE_X48Y4"
     )
     port map (
       ADR0 => SEL_1_IBUF_658,
       ADR1 => BG_T(16),
-      ADR2 => SEL_0_IBUF_659,
-      ADR3 => SEL_2_IBUF_656,
+      ADR2 => SEL_2_IBUF_656,
+      ADR3 => SEL_0_IBUF_659,
       O => BG_Madd_T_addsub0000_lut(16)
     );
   BG_T_addsub0000_16_XUSED : X_BUF
@@ -2110,8 +2122,8 @@ begin
     port map (
       ADR0 => BG_T(17),
       ADR1 => SEL_2_IBUF_656,
-      ADR2 => SEL_0_IBUF_659,
-      ADR3 => SEL_1_IBUF_658,
+      ADR2 => SEL_1_IBUF_658,
+      ADR3 => SEL_0_IBUF_659,
       O => BG_Madd_T_addsub0000_lut(17)
     );
   BG_Madd_T_addsub0000_lut_18_Q : X_LUT4
@@ -2122,8 +2134,8 @@ begin
     port map (
       ADR0 => SEL_2_IBUF_656,
       ADR1 => BG_T(18),
-      ADR2 => SEL_0_IBUF_659,
-      ADR3 => SEL_1_IBUF_658,
+      ADR2 => SEL_1_IBUF_658,
+      ADR3 => SEL_0_IBUF_659,
       O => BG_Madd_T_addsub0000_lut(18)
     );
   BG_T_addsub0000_18_XUSED : X_BUF
@@ -2227,7 +2239,7 @@ begin
     );
   CTS_IBUF : X_BUF
     generic map(
-      LOC => "PAD328",
+      LOC => "PAD330",
       PATHPULSE => 658 ps
     )
     port map (
@@ -2236,7 +2248,7 @@ begin
     );
   SEL_0_IBUF : X_BUF
     generic map(
-      LOC => "PAD320",
+      LOC => "PAD321",
       PATHPULSE => 658 ps
     )
     port map (
@@ -2245,7 +2257,7 @@ begin
     );
   SEL_0_IFF_IMUX : X_BUF
     generic map(
-      LOC => "PAD320",
+      LOC => "PAD321",
       PATHPULSE => 658 ps
     )
     port map (
@@ -2254,7 +2266,7 @@ begin
     );
   SEL_1_IBUF : X_BUF
     generic map(
-      LOC => "PAD322",
+      LOC => "PAD320",
       PATHPULSE => 658 ps
     )
     port map (
@@ -2263,7 +2275,7 @@ begin
     );
   SEL_1_IFF_IMUX : X_BUF
     generic map(
-      LOC => "PAD322",
+      LOC => "PAD320",
       PATHPULSE => 658 ps
     )
     port map (
@@ -2272,7 +2284,7 @@ begin
     );
   SEL_2_IBUF : X_BUF
     generic map(
-      LOC => "PAD321",
+      LOC => "PAD324",
       PATHPULSE => 658 ps
     )
     port map (
@@ -2281,7 +2293,7 @@ begin
     );
   SEL_2_IFF_IMUX : X_BUF
     generic map(
-      LOC => "PAD321",
+      LOC => "PAD324",
       PATHPULSE => 658 ps
     )
     port map (
@@ -2290,7 +2302,7 @@ begin
     );
   CLK_R_OBUF : X_OBUF
     generic map(
-      LOC => "PAD324"
+      LOC => "PAD326"
     )
     port map (
       I => CLK_R_O,
@@ -2315,7 +2327,7 @@ begin
     );
   BUS_IN_1_IBUF : X_BUF
     generic map(
-      LOC => "PAD337",
+      LOC => "PAD336",
       PATHPULSE => 658 ps
     )
     port map (
@@ -2324,7 +2336,7 @@ begin
     );
   BUS_IN_2_IBUF : X_BUF
     generic map(
-      LOC => "PAD336",
+      LOC => "PAD327",
       PATHPULSE => 658 ps
     )
     port map (
@@ -2360,7 +2372,7 @@ begin
     );
   RX_IBUF : X_BUF
     generic map(
-      LOC => "PAD325",
+      LOC => "PAD338",
       PATHPULSE => 658 ps
     )
     port map (
@@ -2403,7 +2415,7 @@ begin
     );
   TX_OBUF : X_OBUF
     generic map(
-      LOC => "PAD330"
+      LOC => "PAD325"
     )
     port map (
       I => TX_O,
@@ -2427,7 +2439,7 @@ begin
     );
   TX_READY_OBUF : X_OBUF
     generic map(
-      LOC => "PAD326"
+      LOC => "PAD322"
     )
     port map (
       I => TX_READY_O,
@@ -2459,7 +2471,7 @@ begin
     );
   BUS_OUT_7_OBUF : X_OBUF
     generic map(
-      LOC => "PAD338"
+      LOC => "PAD337"
     )
     port map (
       I => BUS_OUT_7_O,
@@ -2475,7 +2487,7 @@ begin
     );
   START_IBUF : X_BUF
     generic map(
-      LOC => "PAD327",
+      LOC => "PAD328",
       PATHPULSE => 658 ps
     )
     port map (
@@ -2493,7 +2505,7 @@ begin
     );
   RESET_IBUF : X_BUF
     generic map(
-      LOC => "PAD390",
+      LOC => "PAD381",
       PATHPULSE => 658 ps
     )
     port map (
@@ -2530,7 +2542,7 @@ begin
     );
   SER_RD_0_not0000_F5MUX : X_MUX2
     generic map(
-      LOC => "SLICE_X51Y1"
+      LOC => "SLICE_X53Y0"
     )
     port map (
       IA => SER_RD_0_not00001_2170,
@@ -2540,7 +2552,7 @@ begin
     );
   SER_RD_0_not0000_BXINV : X_BUF
     generic map(
-      LOC => "SLICE_X51Y1",
+      LOC => "SLICE_X53Y0",
       PATHPULSE => 658 ps
     )
     port map (
@@ -2549,7 +2561,7 @@ begin
     );
   BG_CLK_SEL_or0000_F5MUX : X_MUX2
     generic map(
-      LOC => "SLICE_X47Y3"
+      LOC => "SLICE_X51Y3"
     )
     port map (
       IA => BG_CLK_SEL_or00001_2196,
@@ -2559,7 +2571,7 @@ begin
     );
   BG_CLK_SEL_or0000_BXINV : X_BUF
     generic map(
-      LOC => "SLICE_X47Y3",
+      LOC => "SLICE_X51Y3",
       PATHPULSE => 658 ps
     )
     port map (
@@ -2568,7 +2580,7 @@ begin
     );
   BG_T_19_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X49Y2",
+      LOC => "SLICE_X49Y3",
       PATHPULSE => 658 ps
     )
     port map (
@@ -2577,7 +2589,7 @@ begin
     );
   BG_T_19_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X49Y2",
+      LOC => "SLICE_X49Y3",
       PATHPULSE => 658 ps
     )
     port map (
@@ -2586,7 +2598,7 @@ begin
     );
   BG_T_19_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X49Y2",
+      LOC => "SLICE_X49Y3",
       PATHPULSE => 658 ps
     )
     port map (
@@ -2595,7 +2607,7 @@ begin
     );
   BG_T_19_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X49Y2",
+      LOC => "SLICE_X49Y3",
       PATHPULSE => 658 ps
     )
     port map (
@@ -2640,7 +2652,7 @@ begin
     );
   BG_CLK_SEL_cmp_eq0000_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X46Y4",
+      LOC => "SLICE_X50Y5",
       PATHPULSE => 658 ps
     )
     port map (
@@ -2649,7 +2661,7 @@ begin
     );
   SER_COUNT_TY_3_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X52Y0",
+      LOC => "SLICE_X53Y1",
       PATHPULSE => 658 ps
     )
     port map (
@@ -2658,7 +2670,7 @@ begin
     );
   SER_COUNT_TY_3_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X52Y0",
+      LOC => "SLICE_X53Y1",
       PATHPULSE => 658 ps
     )
     port map (
@@ -2667,7 +2679,7 @@ begin
     );
   SER_COUNT_TY_3_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X52Y0",
+      LOC => "SLICE_X53Y1",
       PATHPULSE => 658 ps
     )
     port map (
@@ -2676,7 +2688,7 @@ begin
     );
   SER_COUNT_TY_3_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X52Y0",
+      LOC => "SLICE_X53Y1",
       PATHPULSE => 658 ps
     )
     port map (
@@ -2685,7 +2697,7 @@ begin
     );
   DES_U3_Y_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X43Y2",
+      LOC => "SLICE_X45Y2",
       PATHPULSE => 658 ps
     )
     port map (
@@ -2694,7 +2706,7 @@ begin
     );
   DES_U3_Y_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X43Y2",
+      LOC => "SLICE_X45Y2",
       PATHPULSE => 658 ps
     )
     port map (
@@ -2703,7 +2715,7 @@ begin
     );
   SER_REG_PS_Z_1_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X47Y0",
+      LOC => "SLICE_X45Y1",
       PATHPULSE => 658 ps
     )
     port map (
@@ -2712,7 +2724,7 @@ begin
     );
   SER_REG_PS_Z_1_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X47Y0",
+      LOC => "SLICE_X45Y1",
       PATHPULSE => 658 ps
     )
     port map (
@@ -2721,7 +2733,7 @@ begin
     );
   SER_REG_PS_Z_1_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X47Y0",
+      LOC => "SLICE_X45Y1",
       PATHPULSE => 658 ps
     )
     port map (
@@ -2730,7 +2742,7 @@ begin
     );
   SER_REG_PS_Z_1_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X47Y0",
+      LOC => "SLICE_X45Y1",
       PATHPULSE => 658 ps
     )
     port map (
@@ -2739,7 +2751,7 @@ begin
     );
   SER_REG_PS_Z_3_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X44Y2",
+      LOC => "SLICE_X44Y1",
       PATHPULSE => 658 ps
     )
     port map (
@@ -2748,7 +2760,7 @@ begin
     );
   SER_REG_PS_Z_3_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X44Y2",
+      LOC => "SLICE_X44Y1",
       PATHPULSE => 658 ps
     )
     port map (
@@ -2757,7 +2769,7 @@ begin
     );
   SER_REG_PS_Z_3_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X44Y2",
+      LOC => "SLICE_X44Y1",
       PATHPULSE => 658 ps
     )
     port map (
@@ -2766,7 +2778,7 @@ begin
     );
   SER_REG_PS_Z_3_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X44Y2",
+      LOC => "SLICE_X44Y1",
       PATHPULSE => 658 ps
     )
     port map (
@@ -2775,7 +2787,7 @@ begin
     );
   SER_REG_PS_Z_5_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X45Y0",
+      LOC => "SLICE_X42Y0",
       PATHPULSE => 658 ps
     )
     port map (
@@ -2784,7 +2796,7 @@ begin
     );
   SER_REG_PS_Z_5_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X45Y0",
+      LOC => "SLICE_X42Y0",
       PATHPULSE => 658 ps
     )
     port map (
@@ -2793,7 +2805,7 @@ begin
     );
   SER_REG_PS_Z_5_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X45Y0",
+      LOC => "SLICE_X42Y0",
       PATHPULSE => 658 ps
     )
     port map (
@@ -2802,35 +2814,36 @@ begin
     );
   SER_REG_PS_Z_5_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X45Y0",
+      LOC => "SLICE_X42Y0",
       PATHPULSE => 658 ps
     )
     port map (
       I => BG_U1_TY(2),
       O => SER_REG_PS_Z_5_CLKINV_2455
     );
-  BG_Madd_T_addsub0000_lut_14_Q : X_LUT4
+  BG_T_10 : X_FF
     generic map(
-      INIT => X"6C66",
-      LOC => "SLICE_X48Y3"
+      LOC => "SLICE_X49Y0",
+      INIT => '0'
     )
     port map (
-      ADR0 => SEL_2_IBUF_656,
-      ADR1 => BG_T(14),
-      ADR2 => SEL_0_IBUF_659,
-      ADR3 => SEL_1_IBUF_658,
-      O => BG_Madd_T_addsub0000_lut(14)
+      I => BG_T_11_DYMUX_838,
+      CE => BG_T_11_CEINV_829,
+      CLK => BG_T_11_CLKINV_830,
+      SET => GND,
+      RST => GND,
+      O => BG_T(10)
     );
   BG_Madd_T_addsub0000_lut_19_Q : X_LUT4
     generic map(
-      INIT => X"CC9C",
+      INIT => X"C9CC",
       LOC => "SLICE_X48Y5"
     )
     port map (
       ADR0 => SEL_1_IBUF_658,
       ADR1 => BG_T(19),
-      ADR2 => SEL_0_IBUF_659,
-      ADR3 => SEL_2_IBUF_656,
+      ADR2 => SEL_2_IBUF_656,
+      ADR3 => SEL_0_IBUF_659,
       O => BG_Madd_T_addsub0000_lut(19)
     );
   DES_RD_1 : X_LATCHE
@@ -2882,19 +2895,6 @@ begin
       I => '0',
       O => RX_READY_OUTPUT_OFF_O1INV_1811
     );
-  BG_T_10 : X_FF
-    generic map(
-      LOC => "SLICE_X50Y2",
-      INIT => '0'
-    )
-    port map (
-      I => BG_T_11_DYMUX_838,
-      CE => BG_T_11_CEINV_829,
-      CLK => BG_T_11_CLKINV_830,
-      SET => GND,
-      RST => GND,
-      O => BG_T(10)
-    );
   DES_U4_Mcount_TY_xor_2_11 : X_LUT4
     generic map(
       INIT => X"5AAA",
@@ -2903,8 +2903,8 @@ begin
     port map (
       ADR0 => DES_U4_TY(2),
       ADR1 => VCC,
-      ADR2 => DES_U4_TY(1),
-      ADR3 => DES_U4_TY(0),
+      ADR2 => DES_U4_TY(0),
+      ADR3 => DES_U4_TY(1),
       O => DES_Result(2)
     );
   DES_U4_TY_2 : X_FF
@@ -2931,19 +2931,19 @@ begin
     );
   BG_U1_Mcount_TY_xor_2_11 : X_LUT4
     generic map(
-      INIT => X"7878",
-      LOC => "SLICE_X49Y1"
+      INIT => X"5AAA",
+      LOC => "SLICE_X46Y2"
     )
     port map (
-      ADR0 => BG_U1_TY(1),
-      ADR1 => BG_U1_TY(0),
-      ADR2 => BG_U1_TY(2),
-      ADR3 => VCC,
+      ADR0 => BG_U1_TY(2),
+      ADR1 => VCC,
+      ADR2 => BG_U1_TY(1),
+      ADR3 => BG_U1_TY(0),
       O => BG_Result(2)
     );
   BG_U1_TY_2 : X_FF
     generic map(
-      LOC => "SLICE_X49Y1",
+      LOC => "SLICE_X46Y2",
       INIT => '0'
     )
     port map (
@@ -2956,7 +2956,7 @@ begin
     );
   BG_U1_TY_2_FFY_RSTAND : X_BUF
     generic map(
-      LOC => "SLICE_X49Y1",
+      LOC => "SLICE_X46Y2",
       PATHPULSE => 658 ps
     )
     port map (
@@ -2965,19 +2965,19 @@ begin
     );
   SER_REG_PS_Z_6_mux00011 : X_LUT4
     generic map(
-      INIT => X"CACA",
-      LOC => "SLICE_X46Y1"
+      INIT => X"CCF0",
+      LOC => "SLICE_X45Y0"
     )
     port map (
-      ADR0 => SER_REG_PS_Z(7),
+      ADR0 => VCC,
       ADR1 => BUS_IN_5_IBUF_599,
-      ADR2 => SER_T_LOAD_596,
-      ADR3 => VCC,
+      ADR2 => SER_REG_PS_Z(7),
+      ADR3 => SER_T_LOAD_596,
       O => SER_REG_PS_Z_6_mux0001
     );
   SER_REG_PS_Z_6 : X_FF
     generic map(
-      LOC => "SLICE_X46Y1",
+      LOC => "SLICE_X45Y0",
       INIT => '1'
     )
     port map (
@@ -2990,19 +2990,19 @@ begin
     );
   SER_REG_PS_Z_7_mux00011 : X_LUT4
     generic map(
-      INIT => X"AACC",
-      LOC => "SLICE_X46Y1"
+      INIT => X"F0CC",
+      LOC => "SLICE_X45Y0"
     )
     port map (
-      ADR0 => BUS_IN_6_IBUF_597,
+      ADR0 => VCC,
       ADR1 => SER_REG_PS_Z(8),
-      ADR2 => VCC,
+      ADR2 => BUS_IN_6_IBUF_597,
       ADR3 => SER_T_LOAD_596,
       O => SER_REG_PS_Z_7_mux0001
     );
   SER_REG_PS_Z_7 : X_FF
     generic map(
-      LOC => "SLICE_X46Y1",
+      LOC => "SLICE_X45Y0",
       INIT => '1'
     )
     port map (
@@ -3015,19 +3015,19 @@ begin
     );
   SER_REG_PS_Z_8_mux00011 : X_LUT4
     generic map(
-      INIT => X"CCFF",
-      LOC => "SLICE_X47Y1"
+      INIT => X"AFAF",
+      LOC => "SLICE_X46Y0"
     )
     port map (
-      ADR0 => VCC,
-      ADR1 => BUS_IN_7_IBUF_603,
-      ADR2 => VCC,
-      ADR3 => SER_T_LOAD_596,
+      ADR0 => BUS_IN_7_IBUF_603,
+      ADR1 => VCC,
+      ADR2 => SER_T_LOAD_596,
+      ADR3 => VCC,
       O => SER_REG_PS_Z_8_mux0001
     );
   SER_REG_PS_Z_8 : X_FF
     generic map(
-      LOC => "SLICE_X47Y1",
+      LOC => "SLICE_X46Y0",
       INIT => '1'
     )
     port map (
@@ -3040,28 +3040,28 @@ begin
     );
   SER_REG_PS_Z_8_FFY_SETOR : X_BUF
     generic map(
-      LOC => "SLICE_X47Y1",
+      LOC => "SLICE_X46Y0",
       PATHPULSE => 658 ps
     )
     port map (
       I => RESET_IBUF_592,
       O => SER_REG_PS_Z_8_FFY_SET
     );
-  BG_T_mux0001_8_1 : X_LUT4
+  SER_REG_PS_Y1 : X_LUT4
     generic map(
-      INIT => X"7F00",
-      LOC => "SLICE_X50Y2"
+      INIT => X"FCFC",
+      LOC => "SLICE_X46Y0"
     )
     port map (
-      ADR0 => BG_CLK_SEL_cmp_eq000019_608,
-      ADR1 => BG_CLK_SEL_cmp_eq000042_607,
-      ADR2 => BG_CLK_SEL_cmp_eq00007_609,
-      ADR3 => BG_T_addsub0000(11),
-      O => BG_T_mux0001(8)
+      ADR0 => VCC,
+      ADR1 => SER_REG_PS_Z(0),
+      ADR2 => SER_T_LOAD_596,
+      ADR3 => VCC,
+      O => TX_OBUF_814
     );
   BG_T_11 : X_FF
     generic map(
-      LOC => "SLICE_X50Y2",
+      LOC => "SLICE_X49Y0",
       INIT => '0'
     )
     port map (
@@ -3074,7 +3074,7 @@ begin
     );
   BG_T_8 : X_FF
     generic map(
-      LOC => "SLICE_X50Y3",
+      LOC => "SLICE_X49Y1",
       INIT => '0'
     )
     port map (
@@ -3087,31 +3087,31 @@ begin
     );
   BG_T_mux0001_11_1 : X_LUT4
     generic map(
-      INIT => X"4CCC",
-      LOC => "SLICE_X50Y3"
+      INIT => X"7F00",
+      LOC => "SLICE_X49Y1"
     )
     port map (
-      ADR0 => BG_CLK_SEL_cmp_eq000019_608,
-      ADR1 => BG_T_addsub0000(8),
-      ADR2 => BG_CLK_SEL_cmp_eq00007_609,
-      ADR3 => BG_CLK_SEL_cmp_eq000042_607,
+      ADR0 => BG_CLK_SEL_cmp_eq000042_607,
+      ADR1 => BG_CLK_SEL_cmp_eq00007_609,
+      ADR2 => BG_CLK_SEL_cmp_eq000019_608,
+      ADR3 => BG_T_addsub0000(8),
       O => BG_T_mux0001(11)
     );
   BG_T_mux0001_10_1 : X_LUT4
     generic map(
       INIT => X"4CCC",
-      LOC => "SLICE_X50Y3"
+      LOC => "SLICE_X49Y1"
     )
     port map (
-      ADR0 => BG_CLK_SEL_cmp_eq000019_608,
+      ADR0 => BG_CLK_SEL_cmp_eq000042_607,
       ADR1 => BG_T_addsub0000(9),
-      ADR2 => BG_CLK_SEL_cmp_eq00007_609,
-      ADR3 => BG_CLK_SEL_cmp_eq000042_607,
+      ADR2 => BG_CLK_SEL_cmp_eq000019_608,
+      ADR3 => BG_CLK_SEL_cmp_eq00007_609,
       O => BG_T_mux0001(10)
     );
   BG_T_9 : X_FF
     generic map(
-      LOC => "SLICE_X50Y3",
+      LOC => "SLICE_X49Y1",
       INIT => '0'
     )
     port map (
@@ -3124,7 +3124,7 @@ begin
     );
   BG_T_12 : X_FF
     generic map(
-      LOC => "SLICE_X47Y2",
+      LOC => "SLICE_X50Y3",
       INIT => '0'
     )
     port map (
@@ -3138,30 +3138,30 @@ begin
   BG_T_mux0001_7_1 : X_LUT4
     generic map(
       INIT => X"7F00",
-      LOC => "SLICE_X47Y2"
+      LOC => "SLICE_X50Y3"
     )
     port map (
-      ADR0 => BG_CLK_SEL_cmp_eq00007_609,
-      ADR1 => BG_CLK_SEL_cmp_eq000019_608,
+      ADR0 => BG_CLK_SEL_cmp_eq000019_608,
+      ADR1 => BG_CLK_SEL_cmp_eq00007_609,
       ADR2 => BG_CLK_SEL_cmp_eq000042_607,
       ADR3 => BG_T_addsub0000(12),
       O => BG_T_mux0001(7)
     );
   BG_T_mux0001_6_1 : X_LUT4
     generic map(
-      INIT => X"7F00",
-      LOC => "SLICE_X47Y2"
+      INIT => X"4CCC",
+      LOC => "SLICE_X50Y3"
     )
     port map (
-      ADR0 => BG_CLK_SEL_cmp_eq00007_609,
-      ADR1 => BG_CLK_SEL_cmp_eq000019_608,
+      ADR0 => BG_CLK_SEL_cmp_eq000019_608,
+      ADR1 => BG_T_addsub0000(13),
       ADR2 => BG_CLK_SEL_cmp_eq000042_607,
-      ADR3 => BG_T_addsub0000(13),
+      ADR3 => BG_CLK_SEL_cmp_eq00007_609,
       O => BG_T_mux0001(6)
     );
   BG_T_13 : X_FF
     generic map(
-      LOC => "SLICE_X47Y2",
+      LOC => "SLICE_X50Y3",
       INIT => '0'
     )
     port map (
@@ -3174,7 +3174,7 @@ begin
     );
   BG_T_14 : X_FF
     generic map(
-      LOC => "SLICE_X49Y3",
+      LOC => "SLICE_X49Y2",
       INIT => '0'
     )
     port map (
@@ -3188,30 +3188,30 @@ begin
   BG_T_mux0001_5_1 : X_LUT4
     generic map(
       INIT => X"70F0",
-      LOC => "SLICE_X49Y3"
+      LOC => "SLICE_X49Y2"
     )
     port map (
-      ADR0 => BG_CLK_SEL_cmp_eq000019_608,
-      ADR1 => BG_CLK_SEL_cmp_eq000042_607,
+      ADR0 => BG_CLK_SEL_cmp_eq00007_609,
+      ADR1 => BG_CLK_SEL_cmp_eq000019_608,
       ADR2 => BG_T_addsub0000(14),
-      ADR3 => BG_CLK_SEL_cmp_eq00007_609,
+      ADR3 => BG_CLK_SEL_cmp_eq000042_607,
       O => BG_T_mux0001(5)
     );
   BG_T_mux0001_4_1 : X_LUT4
     generic map(
       INIT => X"4CCC",
-      LOC => "SLICE_X49Y3"
+      LOC => "SLICE_X49Y2"
     )
     port map (
-      ADR0 => BG_CLK_SEL_cmp_eq000019_608,
+      ADR0 => BG_CLK_SEL_cmp_eq00007_609,
       ADR1 => BG_T_addsub0000(15),
-      ADR2 => BG_CLK_SEL_cmp_eq000042_607,
-      ADR3 => BG_CLK_SEL_cmp_eq00007_609,
+      ADR2 => BG_CLK_SEL_cmp_eq000019_608,
+      ADR3 => BG_CLK_SEL_cmp_eq000042_607,
       O => BG_T_mux0001(4)
     );
   BG_T_15 : X_FF
     generic map(
-      LOC => "SLICE_X49Y3",
+      LOC => "SLICE_X49Y2",
       INIT => '0'
     )
     port map (
@@ -3241,9 +3241,9 @@ begin
       LOC => "SLICE_X49Y4"
     )
     port map (
-      ADR0 => BG_CLK_SEL_cmp_eq000019_608,
-      ADR1 => BG_CLK_SEL_cmp_eq000042_607,
-      ADR2 => BG_CLK_SEL_cmp_eq00007_609,
+      ADR0 => BG_CLK_SEL_cmp_eq000042_607,
+      ADR1 => BG_CLK_SEL_cmp_eq00007_609,
+      ADR2 => BG_CLK_SEL_cmp_eq000019_608,
       ADR3 => BG_T_addsub0000(16),
       O => BG_T_mux0001(3)
     );
@@ -3254,8 +3254,8 @@ begin
     )
     port map (
       ADR0 => BG_T_addsub0000(17),
-      ADR1 => BG_CLK_SEL_cmp_eq000042_607,
-      ADR2 => BG_CLK_SEL_cmp_eq00007_609,
+      ADR1 => BG_CLK_SEL_cmp_eq00007_609,
+      ADR2 => BG_CLK_SEL_cmp_eq000042_607,
       ADR3 => BG_CLK_SEL_cmp_eq000019_608,
       O => BG_T_mux0001(2)
     );
@@ -3274,14 +3274,14 @@ begin
     );
   DES_U5_Mcount_TY_xor_2_11 : X_LUT4
     generic map(
-      INIT => X"66CC",
+      INIT => X"7788",
       LOC => "SLICE_X34Y1"
     )
     port map (
-      ADR0 => DES_U5_TY(0),
-      ADR1 => DES_U5_TY(2),
+      ADR0 => DES_U5_TY(1),
+      ADR1 => DES_U5_TY(0),
       ADR2 => VCC,
-      ADR3 => DES_U5_TY(1),
+      ADR3 => DES_U5_TY(2),
       O => DES_Result_2_1
     );
   DES_U5_TY_2 : X_FF
@@ -3299,14 +3299,14 @@ begin
     );
   DES_U5_Mcount_TY_xor_3_11 : X_LUT4
     generic map(
-      INIT => X"7F80",
+      INIT => X"78F0",
       LOC => "SLICE_X34Y1"
     )
     port map (
-      ADR0 => DES_U5_TY(0),
-      ADR1 => DES_U5_TY(2),
-      ADR2 => DES_U5_TY(1),
-      ADR3 => DES_U5_TY(3),
+      ADR0 => DES_U5_TY(1),
+      ADR1 => DES_U5_TY(0),
+      ADR2 => DES_U5_TY(3),
+      ADR3 => DES_U5_TY(2),
       O => DES_Result(3)
     );
   DES_U5_TY_3 : X_FF
@@ -3325,7 +3325,7 @@ begin
   DES_U3_Mshreg_Y_SRL16E : X_SRLC16E
     generic map(
       INIT => X"0000",
-      LOC => "SLICE_X42Y3"
+      LOC => "SLICE_X44Y3"
     )
     port map (
       A0 => GND,
@@ -3340,7 +3340,7 @@ begin
     );
   DES_U3_Y1 : X_FF
     generic map(
-      LOC => "SLICE_X42Y3",
+      LOC => "SLICE_X44Y3",
       INIT => '0'
     )
     port map (
@@ -3365,7 +3365,7 @@ begin
     );
   RESET_IBUF_shift1 : X_FF
     generic map(
-      LOC => "SLICE_X44Y3",
+      LOC => "SLICE_X47Y2",
       INIT => '0'
     )
     port map (
@@ -3378,7 +3378,7 @@ begin
     );
   RESET_IBUF_shift2 : X_FF
     generic map(
-      LOC => "SLICE_X44Y3",
+      LOC => "SLICE_X47Y2",
       INIT => '0'
     )
     port map (
@@ -3391,7 +3391,7 @@ begin
     );
   SER_T_LOAD : X_SFF
     generic map(
-      LOC => "SLICE_X46Y0",
+      LOC => "SLICE_X44Y0",
       INIT => '0'
     )
     port map (
@@ -3406,7 +3406,7 @@ begin
     );
   RESET_IBUF_shift3 : X_FF
     generic map(
-      LOC => "SLICE_X42Y2",
+      LOC => "SLICE_X45Y3",
       INIT => '0'
     )
     port map (
@@ -3419,7 +3419,7 @@ begin
     );
   RESET_IBUF_shift4 : X_FF
     generic map(
-      LOC => "SLICE_X42Y2",
+      LOC => "SLICE_X45Y3",
       INIT => '0'
     )
     port map (
@@ -3433,7 +3433,7 @@ begin
   SER_COUNT_Mcount_TY_xor_1_11 : X_LUT4
     generic map(
       INIT => X"0FF0",
-      LOC => "SLICE_X52Y1"
+      LOC => "SLICE_X50Y0"
     )
     port map (
       ADR0 => VCC,
@@ -3444,7 +3444,7 @@ begin
     );
   SER_COUNT_TY_1 : X_FF
     generic map(
-      LOC => "SLICE_X52Y1",
+      LOC => "SLICE_X50Y0",
       INIT => '0'
     )
     port map (
@@ -3457,7 +3457,7 @@ begin
     );
   SER_COUNT_TY_0 : X_FF
     generic map(
-      LOC => "SLICE_X52Y1",
+      LOC => "SLICE_X50Y0",
       INIT => '0'
     )
     port map (
@@ -3490,29 +3490,29 @@ begin
       I => DES_RD_or0000_0,
       O => DES_RD_FFY_SET
     );
-  SER_r1_input : X_FF
+  SER_R0_INPUT : X_FF
     generic map(
-      LOC => "SLICE_X44Y0",
+      LOC => "SLICE_X47Y1",
       INIT => '0'
     )
     port map (
-      I => SER_r1_input_DYMUX_1204,
+      I => SER_R0_INPUT_DYMUX_1204,
       CE => VCC,
-      CLK => SER_r1_input_CLKINV_1202,
+      CLK => SER_R0_INPUT_CLKINV_1202,
       SET => GND,
       RST => GND,
-      O => SER_r1_input_651
+      O => SER_R0_INPUT_650
     );
   DES_RD_0_not00001 : X_LUT4
     generic map(
-      INIT => X"FFF7",
+      INIT => X"EFFF",
       LOC => "SLICE_X35Y1"
     )
     port map (
-      ADR0 => DES_U5_TY(3),
-      ADR1 => DES_U5_TY(1),
-      ADR2 => DES_U5_TY(2),
-      ADR3 => DES_U5_TY(0),
+      ADR0 => DES_U5_TY(2),
+      ADR1 => DES_U5_TY(0),
+      ADR2 => DES_U5_TY(3),
+      ADR3 => DES_U5_TY(1),
       O => DES_RD_0_not0000
     );
   DES_U5_TY_0 : X_FF
@@ -3530,14 +3530,14 @@ begin
     );
   DES_U5_Mcount_TY_xor_1_11 : X_LUT4
     generic map(
-      INIT => X"55AA",
+      INIT => X"0FF0",
       LOC => "SLICE_X35Y1"
     )
     port map (
-      ADR0 => DES_U5_TY(1),
+      ADR0 => VCC,
       ADR1 => VCC,
-      ADR2 => VCC,
-      ADR3 => DES_U5_TY(0),
+      ADR2 => DES_U5_TY(0),
+      ADR3 => DES_U5_TY(1),
       O => DES_Result_1_1
     );
   DES_U5_TY_1 : X_FF
@@ -3555,19 +3555,19 @@ begin
     );
   SER_T_RESET1 : X_LUT4
     generic map(
-      INIT => X"3030",
-      LOC => "SLICE_X51Y3"
+      INIT => X"2222",
+      LOC => "SLICE_X51Y0"
     )
     port map (
-      ADR0 => VCC,
-      ADR1 => SER_r1_input_651,
-      ADR2 => SER_r0_input_650,
+      ADR0 => SER_R0_INPUT_650,
+      ADR1 => SER_R1_INPUT_651,
+      ADR2 => VCC,
       ADR3 => VCC,
       O => SER_T_RESET
     );
   BG_CLK_SEL : X_FF
     generic map(
-      LOC => "SLICE_X46Y5",
+      LOC => "SLICE_X50Y4",
       INIT => '0'
     )
     port map (
@@ -3580,7 +3580,7 @@ begin
     );
   BG_CLK_SEL_FFX_SETOR : X_BUF
     generic map(
-      LOC => "SLICE_X46Y5",
+      LOC => "SLICE_X50Y4",
       PATHPULSE => 658 ps
     )
     port map (
@@ -3589,7 +3589,7 @@ begin
     );
   BG_CLK_SEL_FFX_RSTAND : X_BUF
     generic map(
-      LOC => "SLICE_X46Y5",
+      LOC => "SLICE_X50Y4",
       PATHPULSE => 658 ps
     )
     port map (
@@ -3604,8 +3604,8 @@ begin
     port map (
       ADR0 => VCC,
       ADR1 => VCC,
-      ADR2 => DES_U4_TY(1),
-      ADR3 => DES_U4_TY(0),
+      ADR2 => DES_U4_TY(0),
+      ADR3 => DES_U4_TY(1),
       O => DES_Result(1)
     );
   DES_U4_TY_1 : X_FF
@@ -3636,19 +3636,19 @@ begin
     );
   BG_U1_Mcount_TY_xor_1_11 : X_LUT4
     generic map(
-      INIT => X"6666",
-      LOC => "SLICE_X49Y0"
+      INIT => X"0FF0",
+      LOC => "SLICE_X46Y3"
     )
     port map (
-      ADR0 => BG_U1_TY(1),
-      ADR1 => BG_U1_TY(0),
-      ADR2 => VCC,
-      ADR3 => VCC,
+      ADR0 => VCC,
+      ADR1 => VCC,
+      ADR2 => BG_U1_TY(1),
+      ADR3 => BG_U1_TY(0),
       O => BG_Result(1)
     );
   BG_U1_TY_1 : X_FF
     generic map(
-      LOC => "SLICE_X49Y0",
+      LOC => "SLICE_X46Y3",
       INIT => '0'
     )
     port map (
@@ -3661,7 +3661,7 @@ begin
     );
   BG_U1_TY_0 : X_FF
     generic map(
-      LOC => "SLICE_X49Y0",
+      LOC => "SLICE_X46Y3",
       INIT => '0'
     )
     port map (
@@ -3674,44 +3674,44 @@ begin
     );
   BG_T_and00011 : X_LUT4
     generic map(
-      INIT => X"3332",
-      LOC => "SLICE_X46Y2"
+      INIT => X"0F0E",
+      LOC => "SLICE_X50Y2"
     )
     port map (
-      ADR0 => SEL_1_IBUF_658,
-      ADR1 => RESET_IBUF_592,
-      ADR2 => SEL_0_IBUF_659,
-      ADR3 => SEL_2_IBUF_656,
+      ADR0 => SEL_2_IBUF_656,
+      ADR1 => SEL_1_IBUF_658,
+      ADR2 => RESET_IBUF_592,
+      ADR3 => SEL_0_IBUF_659,
       O => BG_T_and0001
     );
   BG_CLK_SEL_and00001 : X_LUT4
     generic map(
-      INIT => X"0004",
-      LOC => "SLICE_X46Y2"
+      INIT => X"0010",
+      LOC => "SLICE_X50Y2"
     )
     port map (
       ADR0 => SEL_2_IBUF_656,
-      ADR1 => CLK_IBUF1,
-      ADR2 => SEL_0_IBUF_659,
-      ADR3 => SEL_1_IBUF_658,
+      ADR1 => SEL_1_IBUF_658,
+      ADR2 => CLK_IBUF1,
+      ADR3 => SEL_0_IBUF_659,
       O => BG_CLK_SEL_and0000
     );
   SER_RD_or0000_SW0 : X_LUT4
     generic map(
       INIT => X"0002",
-      LOC => "SLICE_X50Y0"
+      LOC => "SLICE_X52Y0"
     )
     port map (
       ADR0 => SER_COUNT_TY(1),
-      ADR1 => SER_T_RESET_0,
-      ADR2 => SER_COUNT_TY(0),
-      ADR3 => SER_RD_663,
+      ADR1 => SER_RD_663,
+      ADR2 => SER_T_RESET_0,
+      ADR3 => SER_COUNT_TY(0),
       O => N2_pack_1
     );
   SER_RD_or0000 : X_LUT4
     generic map(
       INIT => X"AEAA",
-      LOC => "SLICE_X50Y0"
+      LOC => "SLICE_X52Y0"
     )
     port map (
       ADR0 => RESET_IBUF_592,
@@ -3720,115 +3720,102 @@ begin
       ADR3 => N2,
       O => SER_RD_or0000_1398
     );
-  SER_r0_input : X_FF
-    generic map(
-      LOC => "SLICE_X44Y1",
-      INIT => '0'
-    )
-    port map (
-      I => SER_r0_input_DYMUX_1406,
-      CE => VCC,
-      CLK => SER_r0_input_CLKINV_1404,
-      SET => GND,
-      RST => GND,
-      O => SER_r0_input_650
-    );
   DES_T_END11 : X_LUT4
     generic map(
-      INIT => X"000A",
+      INIT => X"0404",
       LOC => "SLICE_X35Y0"
     )
     port map (
-      ADR0 => DES_U5_TY(3),
-      ADR1 => VCC,
-      ADR2 => DES_U5_TY(2),
-      ADR3 => DES_U5_TY(0),
+      ADR0 => DES_U5_TY(2),
+      ADR1 => DES_U5_TY(3),
+      ADR2 => DES_U5_TY(0),
+      ADR3 => VCC,
       O => DES_N01_pack_1
     );
   DES_T_END1 : X_LUT4
     generic map(
-      INIT => X"1010",
+      INIT => X"0030",
       LOC => "SLICE_X35Y0"
     )
     port map (
-      ADR0 => DES_U5_TY(1),
+      ADR0 => VCC,
       ADR1 => DES_RD_639,
       ADR2 => DES_N01,
-      ADR3 => VCC,
+      ADR3 => DES_U5_TY(1),
       O => DES_T_END
     );
   DES_RD_or00001 : X_LUT4
     generic map(
-      INIT => X"F0F8",
+      INIT => X"F4F0",
       LOC => "SLICE_X37Y1"
     )
     port map (
-      ADR0 => DES_U5_TY(1),
+      ADR0 => DES_T_START_0,
       ADR1 => DES_N01,
       ADR2 => RESET_IBUF_592,
-      ADR3 => DES_T_START_0,
+      ADR3 => DES_U5_TY(1),
       O => DES_RD_or0000
     );
   DES_U2_T_0 : X_FF
     generic map(
-      LOC => "SLICE_X28Y0",
+      LOC => "SLICE_X34Y0",
       INIT => '0'
     )
     port map (
-      I => DES_U2_T_1_DYMUX_1455,
+      I => DES_U2_T_1_DYMUX_1446,
       CE => VCC,
-      CLK => DES_U2_T_1_CLKINV_1452,
+      CLK => DES_U2_T_1_CLKINV_1443,
       SET => GND,
-      RST => DES_U2_T_1_SRINV_1453,
+      RST => DES_U2_T_1_SRINV_1444,
       O => DES_U2_T(0)
     );
   DES_U2_T_1 : X_FF
     generic map(
-      LOC => "SLICE_X28Y0",
+      LOC => "SLICE_X34Y0",
       INIT => '0'
     )
     port map (
-      I => DES_U2_T_1_DXMUX_1463,
+      I => DES_U2_T_1_DXMUX_1454,
       CE => VCC,
-      CLK => DES_U2_T_1_CLKINV_1452,
+      CLK => DES_U2_T_1_CLKINV_1443,
       SET => GND,
-      RST => DES_U2_T_1_SRINV_1453,
+      RST => DES_U2_T_1_SRINV_1444,
       O => DES_U2_T(1)
     );
   DES_U2_T_2 : X_FF
     generic map(
-      LOC => "SLICE_X24Y0",
+      LOC => "SLICE_X30Y0",
       INIT => '0'
     )
     port map (
-      I => DES_U2_T_3_DYMUX_1479,
+      I => DES_U2_T_3_DYMUX_1470,
       CE => VCC,
-      CLK => DES_U2_T_3_CLKINV_1476,
+      CLK => DES_U2_T_3_CLKINV_1467,
       SET => GND,
-      RST => DES_U2_T_3_SRINV_1477,
+      RST => DES_U2_T_3_SRINV_1468,
       O => DES_U2_T(2)
     );
   DES_U2_T_3 : X_FF
     generic map(
-      LOC => "SLICE_X24Y0",
+      LOC => "SLICE_X30Y0",
       INIT => '0'
     )
     port map (
-      I => DES_U2_T_3_DXMUX_1487,
+      I => DES_U2_T_3_DXMUX_1478,
       CE => VCC,
-      CLK => DES_U2_T_3_CLKINV_1476,
+      CLK => DES_U2_T_3_CLKINV_1467,
       SET => GND,
-      RST => DES_U2_T_3_SRINV_1477,
+      RST => DES_U2_T_3_SRINV_1468,
       O => DES_U2_T(3)
     );
   DES_U3_not00001_INV_0 : X_LUT4
     generic map(
-      INIT => X"5555",
-      LOC => "SLICE_X50Y1"
+      INIT => X"3333",
+      LOC => "SLICE_X44Y2"
     )
     port map (
-      ADR0 => RX_IBUF_668,
-      ADR1 => VCC,
+      ADR0 => VCC,
+      ADR1 => RX_IBUF_668,
       ADR2 => VCC,
       ADR3 => VCC,
       O => DES_U3_not0000
@@ -3839,11 +3826,11 @@ begin
       INIT => '0'
     )
     port map (
-      I => DES_U2_T_5_DYMUX_1515,
+      I => DES_U2_T_5_DYMUX_1506,
       CE => VCC,
-      CLK => DES_U2_T_5_CLKINV_1512,
+      CLK => DES_U2_T_5_CLKINV_1503,
       SET => GND,
-      RST => DES_U2_T_5_SRINV_1513,
+      RST => DES_U2_T_5_SRINV_1504,
       O => DES_U2_T(4)
     );
   DES_U2_T_5 : X_FF
@@ -3852,16 +3839,29 @@ begin
       INIT => '0'
     )
     port map (
-      I => DES_U2_T_5_DXMUX_1523,
+      I => DES_U2_T_5_DXMUX_1514,
       CE => VCC,
-      CLK => DES_U2_T_5_CLKINV_1512,
+      CLK => DES_U2_T_5_CLKINV_1503,
       SET => GND,
-      RST => DES_U2_T_5_SRINV_1513,
+      RST => DES_U2_T_5_SRINV_1504,
       O => DES_U2_T(5)
+    );
+  SER_R1_INPUT : X_FF
+    generic map(
+      LOC => "SLICE_X46Y1",
+      INIT => '0'
+    )
+    port map (
+      I => SER_R1_INPUT_DYMUX_1526,
+      CE => VCC,
+      CLK => SER_R1_INPUT_CLKINV_1524,
+      SET => GND,
+      RST => GND,
+      O => SER_R1_INPUT_651
     );
   SER_RD : X_LATCHE
     generic map(
-      LOC => "SLICE_X51Y0",
+      LOC => "SLICE_X52Y1",
       INIT => '1'
     )
     port map (
@@ -3874,7 +3874,7 @@ begin
     );
   SER_RD_FFY_SETOR : X_BUF
     generic map(
-      LOC => "SLICE_X51Y0",
+      LOC => "SLICE_X52Y1",
       PATHPULSE => 658 ps
     )
     port map (
@@ -3883,7 +3883,7 @@ begin
     );
   DES_U2_T_6 : X_FF
     generic map(
-      LOC => "SLICE_X15Y1",
+      LOC => "SLICE_X16Y0",
       INIT => '0'
     )
     port map (
@@ -3896,7 +3896,7 @@ begin
     );
   DES_U2_T_7 : X_FF
     generic map(
-      LOC => "SLICE_X15Y1",
+      LOC => "SLICE_X16Y0",
       INIT => '0'
     )
     port map (
@@ -3909,38 +3909,38 @@ begin
     );
   BG_Madd_T_addsub0000_lut_9_Q : X_LUT4
     generic map(
-      INIT => X"66A6",
+      INIT => X"6A66",
       LOC => "SLICE_X48Y0"
     )
     port map (
       ADR0 => BG_T(9),
       ADR1 => SEL_2_IBUF_656,
-      ADR2 => SEL_0_IBUF_659,
-      ADR3 => SEL_1_IBUF_658,
+      ADR2 => SEL_1_IBUF_658,
+      ADR3 => SEL_0_IBUF_659,
       O => BG_Madd_T_addsub0000_lut(9)
     );
   BG_Madd_T_addsub0000_lut_8_Q : X_LUT4
     generic map(
-      INIT => X"6A6A",
+      INIT => X"66CC",
       LOC => "SLICE_X48Y0"
     )
     port map (
-      ADR0 => BG_T(8),
-      ADR1 => SEL_2_IBUF_656,
-      ADR2 => SEL_0_IBUF_659,
-      ADR3 => VCC,
+      ADR0 => SEL_2_IBUF_656,
+      ADR1 => BG_T(8),
+      ADR2 => VCC,
+      ADR3 => SEL_0_IBUF_659,
       O => BG_Madd_T_addsub0000_lut(8)
     );
   BG_Madd_T_addsub0000_lut_11_Q : X_LUT4
     generic map(
-      INIT => X"6AA6",
+      INIT => X"6CC6",
       LOC => "SLICE_X48Y1"
     )
     port map (
-      ADR0 => BG_T(11),
-      ADR1 => SEL_1_IBUF_658,
-      ADR2 => SEL_0_IBUF_659,
-      ADR3 => SEL_2_IBUF_656,
+      ADR0 => SEL_1_IBUF_658,
+      ADR1 => BG_T(11),
+      ADR2 => SEL_2_IBUF_656,
+      ADR3 => SEL_0_IBUF_659,
       O => BG_Madd_T_addsub0000_lut(11)
     );
   BG_Madd_T_addsub0000_lut_10_Q : X_LUT4
@@ -3951,44 +3951,44 @@ begin
     port map (
       ADR0 => SEL_1_IBUF_658,
       ADR1 => BG_T(10),
-      ADR2 => SEL_0_IBUF_659,
-      ADR3 => SEL_2_IBUF_656,
+      ADR2 => SEL_2_IBUF_656,
+      ADR3 => SEL_0_IBUF_659,
       O => BG_Madd_T_addsub0000_lut(10)
     );
   BG_Madd_T_addsub0000_lut_13_Q : X_LUT4
     generic map(
-      INIT => X"AA6A",
+      INIT => X"C6CC",
       LOC => "SLICE_X48Y2"
     )
     port map (
-      ADR0 => BG_T(13),
-      ADR1 => SEL_2_IBUF_656,
-      ADR2 => SEL_0_IBUF_659,
-      ADR3 => SEL_1_IBUF_658,
+      ADR0 => SEL_2_IBUF_656,
+      ADR1 => BG_T(13),
+      ADR2 => SEL_1_IBUF_658,
+      ADR3 => SEL_0_IBUF_659,
       O => BG_Madd_T_addsub0000_lut(13)
     );
   BG_Madd_T_addsub0000_lut_12_Q : X_LUT4
     generic map(
-      INIT => X"C69C",
+      INIT => X"C96C",
       LOC => "SLICE_X48Y2"
     )
     port map (
       ADR0 => SEL_1_IBUF_658,
       ADR1 => BG_T(12),
-      ADR2 => SEL_0_IBUF_659,
-      ADR3 => SEL_2_IBUF_656,
+      ADR2 => SEL_2_IBUF_656,
+      ADR3 => SEL_0_IBUF_659,
       O => BG_Madd_T_addsub0000_lut(12)
     );
   BG_Madd_T_addsub0000_lut_15_Q : X_LUT4
     generic map(
-      INIT => X"956A",
+      INIT => X"965A",
       LOC => "SLICE_X48Y3"
     )
     port map (
       ADR0 => BG_T(15),
       ADR1 => SEL_1_IBUF_658,
-      ADR2 => SEL_0_IBUF_659,
-      ADR3 => SEL_2_IBUF_656,
+      ADR2 => SEL_2_IBUF_656,
+      ADR3 => SEL_0_IBUF_659,
       O => BG_Madd_T_addsub0000_lut(15)
     );
   BUS_IN_0_IFF_IMUX : X_BUF
@@ -4002,7 +4002,7 @@ begin
     );
   BUS_IN_1_IFF_IMUX : X_BUF
     generic map(
-      LOC => "PAD337",
+      LOC => "PAD336",
       PATHPULSE => 658 ps
     )
     port map (
@@ -4011,7 +4011,7 @@ begin
     );
   BUS_IN_2_IFF_IMUX : X_BUF
     generic map(
-      LOC => "PAD336",
+      LOC => "PAD327",
       PATHPULSE => 658 ps
     )
     port map (
@@ -4047,7 +4047,7 @@ begin
     );
   RX_IFF_IMUX : X_BUF
     generic map(
-      LOC => "PAD325",
+      LOC => "PAD338",
       PATHPULSE => 658 ps
     )
     port map (
@@ -4417,7 +4417,7 @@ begin
     );
   BUS_OUT_7_OUTPUT_OFF_O1INV : X_BUF
     generic map(
-      LOC => "PAD338",
+      LOC => "PAD337",
       PATHPULSE => 658 ps
     )
     port map (
@@ -4426,7 +4426,7 @@ begin
     );
   BUS_OUT_7_OUTPUT_OFF_OMUX : X_BUF
     generic map(
-      LOC => "PAD338",
+      LOC => "PAD337",
       PATHPULSE => 658 ps
     )
     port map (
@@ -4435,7 +4435,7 @@ begin
     );
   DES_U1_Y_7 : X_FF
     generic map(
-      LOC => "PAD338",
+      LOC => "PAD337",
       INIT => '0'
     )
     port map (
@@ -4448,7 +4448,7 @@ begin
     );
   BUS_OUT_7_OUTPUT_OFF_OFF1_RSTAND : X_BUF
     generic map(
-      LOC => "PAD338",
+      LOC => "PAD337",
       PATHPULSE => 658 ps
     )
     port map (
@@ -4457,7 +4457,7 @@ begin
     );
   BUS_OUT_7_OUTPUT_OTCLK1INV : X_BUF
     generic map(
-      LOC => "PAD338",
+      LOC => "PAD337",
       PATHPULSE => 658 ps
     )
     port map (
@@ -4475,7 +4475,7 @@ begin
     );
   RESET_IFF_IMUX : X_BUF
     generic map(
-      LOC => "PAD390",
+      LOC => "PAD381",
       PATHPULSE => 658 ps
     )
     port map (
@@ -4484,67 +4484,67 @@ begin
     );
   SER_RD_0_not00001 : X_LUT4
     generic map(
-      INIT => X"FFBF",
-      LOC => "SLICE_X51Y1"
+      INIT => X"EFFF",
+      LOC => "SLICE_X53Y0"
     )
     port map (
-      ADR0 => SER_COUNT_TY(2),
-      ADR1 => SER_COUNT_TY(1),
+      ADR0 => SER_COUNT_TY(0),
+      ADR1 => SER_COUNT_TY(2),
       ADR2 => SER_COUNT_TY(3),
-      ADR3 => SER_COUNT_TY(0),
+      ADR3 => SER_COUNT_TY(1),
       O => SER_RD_0_not00001_2170
     );
   BG_CLK_SEL_or00001 : X_LUT4
     generic map(
       INIT => X"AAAB",
-      LOC => "SLICE_X47Y3"
+      LOC => "SLICE_X51Y3"
     )
     port map (
       ADR0 => RESET_IBUF_592,
       ADR1 => SEL_0_IBUF_659,
-      ADR2 => CLK_IBUF1,
-      ADR3 => SEL_1_IBUF_658,
+      ADR2 => SEL_1_IBUF_658,
+      ADR3 => CLK_IBUF1,
       O => BG_CLK_SEL_or00001_2196
     );
   RESET_IBUF_rt : X_LUT4
     generic map(
-      INIT => X"F0F0",
-      LOC => "SLICE_X47Y3"
+      INIT => X"AAAA",
+      LOC => "SLICE_X51Y3"
     )
     port map (
-      ADR0 => VCC,
+      ADR0 => RESET_IBUF_592,
       ADR1 => VCC,
-      ADR2 => RESET_IBUF_592,
+      ADR2 => VCC,
       ADR3 => VCC,
       O => RESET_IBUF_rt_2206
     );
   BG_CLK_SEL_cmp_eq000042 : X_LUT4
     generic map(
       INIT => X"0001",
-      LOC => "SLICE_X49Y2"
+      LOC => "SLICE_X49Y3"
     )
     port map (
       ADR0 => BG_T(11),
-      ADR1 => BG_T(8),
+      ADR1 => BG_T(9),
       ADR2 => BG_T(10),
-      ADR3 => BG_T(9),
+      ADR3 => BG_T(8),
       O => BG_CLK_SEL_cmp_eq000042_pack_1
     );
   BG_T_mux0001_0_1 : X_LUT4
     generic map(
       INIT => X"7F00",
-      LOC => "SLICE_X49Y2"
+      LOC => "SLICE_X49Y3"
     )
     port map (
-      ADR0 => BG_CLK_SEL_cmp_eq000019_608,
-      ADR1 => BG_CLK_SEL_cmp_eq000042_607,
-      ADR2 => BG_CLK_SEL_cmp_eq00007_609,
+      ADR0 => BG_CLK_SEL_cmp_eq00007_609,
+      ADR1 => BG_CLK_SEL_cmp_eq000019_608,
+      ADR2 => BG_CLK_SEL_cmp_eq000042_607,
       ADR3 => BG_T_addsub0000(19),
       O => BG_T_mux0001(0)
     );
   BG_T_19 : X_FF
     generic map(
-      LOC => "SLICE_X49Y2",
+      LOC => "SLICE_X49Y3",
       INIT => '0'
     )
     port map (
@@ -4573,10 +4573,10 @@ begin
       LOC => "SLICE_X49Y5"
     )
     port map (
-      ADR0 => BG_CLK_SEL_cmp_eq000019_608,
-      ADR1 => BG_CLK_SEL_cmp_eq000042_607,
+      ADR0 => BG_CLK_SEL_cmp_eq000042_607,
+      ADR1 => BG_CLK_SEL_cmp_eq00007_609,
       ADR2 => BG_T_addsub0000(18),
-      ADR3 => BG_CLK_SEL_cmp_eq00007_609,
+      ADR3 => BG_CLK_SEL_cmp_eq000019_608,
       O => BG_T_mux0001(1)
     );
   BG_T_18 : X_FF
@@ -4594,43 +4594,43 @@ begin
     );
   BG_CLK_SEL_cmp_eq00007 : X_LUT4
     generic map(
-      INIT => X"0800",
-      LOC => "SLICE_X46Y4"
+      INIT => X"0080",
+      LOC => "SLICE_X50Y5"
     )
     port map (
-      ADR0 => BG_T(19),
+      ADR0 => BG_T(17),
       ADR1 => BG_T(18),
-      ADR2 => BG_T(16),
-      ADR3 => BG_T(17),
+      ADR2 => BG_T(19),
+      ADR3 => BG_T(16),
       O => BG_CLK_SEL_cmp_eq00007_pack_1
     );
   BG_CLK_SEL_cmp_eq000044 : X_LUT4
     generic map(
       INIT => X"A000",
-      LOC => "SLICE_X46Y4"
+      LOC => "SLICE_X50Y5"
     )
     port map (
       ADR0 => BG_CLK_SEL_cmp_eq000019_608,
       ADR1 => VCC,
-      ADR2 => BG_CLK_SEL_cmp_eq000042_607,
-      ADR3 => BG_CLK_SEL_cmp_eq00007_609,
+      ADR2 => BG_CLK_SEL_cmp_eq00007_609,
+      ADR3 => BG_CLK_SEL_cmp_eq000042_607,
       O => BG_CLK_SEL_cmp_eq0000
     );
   SER_COUNT_Mcount_TY_xor_2_11 : X_LUT4
     generic map(
-      INIT => X"5AAA",
-      LOC => "SLICE_X52Y0"
+      INIT => X"5AF0",
+      LOC => "SLICE_X53Y1"
     )
     port map (
-      ADR0 => SER_COUNT_TY(2),
+      ADR0 => SER_COUNT_TY(0),
       ADR1 => VCC,
-      ADR2 => SER_COUNT_TY(1),
-      ADR3 => SER_COUNT_TY(0),
+      ADR2 => SER_COUNT_TY(2),
+      ADR3 => SER_COUNT_TY(1),
       O => SER_Result(2)
     );
   SER_COUNT_TY_2 : X_FF
     generic map(
-      LOC => "SLICE_X52Y0",
+      LOC => "SLICE_X53Y1",
       INIT => '0'
     )
     port map (
@@ -4643,19 +4643,19 @@ begin
     );
   SER_COUNT_Mcount_TY_xor_3_11 : X_LUT4
     generic map(
-      INIT => X"6CCC",
-      LOC => "SLICE_X52Y0"
+      INIT => X"78F0",
+      LOC => "SLICE_X53Y1"
     )
     port map (
-      ADR0 => SER_COUNT_TY(2),
-      ADR1 => SER_COUNT_TY(3),
-      ADR2 => SER_COUNT_TY(1),
-      ADR3 => SER_COUNT_TY(0),
+      ADR0 => SER_COUNT_TY(0),
+      ADR1 => SER_COUNT_TY(2),
+      ADR2 => SER_COUNT_TY(3),
+      ADR3 => SER_COUNT_TY(1),
       O => SER_Result(3)
     );
   SER_COUNT_TY_3 : X_FF
     generic map(
-      LOC => "SLICE_X52Y0",
+      LOC => "SLICE_X53Y1",
       INIT => '0'
     )
     port map (
@@ -4668,19 +4668,19 @@ begin
     );
   DES_U3_Y11 : X_LUT4
     generic map(
-      INIT => X"F000",
-      LOC => "SLICE_X43Y2"
+      INIT => X"A0A0",
+      LOC => "SLICE_X45Y2"
     )
     port map (
-      ADR0 => VCC,
+      ADR0 => RESET_IBUF_shift4_645,
       ADR1 => VCC,
       ADR2 => DES_U3_Y1_637,
-      ADR3 => RESET_IBUF_shift4_645,
+      ADR3 => VCC,
       O => DES_U3_Y11_2355
     );
   DES_U3_Y : X_FF
     generic map(
-      LOC => "SLICE_X43Y2",
+      LOC => "SLICE_X45Y2",
       INIT => '0'
     )
     port map (
@@ -4693,7 +4693,7 @@ begin
     );
   DES_U3_Y_FFY_RSTAND : X_BUF
     generic map(
-      LOC => "SLICE_X43Y2",
+      LOC => "SLICE_X45Y2",
       PATHPULSE => 658 ps
     )
     port map (
@@ -4702,19 +4702,19 @@ begin
     );
   SER_REG_PS_Z_0_mux00011 : X_LUT4
     generic map(
-      INIT => X"00CC",
-      LOC => "SLICE_X47Y0"
+      INIT => X"00AA",
+      LOC => "SLICE_X45Y1"
     )
     port map (
-      ADR0 => VCC,
-      ADR1 => SER_REG_PS_Z(1),
+      ADR0 => SER_REG_PS_Z(1),
+      ADR1 => VCC,
       ADR2 => VCC,
       ADR3 => SER_T_LOAD_596,
       O => SER_REG_PS_Z_0_mux0001
     );
   SER_REG_PS_Z_0 : X_FF
     generic map(
-      LOC => "SLICE_X47Y0",
+      LOC => "SLICE_X45Y1",
       INIT => '1'
     )
     port map (
@@ -4727,19 +4727,19 @@ begin
     );
   SER_REG_PS_Z_1_mux00011 : X_LUT4
     generic map(
-      INIT => X"EE44",
-      LOC => "SLICE_X47Y0"
+      INIT => X"AAF0",
+      LOC => "SLICE_X45Y1"
     )
     port map (
-      ADR0 => SER_T_LOAD_596,
-      ADR1 => SER_REG_PS_Z(2),
-      ADR2 => VCC,
-      ADR3 => BUS_IN_0_IBUF_687,
+      ADR0 => BUS_IN_0_IBUF_687,
+      ADR1 => VCC,
+      ADR2 => SER_REG_PS_Z(2),
+      ADR3 => SER_T_LOAD_596,
       O => SER_REG_PS_Z_1_mux0001
     );
   SER_REG_PS_Z_1 : X_FF
     generic map(
-      LOC => "SLICE_X47Y0",
+      LOC => "SLICE_X45Y1",
       INIT => '1'
     )
     port map (
@@ -4753,7 +4753,7 @@ begin
   SER_REG_PS_Z_2_mux00011 : X_LUT4
     generic map(
       INIT => X"CCAA",
-      LOC => "SLICE_X44Y2"
+      LOC => "SLICE_X44Y1"
     )
     port map (
       ADR0 => SER_REG_PS_Z(3),
@@ -4764,7 +4764,7 @@ begin
     );
   SER_REG_PS_Z_2 : X_FF
     generic map(
-      LOC => "SLICE_X44Y2",
+      LOC => "SLICE_X44Y1",
       INIT => '1'
     )
     port map (
@@ -4777,19 +4777,19 @@ begin
     );
   SER_REG_PS_Z_3_mux00011 : X_LUT4
     generic map(
-      INIT => X"F0AA",
-      LOC => "SLICE_X44Y2"
+      INIT => X"F0CC",
+      LOC => "SLICE_X44Y1"
     )
     port map (
-      ADR0 => SER_REG_PS_Z(4),
-      ADR1 => VCC,
+      ADR0 => VCC,
+      ADR1 => SER_REG_PS_Z(4),
       ADR2 => BUS_IN_2_IBUF_689,
       ADR3 => SER_T_LOAD_596,
       O => SER_REG_PS_Z_3_mux0001
     );
   SER_REG_PS_Z_3 : X_FF
     generic map(
-      LOC => "SLICE_X44Y2",
+      LOC => "SLICE_X44Y1",
       INIT => '1'
     )
     port map (
@@ -4803,7 +4803,7 @@ begin
   SER_REG_PS_Z_4_mux00011 : X_LUT4
     generic map(
       INIT => X"CCAA",
-      LOC => "SLICE_X45Y0"
+      LOC => "SLICE_X42Y0"
     )
     port map (
       ADR0 => SER_REG_PS_Z(5),
@@ -4814,7 +4814,7 @@ begin
     );
   SER_REG_PS_Z_4 : X_FF
     generic map(
-      LOC => "SLICE_X45Y0",
+      LOC => "SLICE_X42Y0",
       INIT => '1'
     )
     port map (
@@ -4827,19 +4827,19 @@ begin
     );
   SER_REG_PS_Z_5_mux00011 : X_LUT4
     generic map(
-      INIT => X"F0AA",
-      LOC => "SLICE_X45Y0"
+      INIT => X"AAF0",
+      LOC => "SLICE_X42Y0"
     )
     port map (
-      ADR0 => SER_REG_PS_Z(6),
+      ADR0 => BUS_IN_4_IBUF_691,
       ADR1 => VCC,
-      ADR2 => BUS_IN_4_IBUF_691,
+      ADR2 => SER_REG_PS_Z(6),
       ADR3 => SER_T_LOAD_596,
       O => SER_REG_PS_Z_5_mux0001
     );
   SER_REG_PS_Z_5 : X_FF
     generic map(
-      LOC => "SLICE_X45Y0",
+      LOC => "SLICE_X42Y0",
       INIT => '1'
     )
     port map (
@@ -4852,7 +4852,7 @@ begin
     );
   DES_U3_Mshreg_Y_SRL16E_CE_WSGAND : X_BUF
     generic map(
-      LOC => "SLICE_X42Y3",
+      LOC => "SLICE_X44Y3",
       PATHPULSE => 658 ps
     )
     port map (
@@ -4861,7 +4861,7 @@ begin
     );
   CLK_R_OUTPUT_OFF_OMUX : X_BUF
     generic map(
-      LOC => "PAD324",
+      LOC => "PAD326",
       PATHPULSE => 658 ps
     )
     port map (
@@ -4879,7 +4879,7 @@ begin
     );
   TX_OUTPUT_OFF_OMUX : X_BUF
     generic map(
-      LOC => "PAD330",
+      LOC => "PAD325",
       PATHPULSE => 658 ps
     )
     port map (
@@ -4888,7 +4888,7 @@ begin
     );
   TX_READY_OUTPUT_OFF_OMUX : X_BUF
     generic map(
-      LOC => "PAD326",
+      LOC => "PAD322",
       PATHPULSE => 658 ps
     )
     port map (
@@ -4907,7 +4907,7 @@ begin
   SER_RD_0_not0000_F_X_LUT4 : X_LUT4
     generic map(
       INIT => X"FFFF",
-      LOC => "SLICE_X51Y1"
+      LOC => "SLICE_X53Y0"
     )
     port map (
       ADR0 => VCC,
@@ -4915,10 +4915,6 @@ begin
       ADR2 => VCC,
       ADR3 => VCC,
       O => SER_RD_0_not0000_F
-    );
-  NlwBlock_UART_VCC : X_ONE
-    port map (
-      O => VCC
     );
   NlwBlock_UART_GND : X_ZERO
     port map (
@@ -4928,6 +4924,10 @@ begin
     port map (
       I => RX_READY_OUTPUT_OTCLK1INVNOT,
       O => NlwInverterSignal_DES_RD_1_CLK
+    );
+  NlwBlock_UART_VCC : X_ONE
+    port map (
+      O => VCC
     );
   NlwInverterBlock_DES_RD_CLK : X_INV
     port map (

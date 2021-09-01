@@ -39,8 +39,8 @@ architecture rtl of SERIALIZER is
 	  signal T_READY: std_logic;
 	  signal RD: std_logic;
 	  signal OUT_C16: std_logic_vector(3 downto 0);
-	  signal r0_input: std_logic;
-		signal r1_input : std_logic;
+	  signal R0_INPUT: std_logic;
+	  signal R1_INPUT : std_logic;
 	  
 	  
 begin
@@ -71,15 +71,15 @@ begin
 		end if; 
 	end process; 
 	
-	p_rising_edge_detector : process(CLK)
+	EDGE_DETECTOR : process(CLK)
 	begin
 	 if(rising_edge(CLK)) then
-		 r0_input           <= T_LOAD;
-		 r1_input           <= r0_input;
+		 R0_INPUT           <= T_LOAD;
+		 R1_INPUT           <= R0_INPUT;
 	  end if;
-	end process p_rising_edge_detector;
+	end process EDGE_DETECTOR;
 	
-	T_RESET <= r0_input and not r1_input;
+	T_RESET <= R0_INPUT and not R1_INPUT;
 	
 	
 	latchSR : process(T_READY,T_RESET, RESET)

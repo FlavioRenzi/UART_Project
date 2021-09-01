@@ -2,15 +2,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
-
 entity DESERIALIZER is
 port( 
      RESET: in std_logic;
@@ -21,7 +12,6 @@ port(
      );
 end DESERIALIZER;
 architecture STRUCT of DESERIALIZER is
-		constant K: integer :=3;
      component REG_PP_8_BIT is
 			port(
 				  ENABLE: in std_logic; 
@@ -108,7 +98,7 @@ architecture STRUCT of DESERIALIZER is
 	T_END <= OUT_C16(3) and (not  OUT_C16(2)) and  not OUT_C16(1) and  not OUT_C16(0) and not RD;
 	T_READY <= OUT_C16(3) and (not  OUT_C16(2)) and OUT_C16(1) and (not OUT_C16(0)) ;
 	RX_READY <= RD;
-	latchSR : process(T_END,T_START, RESET)
+	latchSR : process(T_READY,T_START, RESET)
 	begin
 		if (RESET = '1') then
 			RD <= '1';
