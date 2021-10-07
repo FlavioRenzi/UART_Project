@@ -34,7 +34,8 @@ Compiling architecture x_toc_v of entity X_TOC [\X_TOC("UNPLACED",0,"*")(1,8,1,1
 Compiling architecture structure of entity UART [uart_default]
 Compiling architecture behavior of entity dual_uart_burst_test
 Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
 Compiled 486 VHDL Units
 Built simulation executable C:/Users/Flavio/OneDrive - Politecnico di Milano/06_Prog_RL/UART_Project/VHDL/DUAL_UART_BURST_TEST_isim_par.exe
-Fuse Memory Usage: 79528 KB
-Fuse CPU Usage: 2374 ms
+Fuse Memory Usage: 80288 KB
+Fuse CPU Usage: 2296 ms

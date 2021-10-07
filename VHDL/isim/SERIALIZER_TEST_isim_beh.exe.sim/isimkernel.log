@@ -1,0 +1,28 @@
+Command line:
+   SERIALIZER_TEST_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50376
+
+Wed Sep 01 22:52:20 2021
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5467 Meg
+
+ Total Signals          : 32
+ Total Nets             : 38
+ Total Signal Drivers   : 15
+ Total Blocks           : 7
+ Total Primitive Blocks : 5
+ Total Processes        : 11
+ Total Traceable Variables  : 12
+ Total Scalar Nets and Variables : 418
+
+ Total Simulation Time: 0.8125 sec
+
+ Current Memory Usage: 4680.56 Meg
+
+Wed Sep 01 23:02:30 2021
+
