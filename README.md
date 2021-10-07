@@ -1,4 +1,4 @@
-﻿#PROGETTO RETI LOGICHE
+﻿#PROGETTO RETI LOGICHE#
 
 ##Interfaccia Seriale UART
 
