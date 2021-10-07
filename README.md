@@ -1,11 +1,11 @@
-﻿#PROGETTO RETI LOGICHE#
+﻿# PROGETTO RETI LOGICHE
 
-##Interfaccia Seriale UART
+## Interfaccia Seriale UART
 
 *di Flavio Renzi e Federico Viola*
 
 ------------------
-##**SOMMARIO**
+## **SOMMARIO**
 
 
 * **Introduzione**
@@ -34,7 +34,7 @@
 
 ----
 
-#INTRODUZIONE
+# INTRODUZIONE
 Il nostro progetto ha l’obiettivo di studiare l’interfaccia seriale asincrona UART (Universal Asinchronous Receiver Transmitter), in particolare gli aspetti legati alla sua composizione, alla costruzione, al suo utilizzo e funzionamento.
 
 L’interfaccia rappresenta un sistema che permette la comunicazione tra dispositivi, enormemente utilizzato ancora oggi negli apparati industriali.
@@ -55,9 +55,9 @@ Viene dato per scontato il corretto utilizzo di questa interfaccia, ipotizzando 
 ---
 
 
-#SPECIFICA
+# SPECIFICA
 
-##INTERFACCIA DEL SISTEMA
+## INTERFACCIA DEL SISTEMA
 
 Il meccanismo UART, nello specifico, funziona in questo modo:
 
@@ -111,7 +111,7 @@ A questo punto i dispositivi tornano alla propria configurazione iniziale.
 
 ---
 
-#ARCHITETTURA DEL SISTEMA
+# ARCHITETTURA DEL SISTEMA
 
 Come abbiamo già osservato, la struttura di un’interfaccia UART è formata da una serie di elementi che hanno una funzione specifica e svolgono determinati compiti relativi alla gestione dei dati e dei segnali, ai fini di una corretta trasmissione delle informazioni.
 
@@ -121,7 +121,7 @@ Vediamo nello specifico come è realizzato un dispositivo UART.
 
 Gli elementi principali che costituiscono il nostro oggetto di studio sono un serializzatore, un deserializzatore e un generatore di frequenza del clock.
 
-###SERIALIZZATORE
+### SERIALIZZATORE
 
 ![Rappresentazione grafica dell’architettura del serializzatore](/Image/Uart-NewSerializer.png)
 
@@ -137,7 +137,7 @@ Il segnale RESET coincide con il preset di ciascun bistabile all’interno del r
 
 Il contatore mod16 e il latch SR vengono resettati quando LOAD = 1. In questo modo il latch manterrà salvato il valore 0 durante tutto il periodo della trasmissione e di conseguenza anche TX\_READY = 0. Questo significa che il canale trasmissivo del dispositivo è occupato. Al decimo conteggio verrà impostato, grazie alla rete di transcodifica, il valore 1 nel latch SR e TX\_READY = 1 ad indicare che ora è possibile inoltrare un nuovo dato.
 
-###DESERIALIZZATORE
+### DESERIALIZZATORE
 
 
 ![Rappresentazione grafica dell’architettura del deserializzatore](/Image/Uart-NewDeserializer.png)
@@ -158,7 +158,7 @@ Il valore di output del contatore mod8 e del contatore mod16 sono molto importan
 
 
 
-###BAUD GENERATOR
+### BAUD GENERATOR
 
 ![Rappresentazione grafica dell’architettura del baud generator](/Image/BaudRateGenerator.png)
 
@@ -171,7 +171,7 @@ Per poter compiere questa operazione, all’interno del modulo è presente un co
 Se la frequenza selezionata è quella massima non c’è bisogno di modificare il clock iniziale, che viene preso direttamente per definire i due clock secondari.
 
 ---
-#VERIFICA
+# VERIFICA
 
 Il dispositivo che è stato realizzato può svolgere sia il ruolo di trasmettitore che di ricevitore. L’approccio che è stato deciso di seguire è quello di sperimentare queste due proprietà effettuando dei test su due dispositivi identici. 
 
@@ -180,9 +180,9 @@ Istanziato, quindi, lo stesso componente due volte testeremo la sua capacità di
 Testeremo la modalità di comunicazione Full-Duplex supportata dall’interfaccia: se identifichiamo un device\_1 e l’altro come device\_2, può avvenire contemporaneamente la trasmissione/ricezione di un dato in direzione device\_1 à device\_2 e la trasmissione/ricezione di un altro dato in direzione device\_2 à device\_1.
 
 
-##TEST-BENCH
+## TEST-BENCH
 
-###TEST 1: TRASMISSIONE SINGOLO BYTE
+### TEST 1: TRASMISSIONE SINGOLO BYTE
 
 Dopo un periodo iniziale in cui le due interfacce vengono resettate, è stato trasmesso un byte dal 
 
@@ -197,7 +197,7 @@ Da notare, inoltre, la differenza di frequenza tra i clock associati alla trasmi
 
 
 
-###TEST 2: TRASMISSIONE 8 BYTE
+### TEST 2: TRASMISSIONE 8 BYTE
 
 Questo test permette di osservare la trasmissione in sequenza di 8 byte e la loro corretta ricezione. 
 
@@ -209,7 +209,7 @@ Nel test-bench è stato aggiunto un segnale CHECK che genera un impulso ogni vol
 ![Schermata di test](/Image/Burst_Test.png)
 
 
-###TEST 3: SELEZIONE DELLE FREQUENZE DI FUNZIONAMENTO
+### TEST 3: SELEZIONE DELLE FREQUENZE DI FUNZIONAMENTO
 
 Attraverso questo test viene verificata la capacità dell’interfaccia di trasmettere un dato utilizzando tutte le possibili frequenze di funzionamento selezionabili.
 
@@ -219,7 +219,7 @@ Facendo variare il segnale di selezione delle frequenze è possibile osservare c
 
 ---
 
-#SCENARI D’USO
+# SCENARI D’USO
 
 Abbiamo progettato l’interfaccia per essere utilizzata all’interno di un modulo che abbia collegati alle linee parallele dei bus di entrata e uscita di essa, un buffer per la ricezione e uno per la trasmissione. 
 
