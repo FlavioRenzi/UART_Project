@@ -4,6 +4,8 @@
 
 *di Flavio Renzi e Federico Viola*
 
+![grade](https://img.shields.io/badge/Grade-100%25-green)
+
 ------------------
 ## **SOMMARIO**
 
